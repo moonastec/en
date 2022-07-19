@@ -217,7 +217,7 @@ function pavykoClose() {
       document.getElementById("back2").style.opacity = "1";
       }, 300);
       setTimeout(() => {
-        location.replace("https://matthewmatexas.github.io/moon_astec/en/main")
+        location.replace("https://moonastec.github.io/en/main")
       }, 5300);
   }
   else {
@@ -271,7 +271,7 @@ function pavykoClose() {
       document.getElementById("back2").style.opacity = "1";
       }, 300);
       setTimeout(() => {
-        location.replace("https://matthewmatexas.github.io/moon_astec/en/main")
+        location.replace("https://moonastec.github.io/en/main")
       }, 5300);
   }
 }
