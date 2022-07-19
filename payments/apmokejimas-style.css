@@ -1,0 +1,787 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-transform: lowercase;
+    font-family: 'Poppins', sans-serif;
+}
+::-moz-selection { /* Code for Firefox */
+  color: azure;
+  background: darkgray;
+}
+
+::selection {
+  color: azure;
+  background: darkgray;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 0;
+}
+
+body{
+    background-color: azure;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+#screen {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: azure;
+    z-index: 100;
+    top: 0;
+    transition: 0.3s;
+}
+@keyframes size{
+    0%{
+        transform: scale(1.0);
+    }
+    8%{
+        transform: scale(1.1);
+    }
+    16%{
+        transform: scale(1.0);
+    }
+    24%{
+        transform: scale(1.1);
+    }
+    32%{
+        transform: scale(1.0);
+    }
+    100%{
+        transform: scale(1.0);
+    }
+}
+@keyframes sukasi2{
+    from{
+        transform: rotate(6000deg);
+    }
+    to{
+        
+    }
+}
+@keyframes opacity{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes spin{
+    0%{
+        transform: rotate(-360deg);
+    }
+    100%{
+        
+    }
+}
+.info{
+    width: 90%;
+    background-color: white;
+    box-shadow: 0px 0px 20px black;
+    height: 130px;
+    margin-top: 20px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 200px;
+    padding-right: 200px;
+    margin-bottom: -50px;
+    z-index: 5;
+}
+.info img{
+    width: 100px;
+    border-radius: 15px;
+    left: 15px;
+    top: 15px;
+    bottom: 15px;
+    position: absolute;
+}
+.info h1{
+    display: inline;
+    text-align: center;
+}
+.info input{
+    width: 100%;
+    padding: 5px;
+    font-size: 20px;
+    border: 1px solid darkgray;
+    margin-top: 5px;
+    background-color: azure;
+    cursor: pointer;
+    height: 50px;
+}
+.info button{
+    width: 70px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    top: 45px;
+    right: 15px;
+    cursor: pointer;
+    background-color: lightgray;
+    transition: 0.3s;
+}
+.info button:hover{
+   background-color: black;
+   color: white;
+}
+#closing{
+    font-size: 35px; 
+    position: absolute; 
+    top: 15px; 
+    right: 25px; 
+    cursor: pointer;
+    transition: 0.3s;
+    border: 2px solid black;
+    border-radius: 100%;
+    padding-left: 6.3px;
+    padding-right: 6.3px;
+}
+#closing:hover{
+    color: darkgray;
+    border-color: darkgray;
+    animation-name: spin;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.safe{
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    right: 0;
+    bottom: 50px;
+    background-color: azure;
+    box-shadow: 10px 10px 20px;
+    z-index: 15;
+    overflow: hidden;
+    transition: 0.3s;
+    cursor: pointer;
+    border-radius: 15px 0 0 15px;
+}
+.safe2{
+    width: 350px;
+    height: 100px;
+    position: fixed;
+    right: -350px;
+    bottom: 50px;
+    background-color: azure;
+    box-shadow: 10px 10px 20px;
+    z-index: 16;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.3s;
+    border-radius: 15px 0 0 15px;
+}
+label{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.christmas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: 270px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.first{
+    background-color: black;
+    box-shadow: 2px 2px 5px black;
+    animation-name: raudona;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.second{
+    background-color: black;
+    box-shadow: 2px 2px 5px black;
+    animation-name: zalia;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.third{
+    background-color: black;
+    box-shadow: 2px 2px 5px black;
+    animation-name: melyna;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.christmas div{
+    width: 20px;
+    height: 20px; 
+    border-radius: 100%;
+}
+@keyframes raudona{
+    0%{
+        background-color: red;
+        box-shadow: 2px 2px 5px red;
+    }
+    32%{
+        background-color: red;
+        box-shadow: 2px 2px 5px red;
+    }
+    33%{
+        background-color: green;
+        box-shadow: 2px 2px 5px green;
+    }
+    65%{
+        background-color: green;
+        box-shadow: 2px 2px 5px green;
+    }
+    66%{
+        background-color: blue;
+        box-shadow: 2px 2px 5px blue;
+    }
+    100%{
+        background-color: blue;
+        box-shadow: 2px 2px 5px blue;
+    }
+}
+@keyframes zalia{
+    0%{
+        background-color: green;
+        box-shadow: 2px 2px 5px green;
+    }
+    32%{
+        background-color: green;
+        box-shadow: 2px 2px 5px green;
+    }
+    33%{
+        background-color: blue;
+        box-shadow: 2px 2px 5px blue;
+    }
+    65%{
+        background-color: blue;
+        box-shadow: 2px 2px 5px blue;
+    }
+    66%{
+        background-color: red;
+        box-shadow: 2px 2px 5px red;
+    }
+    100%{
+        background-color: red;
+        box-shadow: 2px 2px 5px red;
+    }
+}
+@keyframes melyna{
+    0%{
+        background-color: blue;
+        box-shadow: 2px 2px 5px blue;
+    }
+    32%{
+        background-color: blue;
+        box-shadow: 2px 2px 5px blue;
+    }
+    33%{
+        background-color: red;
+        box-shadow: 2px 2px 5px red;
+    }
+    65%{
+        background-color: red;
+        box-shadow: 2px 2px 5px red;
+    }
+    66%{
+        background-color: green;
+        box-shadow: 2px 2px 5px green;
+    }
+    100%{
+        background-color: green;
+        box-shadow: 2px 2px 5px green;
+    }
+}
+section{
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+option{
+    height: 30px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: azure;
+}
+select{
+    height: 30px;
+    padding: 5px;
+    border-radius: 15px;
+    border: 2px solid black;
+}
+.container{
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
+    box-shadow: 0px 0px 20px black;
+    background-color: #FFF;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    transition: 0.3s;
+}
+.form-group{
+    width: 100%;
+    margin-top: 10px;
+    font-size: 20px;
+    vertical-align: top;
+}
+.name{
+    width: 100%;
+}
+.place{
+    position: relative;
+}
+.vardas{
+    width: 49.8%;
+    display: inline-block;
+    vertical-align: top;
+}
+select{
+    width: 100%;
+    background-color: azure;
+    cursor: pointer;
+    height: 50px;
+    font-size: 20px;
+}
+input, textarea{
+    width: 100%;
+    padding: 5px;
+    font-size: 20px;
+    margin-top: 5px;
+    background-color: azure;
+    cursor: pointer;
+    border-radius: 15px;
+    border: 2px solid black;
+}
+.form-group input{
+    height: 50px;
+}
+.form-group textarea{
+    resize: vertical;
+    background-color: azure;
+}
+.text{
+    width: 100%;
+}
+.text2{
+    width: 100%;
+}
+button[type="submit"]{
+    width: 100%;
+    border: none;
+    outline: none;
+    height: 70px;
+    font-size: 25px;
+    border-radius: 40px;
+    color: springgreen;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+    background-color: lightgray;
+    padding: 5px;
+}
+button[type="submit"] div{
+    width: 60px; 
+    height: 60px; 
+    background-color: white; 
+    border-radius: 40px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;  
+    margin-right: 10px;
+    transition: 0.3s;
+}
+.flex{
+    width: 100%;
+    height: 70px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+@keyframes spalva{
+    0%{
+        color: black;
+    }
+    50%{
+        color: white;
+    }
+    100%{
+        color: black;
+    }
+}
+.prekes-info{
+    border: 2px solid lightgray;
+    padding: 20px;
+    transition: 0.5s;
+    width: 40%;
+    margin: 20px auto;
+    height: 95%;
+    position: absolute;
+    top: 0;
+    right: 5%;
+    bottom: 0;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.prekes-info:hover{
+    background-color: lightgray;
+}
+.prekes-info input{
+    background-color: lightgray;
+    transition: 0.5s;
+}
+.prekes-info:hover input{
+    background-color: azure;
+}
+button[type="submit"]:hover div{
+    background-color: azure;
+    width: 100%;
+}
+.taisykle{
+    text-align: center; 
+    margin: 10px;
+    margin-top: 15px;
+    width: 100%;
+}
+#pavyko {
+    width: 90%;
+    height: 90%;
+    overflow: hidden;
+    top: -100%;
+    left: 5%;
+    right: 5%;
+    position: fixed;
+  text-align: center;
+  background-color: azure;
+    color: black;
+    margin: 0 auto;
+  margin-top: 20px;
+    transition: 0.3s;
+    border-radius: 15px;
+}
+#back2{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: fixed;
+    z-index: -1;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#nepavyko {
+  width: 100%;
+    height: 100%;
+    display: none;
+    position: absolute;
+    top: -20px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+  text-align: center;
+  background-color: #cc0000;
+    margin: 0 auto;
+  margin-top: 20px;
+    z-index: 20;
+    box-shadow: 50px 50px 100px;
+}
+#nepavyko button:hover{
+    color: black;
+}
+#nepavyko button{
+    color: white;
+}
+.grizti{
+           width: 50px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    position: absolute;
+    left: 20px;
+       }
+       .grizti button{
+           width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    background-color: black;
+    font-size: 17px;
+    cursor: pointer;
+    transition: .5s;
+           font-size: 25px;
+       }
+       .grizti button:hover{
+    background-color: lightgray;
+    color: black;
+    transform: scale(1.2);
+}
+
+.prekes-uzdarymas{
+    position: absolute; 
+    top: 20px; 
+    right: 20px; 
+    border: none; 
+    color: red; 
+    cursor: pointer;
+    background: none;
+    width: 50px; 
+    height: 50px; 
+    font-size: 30px; 
+    border-radius: 100%;
+    transition: 0.5s;
+    font-weight: 600;
+}
+.prekes-uzdarymas:hover{
+    color: black;
+    animation-name: spin;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+#taisykliu-langas{
+    width: 90%;
+    height: 90%;
+    overflow: hidden;
+    top: -100%;
+    left: 5%;
+    right: 5%;
+    position: fixed;
+  text-align: center;
+  background-color: azure;
+    color: black;
+    margin: 0 auto;
+  margin-top: 20px;
+    transition: 0.3s;
+    border-radius: 15px;
+}
+#taisykliu-langas li{
+    margin: 5px;
+    font-size: 15px;
+    text-align: left;
+}
+#taisykliu-langas p{
+    color: black;
+    font-weight: 800;
+    font-size: 20px;
+    margin: 20px;
+}
+#back{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: fixed;
+    z-index: -1;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    transition: 0.3s;
+}
+.taisykles{
+    border: none;
+    background: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    color: darkslateblue;
+    text-decoration: none;
+    transition: .5s;
+    cursor: pointer;
+}
+.taisykles:hover{
+          color: blue;
+          font-size: 20px;
+      }
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 67px;
+  height: 40px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 32px;
+  width: 32px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: azure;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px azure;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+@media only screen and (max-width: 750px){
+    #taisykliu-langas{
+        width: 90%;
+        height: 96%;
+        right: -200%;
+        top: -1%;
+        bottom: 2%;
+    }
+    #pavyko{
+        width: 90%;
+        height: 96%;
+        right: -200%;
+        top: -1%;
+        bottom: 2%;
+    }
+}
+@media only screen and (max-width: 1200px){
+    .container{
+        max-width: 95%;
+    }
+    #status{
+        max-width: 300px;
+    }
+    .ka-daryti{
+        width: 300px;
+        height: 50px;
+    }
+    .ka-daryti button{
+        font-size: 15px;
+    }
+    .name{
+    width: 100%; 
+    display: block;
+    }
+    .margin2{
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+        #galimybe{
+        width: 90%;
+        height: 54%;
+        top: 23%;
+        bottom: 23%;
+    }
+    .prekes-info{
+        position: static;
+        width: 100%;
+        height: 600px;
+        z-index: 20;
+    }
+    .flex{
+        width: 100%;
+    }
+    .load{
+        width: 100%;
+    }
+    .taisykle{
+        width: 100%;
+    }
+    #nuoroda{
+        font-size: 12px;
+    }
+    .vardas{
+        display: block;
+        width: 100%;
+    }
+    .siuntimas{
+        width: 80%;
+    }
+    .text{
+        width: 100%;
+    }
+    #hide{
+        display: none;
+    }
+    .info{
+        flex-direction: column;
+        height: 420px;
+        width: 300px;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin-bottom: 20px;
+        border-radius: 15px;
+    }
+    .info img{
+        position: static;
+    }
+    .info button{
+        top: 350px;
+        right: 15px;
+    }
+}

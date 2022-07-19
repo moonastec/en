@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>moon_astec&#9789; payment</title>
+    <link rel="shortcut icon" type="image/png" href="photos/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="apmokejimas-style.css" type="text/css" rel="stylesheet">
+</head>
+<body onload="loadFunction()">
+    <section>
+        <div id="screen">
+            <p style="position: absolute; font-size: 13px; color: red; transition: 0.3s; margin-top: -2000px;" id="wifi"><i class="fa-solid fa-wifi"></i> Poor internet connection</p>
+            <div style="width: 120px; height: 120px; border-radius: 100%; box-shadow: 5px 0 10px darkgray; display: flex; justify-content: center; align-items: center; animation: spin 1s linear infinite;"></div>
+            <img src="photos/logo.png" alt="Moon_astec" width="100px" height="100px" style="position: absolute;">
+        </div>
+        <div class="safe" onclick="openForm5()"><img src="photos/moon_astec-safe.png" alt="Moon_astec - saugu" style="width: 100%; height: 100%;"></div>
+        <div class="safe2" id="safe"><img src="photos/moon_astec-safe.png" alt="Moon_astec - saugu" style="width: auto; height: 100%; cursor: pointer;" onclick="closeForm5()">
+            <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+            <p style="font-size: 15px; color: black; display: inline-block;">Safety</p>
+            <p style="font-size: 10px; color: black; display: inline-block; text-align: center;">It's safe to purchase in this page.</p>
+            <p style="font-size: 10px; color: black; display: inline-block; text-align: center;">Only Moon_astec☽ and the payment sender (Formspree) <span style="font-weight: 800;">may</span> see your data.</p>
+            <p style="font-size: 10px; color: black; display: inline-block; text-align: center;">Also, for your safety, robots cannot purchase in this page, and they are detected by our system.</p>
+            </div>
+        </div>
+        <div id="back" onclick="closeForm()"></div>
+        <div id="taisykliu-langas">
+            <i class="fas fa-times" id="closing" onclick="closeForm()"></i>
+            <h1 style="margin: 30px auto; font-size: 35px; margin-top: 80px; margin-bottom: 20px;">Moon_astec&#9789; Rules of purchase</h1>
+            <h1 style="margin: 30px auto; font-size: 25px; margin-top: 10px; color: darkgray;"><i class="fa-solid fa-language"></i> Translated by Google</h1>
+            <p><b>1. DEFINITIONS</b></p>
+            <ul>
+                <li style="list-style: none; padding-left: 15px; padding-right: 15px;">1.1 Seller -  &copy;Moon_astec&#9789; - a website/e-shop created because of someone's desire.</li>
+                <br>
+                <li style="list-style: none; padding-left: 15px; padding-right: 15px;">1.2 Buyer - a person who's buying items or services in the e-shop or browsing the e-shop. Buyer – user is an individual, with an age of 12 or older, intending to buy items or services from &copy;Moon_astec&#9789; for personal or family needs and for non-business or non-professional purposes.</li>
+                <br>
+                <li style="list-style: none; padding-left: 15px; padding-right: 15px;">1.3 E-shop - &copy;Moon_astec&#9789; e-shop, available at <span id="nuoroda"><a href="https://matthewmatexas.github.io/moon_astec" target="_blank">https://matthewmatexas.github.io/moon_astec</a>.</span></li>
+                <br>
+                <li style="list-style: none; padding-left: 15px; padding-right: 15px;">1.4 Rules –  these rules on distant purchase and sale of items laying down the rights and duties of the buyer and the seller, conditions of purchase of items and services offered by the Seller and the terms of payment thereof, procedure of delivery and return of items and services, liability of the parties and other provisions related to the purchase and sale of items and services at the e-shop.</li>
+                <br>
+                <li style="list-style: none; padding-left: 15px; padding-right: 15px;">1.4 Purchase agreement – agreement on the purchase and sale of items concluded by the buyer and the seller in accordance with the rules of purchase and sale of items of the e-shop.</li>
+            </ul>
+            <p><b>2. GENERAL PROVISIONS</b></p>
+            <ul>
+                <li style="list-style: none; padding-left: 15px; padding-right: 15px;">2.1 These rules shall be a binding legal document establishing mutual rights, obligations and liability of the buyer and the seller, as well as other provisions related to the sale and purchase of items and services offered by the seller, when purchasing items or services at the e-shop.</li>
+                <br>
+                <li style="list-style: none; padding-left: 15px; padding-right: 15px;">2.2 The buyer can purchase items and services in the e-shop only after reading and agreeing to these rules. After the buyer confirms the acquaintance with the rules, he undertakes to comply with them. By purchasing items and services in the e-shop, the buyer agrees to the application of the rules and confirms that they have understood them. In case the buyer has not read and/or did not understand the rules or did not agree with them, he/she cannot buy items and services in the e-shop.</li>
+                <br>
+                <li style="list-style: none; padding-left: 15px; padding-right: 15px;">2.3 The selling activity in the e-shop is carried out from the territory of Lithuania.</li>
+                <br>
+                <li style="list-style: none; padding-left: 15px; padding-right: 15px;">2.4 The seller has the right to change the rules. The changes to the rules take effect after their publication in the e-shop and apply only to those orders placed by the buyer after the change of the rules. The seller will inform the buyer about the changes in the rules (for for ex., by email and/or by publishing the information in the e-shop and/or etc.). If the buyer uses the e-shop in any way after the amendments to the rules have been published, he/she shall be deemed to have agreed to all the amendments to the rules.</li>
+            </ul>
+            <p><b>3. ENTERING INTO THE PURCHASE AGREEMENT</b></p>
+            <ul>
+                <li style="list-style: none; padding-left: 15px; padding-right: 15px;">3.1 The rules are the basis for concluding and enforcing one-off supply contracts. Upon concluding a contract for the purchase of a specific product in accordance with the procedure established by the tules, the terms and conditions of the contract shall become the terms and conditions of the contract for the purchase of such item.</li>
+                <br>
+                <li style="list-style: none; padding-left: 15px; padding-right: 15px;">3.2 In order to purchase the items, the buyer places the order in the e-shop by filling in the electronic order form in the e-shop and submitting it to the seller.</li>
+                <br>
+                <li style="list-style: none; padding-left: 15px; padding-right: 15px;">3.3 The purchase agreement between the buyer and the seller is considered concluded when the buyer, having read the rules, places an order for the items.</li>
+                <br>
+                <li style="list-style: none; padding-left: 15px; padding-right: 15px;">3.4 The purchase agreement is valid until the full fulfillment of obligations. The purchase contract is considered fulfilled when the items are delivered to the buyer in accordance with the procedure established by the rules.</li>
+                <br>
+                <li style="list-style: none; padding-left: 15px; padding-right: 15px;">3.5 By concluding a purchase agreement, the buyer undertakes to pay the price of the items and accept the items ordered in the e-shop. You can buy one type of item at a time (quantity is unlimited). To order additional items, you must place a new order with the seller.</li>
+            </ul>
+            <p><b>4. RIGHTS AND OBLIGATIONS OF THE BUYER</b></p>
+            <ul>
+                <li style="list-style: none; padding-left: 15px; padding-right: 15px;">4.1 The Buyer shall have the right:</li>
+                <br>
+                <li style="list-style: none; padding-left: 25px; padding-right: 15px;">4.1.1 to buy in the e-shop in accordance with the rules and other instructions of the seller;</li>
+                <br>
+                <li style="list-style: none; padding-left: 25px; padding-right: 15px;">4.1.2 (when he/she is a consumer) to cancel the purchase agreement concluded in the e-shop by notifying the seller by email before the items are shipped out in accordance with the procedure established by these rules;</li>
+                <br>
+                <li style="list-style: none; padding-left: 25px; padding-right: 15px;">4.1.3 to ask the seller to replace the substandard and/or improperly assembled items, to reduce the price of the substandard and/or improperly assembled items proportionally, or to terminate the purchase agreement and return the items, to use the warranties applicable to the items;</li>
+                <br>
+                <li style="list-style: none; padding-left: 25px; padding-right: 15px;">4.1.4 other rights provided for by rules.</li>
+                <br>
+                <li style="list-style: none; padding-left: 15px; padding-right: 15px;">4.2 The buyer shall undertake:</li>
+                <br>
+                <li style="list-style: none; padding-left: 25px; padding-right: 15px;">4.2.1 to pay the price of the ordered items and their delivery costs and to accept the ordered items;</li>
+                <br>
+                <li style="list-style: none; padding-left: 25px; padding-right: 15px;">4.2.2 to inspect the items upon acceptance, as well as to inform the seller about the damage of the consignment, clearly visible defects of the items, non-conformity of the product model, assembly to the buyer's order in accordance with the rules;</li>
+                <br>
+                <li style="list-style: none; padding-left: 25px; padding-right: 15px;">4.2.3 patikrinti, ar įsigyta prekė yra kokybiška, ir informuoti pardavėją el. paštu apie pastebėtus prekės kokybės trūkumus, kurių nebuvo galima pastebėti prekės perdavimo metu;</li>
+                <br>
+                <li style="list-style: none; padding-left: 25px; padding-right: 15px;">4.2.4 to check that the purchased item is of good quality and to inform the seller by email about the observed defects in the quality of the items, which could not be noticed during the delivery of the items;</li>
+                <br>
+                <li style="list-style: none; padding-left: 25px; padding-right: 15px;">4.2.5 to create good conditions for the delivery of items by choosing the delivery service or other services offered by the seller;</li>
+                <br>
+                <li style="list-style: none; padding-left: 25px; padding-right: 15px;">4.2.6 to pay the cost of returning the items if a return of the items is required;</li>
+                <br>
+                <li style="list-style: none; padding-left: 25px; padding-right: 15px;">4.2.7 to immediately inform the seller by email if the buyer's personal or delivery data has changed;</li>
+                <br>
+                <li style="list-style: none; padding-left: 25px; padding-right: 15px;">4.2.8 not to use the e-shop in an illegal way, including but not limited to in a way that may disable the proper functioning, security, integrity of the e-shop or restrict other people's access to the e-shop;</li>
+                <br>
+                <li style="list-style: none; padding-left: 25px; padding-right: 15px;">4.2.9 to comply with other requirements set out in the rules.</li>
+            </ul>
+            <p><b>5. RIGHTS AND OBLIGATIONS OF THE SELLER</b></p>
+            <ul>
+                <li style="list-style: none; padding-left: 15px; padding-right: 15px;">5.1 The Seller shall have the right:</li>
+                <br>
+                <li style="list-style: none; padding-left: 25px; padding-right: 15px;">5.1.1 to cancel the buyer's order and return only a part of the money if the buyer violates the rules of purchase, in particular - if his actions or omissions threatens or damages the seller, other buyers or third parties, the stability or security of the e-shop;</li>
+                <br>
+                <li style="list-style: none; padding-left: 25px; padding-right: 15px;">5.1.2 to restrict and/or prohibit wholesale purchases;</li>
+                <br>
+                <li style="list-style: none; padding-left: 25px; padding-right: 15px;">5.1.3 to temporarily or permanently terminate the operation of the e-shop, change the e-shop or its separate parts, all and any of its contents, change the e-shop's domain address and/or, taking into account the technical capacity of the e-shop system, number of buyer; however, this will not affect the purchase agreements entered into by the buyer and their implementation prior to the seller's decision to perform these actions;</li>
+                <br>
+                <li style="list-style: none; padding-left: 25px; padding-right: 15px;">5.1.4 to change the rules, prices of items, purchase conditions and/or any other instructions related to the e-shop by announcing the changes in the e-shop; however, the changes will not affect the purchase agreements entered into by the buyer and their implementation prior to the seller's decision to perform these actions.</li>
+                <br>
+                <li style="list-style: none; padding-left: 15px; padding-right: 15px;">5.2 The seller undertakes to respect the privacy of the buyer, to protect the confidentiality of his data.</li>
+            </ul>
+            <p><b>6. PRICES OF ITEMS AND PAYMENT FOR ITEMS</b></p>
+            <ul>
+                <li style="list-style: none; padding-left: 15px; padding-right: 15px;">6.1 The prices of the items in the e-shop and/or the order are indicated in euros with the included value added taxes.</li>
+                <br>
+                <li style="list-style: none; padding-left: 15px; padding-right: 15px;">6.2 The items are sold to the buyer at the prices valid in the e-shop at the time of placing the order. If the buyer does not agree with the quoted price, he/she cannot continue the ordering procedure and order the items.</li>
+                <br>
+                <li style="list-style: none; padding-left: 15px; padding-right: 15px;">6.3 The price of the items does not include the price of delivery of the items and the price of services that can be ordered separately from the seller by the buyer. Delivery service and other services are not free, unless otherwise specified in the e-shop. The prices of these services and the procedure for their calculation and payment are indicated in the e-shop.</li>
+            </ul>
+            <p><b>7. DELIVERY OF ITEMS</b></p>
+            <ul>
+                <li style="list-style: none; padding-left: 15px; padding-right: 15px;">7.1 The items are delivered only in Lithuania and Belgium (for now). The possible ways of delivery are indicated to the buyer in the e-shop when placing an order.</li>
+                <br>
+                <li style="list-style: none; padding-left: 15px; padding-right: 15px;">7.2 Delivery service is not free. Delivery prices are indicated in the e-shop when ordering. The information provided with the order is considered an integral part of these rules.</li>
+                <br>
+                <li style="list-style: none; padding-left: 15px; padding-right: 15px;">7.3 When the buyer chooses the delivery service, the price of their delivery is indicated to the buyer when forming the order of items. The delivery price of the items is written separately from the price of the items. Items and delivery are paid for at the same time.</li>
+                <br>
+                <li style="list-style: none; padding-left: 15px; padding-right: 15px;">7.4 When ordering the delivery service, the buyer must write the exact place of delivery before payment.</li>
+                <br>
+                <li style="list-style: none; padding-left: 15px; padding-right: 15px;">7.5 When accepting the items, the buyer must check the condition of the package. If the packaging is found to be damaged, the buyer must notify &copy;Moon_astec&#9789; by email.</li>
+                <br>
+                <li style="list-style: none; padding-left: 15px; padding-right: 15px;">7.6 If there is a discrepancy between the quality and/or range of the items, the buyer may not accept the items that do not correspond to the quality and/or range. The buyer must notify &copy;Moon_astec&#9789; by email about the refusal to accept the product and the violations found. If a discrepancy is found in the quantity of items, the buyer must also notify &copy;Moon_astec&#9789; by email about the shortage of items.</li>
+                <br>
+                <li style="list-style: none; padding-left: 15px; padding-right: 15px;">7.7 Upon receipt of the consignment by the buyer without comments, the items are considered to have been delivered in the intact packaging of the consignment. In the event that defects in the items due to no fault of the buyer become apparent later, the buyer does not lose the right to a 30-day post-delivery quality guarantee.</li>
+                <br>
+                <li style="list-style: none; padding-left: 15px; padding-right: 15px;">7.8 If the buyer has chosen the option to pick up the items, undertakes to accept the items from the seller himself. When transferring items from the buyer, an identity document may be required, as well as the order information sent by the seller to the buyer.</li>
+                <br>
+                <li style="list-style: none; padding-left: 15px; padding-right: 15px;">7.9 The seller is released from liability for violation of the terms of delivery of items, if the items are not delivered to the buyer or are not delivered in time due to the fault of the buyer or due to circumstances beyond the control of the buyer.</li>
+                <br>
+                <li style="list-style: none; padding-left: 15px; padding-right: 15px;">7.10 If the buyer does not order the delivery service, the buyer can pick up the ordered items free of charge by agreeing on the time and place of delivery. After placing the order, the buyer agrees with the seller on the time and place of delivery.</li>
+            </ul>
+            <p><b>8. RETURN OF ITEMS</b></p>
+            <ul>
+                <li style="list-style: none; padding-left: 15px; padding-right: 15px;">8.1 The buyer (consumer) has the right to return the item without giving a reason within 30 (thirty) days from the date of delivery (receipt) of the items.</li>
+                <br>
+                <li style="list-style: none; padding-left: 15px; padding-right: 15px;">8.2 The items must be returned to the seller no later than 14 (fourteen) calendar days from the submission of the notice of withdrawal from the purchase agreement to the seller. The buyer is responsible for the proper packaging of the items for return. The product is only considered to be properly packaged when it is placed in an additional outer packaging (for ex., placed in a box, bag, wrapped in paper, etc.) and this packaging is tightly closed (for ex., sealed). The buyer has to pay the direct cost of returning the items, unless the seller, after receiving notice of withdrawal, instructs the buyer not to do so. Then, the seller pays the cost of returning the items.</li>
+                <br>
+                <li style="list-style: none; padding-left: 15px; padding-right: 15px;">8.3 The items can be returned to the agreed place of return by the delivery methods chosen by the buyer.</li>
+                <br>
+                <li style="list-style: none; padding-left: 15px; padding-right: 15px;">8.4 The money is returned to the buyer only after the buyer returns the items. Money can be refunded in the way chosen by the buyer if available.</li>
+                <br>
+                <li style="list-style: none; padding-left: 15px; padding-right: 15px;">8.5 The seller is not considered to have violated the refund conditions if he is unable to return the money due to the buyer's fault (for ex., delay in returning the goods, inaccurate data, etc.).</li>
+                <br>
+                <li style="list-style: none; padding-left: 15px; padding-right: 15px;">8.6 In any case of return, the seller shall not be obliged to reimburse the buyer for any additional costs incurred as a result of his choice of a method other than the cheapest normal delivery of the items offered by the seller.</li>
+                <br>
+                <li style="list-style: none; padding-left: 15px; padding-right: 15px;">8.7 When returning items of poor quality to the buyer, it is necessary to comply with these conditions:</li>
+                <br>
+                <li style="list-style: none; padding-left: 25px; padding-right: 15px;">8.7.1 the returned product must be in the original or other safe packaging;</li>
+                <br>
+                <li style="list-style: none; padding-left: 25px; padding-right: 15px;">8.7.2 the product must be undamaged by the buyer;</li>
+                <br>
+                <li style="list-style: none; padding-left: 25px; padding-right: 15px;">8.7.3 the product must be unused, without loss its appearance;</li>
+                <br>
+                <li style="list-style: none; padding-left: 25px; padding-right: 15px;">8.7.4 the returned items must be in the same configuration as received by the buyer;</li>
+                <br>
+                <li style="list-style: none; padding-left: 25px; padding-right: 15px;">8.7.5 when returning the item, it is necessary to show an order confirmation email confirming its purchase.</li>
+                <br>
+                <li style="list-style: none; padding-left: 15px; padding-right: 15px;">8.8 In case of poor quality services, the buyer has the right to demand the elimination of the shortcomings of the provision of services, refund of the price paid for the services, reduction of the price of services.</li>
+            </ul>
+            <p><b>9. FINAL PROVISIONS</b></p>
+            <ul>
+                <li style="list-style: none; padding-left: 15px; padding-right: 15px;">9.1 All information provided on the seller's e-shop website, including but not limited to these rules, information about the seller, the items and services offered and their features, the buyer's right to withdraw from the purchase agreement, the seller's product warranties (if any) to the buyer in writing.</li>
+                <br>
+                <li style="list-style: none; padding-left: 15px; padding-right: 15px;">9.2 The seller can at any time assign its rights and obligations arising from these rules to third parties without the buyer's consent, provided that ensuring that the seller transfers its rights and obligations to third parties does not adversely affect the scope of the buyer's rights and obligations.</li>
+                <br>
+                <li style="list-style: none; padding-left: 15px; padding-right: 15px; margin-bottom: 20px;">9.3 These rules updated on 2022-06-16.</li>
+            </ul>
+        </div>
+        <div id="back2" onclick="pavykoClose()"><div style="width: 120px; height: 120px; border-radius: 100%; opacity: 0; box-shadow: 5px 0 10px darkgray; display: flex; justify-content: center; align-items: center; animation: spin 1s linear infinite;" id="finished"></div><img src="photos/logo.png" alt="Moon_astec" width="100px" height="100px" style="position: absolute; opacity: 0;" id="finished2"></div>
+            <div id="pavyko">
+                <i class="fas fa-times" id="closing" onclick="pavykoClose()"></i>
+                    <h1 style="margin: 20px; color: darkseagreen;"><i class="fas fa-check-square" style="color: darkseagreen; margin: 10px; margin-top: 60px;"></i>Order request sent</h1>
+                    <h1 style="margin: 20px; color: slategray;">You will receive a confirmation email soon.</h1>
+                    <h1 style="text-align: center; margin-top: 20px;">What to do after the payment?</h1>
+                    <p style="width: 50%; margin: 40px auto;">1. After payment confirmation you will get an automatic confirmation email to the email you entered, which will show your order number.</p>
+                    <p style="width: 50%; margin: 40px auto;">2. After that (in 5 days), you will get another email, in which you will get a payment method and confirm your data.</p>
+                    <p style="width: 50%; margin: 40px auto;">3. After paying for the order, we will send it to you in 5 days (if in stock) through your selected shipping method.</p>
+                    <p style="width: 50%; margin: 40px auto; color: darkgray;">You also can leave a review for us after the item has been delivered: write you name, last name, email and rating 1-5 to <a href="mailto: moon.astec@gmail.com" style="color: blue; text-decoration: underline;">our email</a>.</p>
+            </div>
+            <p id="nepavyko" style="color: red; text-align: center; position: fixed; top: -250px; width: 100%; height: 50px; overflow: hidden; transition: 0.3s; display: flex; justify-content: center; align-items: center; background-color: azure; z-index: 15;">Order request not sent, try again.</p>
+     <form action="https://matthewmatexas.github.io/moon_astec/en/main">
+      <div class="grizti"><button><i class="fas fa-arrow-left"></i></button></div>
+      </form>
+       <img src="photos/logo.png" alt="Moon_astec payment" style="width: 200px;">
+<!--
+        <div class="christmas">
+                <div class="first"></div>
+                <div style="border-bottom: 2px solid black; width: 8%; margin-top: -5px;"></div>
+               <div class="second"></div>
+               <div style="border-bottom: 2px solid black; width: 8%; margin-top: -5px;"></div>
+               <div class="third"></div>
+               <div style="border-bottom: 2px solid black; width: 8%; margin-top: -5px;"></div>
+               <div class="first"></div>
+               <div style="border-bottom: 2px solid black; width: 8%; margin-top: -5px;"></div>
+               <div class="second"></div>
+               <div style="border-bottom: 2px solid black; width: 8%; margin-top: -5px;"></div>
+               <div class="third"></div>
+               <div style="border-bottom: 2px solid black; width: 8%; margin-top: -5px;"></div>
+               <div class="first"></div>
+               <div style="border-bottom: 2px solid black; width: 8%; margin-top: -5px;" id="hide"></div>
+               <div class="second" id="hide"></div>
+               <div style="border-bottom: 2px solid black; width: 8%; margin-top: -5px;" id="hide"></div>
+               <div class="third" id="hide"></div>
+               <div style="border-bottom: 2px solid black; width: 8%; margin-top: -5px;" id="hide"></div>
+               <div class="first" id="hide"></div>
+           </div>
+-->
+    <h1>Payment <span style="border-radius: 25px; border: 2px solid black; padding-left: 5px; padding-right: 5px; user-select: none;">BETA</span></h1>
+    <h2 style="padding: 10px; margin: 0 auto; text-align: center; margin-top: 10px;">To continue, fill in the required data.</h2>
+    <div class="info">
+        <img src="photos/vandenynai.jpg" alt="Music composition Oceans">
+        <h1>Music composition "Oceans"</h1>
+        <h1>16 Eur</h1>
+        <div style="display: flex; justify-content: center; align-items: center;">
+        <div style="width: 10px; height: 10px; background-color: darkseagreen; border-radius: 100%;"></div>
+        <p style="margin: 10px;">In stock</p>
+        </div>
+        <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+            <p>Amount</p>
+            <input type="number" id="Amount" name="Amount" value="1" required style="width: 100px; border: 2px solid black;">
+        </div>
+        <button onclick="next()" id="next">Continue</button>
+    </div>
+        <div class="container" id="container">
+            <form action="https://formspree.io/f/mdoyzdlr" method="POST" id="my-form">
+            <h1 style="margin-bottom: 20px;"><i class="fas fa-user-circle" style="color: darkgray;"></i> Buyer info</h1>
+            <div class="form-group vardas">
+                <label for="First name"><i class="far fa-user" style="color: darkgray;"></i> First name</label>
+                <input type="text" id="First name" name="First name" placeholder="ex., Eve" required>
+            </div>
+            <div class="form-group vardas">
+                <label for="Last name"><i class="fas fa-user" style="color: darkgray;"></i> Last name</label>
+                <input type="text" id="Last name" name="Last name" placeholder="ex., Smith" required>
+            </div>
+            <br>
+            <div class="form-group vardas">
+                <label for="Email"><i class="fas fa-envelope" style="color: darkgray;"></i> Email</label>
+                <input type="email" id="Email" name="Email" placeholder="ex., ievakasparav@gmail.com" required>
+            </div>
+            <div class="form-group vardas" style="margin-top: 15px;" style="color: darkgray;">
+                <label for="Payment method"><i class="fas fa-money-bill-wave" style="color: darkgray;"></i> Payment method:</label>
+                <br>
+                <select name="Payment method" id="Payment method" required>
+                <option value="Cash">Cash</option>
+                <option value="Bank transfer">Bank transfer</option>
+              </select>
+            </div>
+            <select name="Item" id="Item" style="display: none;">
+                <option value="Music composition Oceans">Music composition Oceans</option>
+            </select>
+            <h1 style="margin-bottom: 20px; margin-top: 20px;"><i class="fas fa-shopping-bag" style="color: darkgray;"></i> Shipping information</h1>
+            
+            <div class="form-group vardas place">
+                <label for="Shipping country"><i class="fas fa-globe-europe" style="color: darkgray;"></i> Shipping country:</label>
+                <br>
+                <select name="Shipping country" id="Shipping country" required>
+                <option value="Belgium">Belgium</option>
+                <option value="Lithuania">Lithuania</option>
+              </select>
+            </div>
+<!--
+            <div class="form-group name margin">
+                <label for="Pasirinkimas">Prekė:</label>
+                <br>
+                <select name="Preke" id="Preke" required>
+                <option value="Karviukas. Spaudymo zaislas">Karviukas. Spaudymo žaislas. 1 Eur</option>
+                <option value="Paveiksleliai. Polaroid nuotraukos">Paveikslėliai. Polaroid nuotraukos 80 ct</option>
+                <option value="Vasaros cukraus sveitiklis">Vasaros cukraus šveitiklis 5 Eur</option>
+                <option value="Debeseliu auskarai">Debesėlių auskarai 6,50 Eur</option>
+                <option value="Astuonkojiuko lipdukas">Aštuonkojiuko lipdukas 1 Eur</option>
+                <option value="Tetos meile">Tetos meilė 9,50 Eur</option>
+                <option value="Vonios putu pagaliukai">Vonios putų pagaliukai 3 Eur</option>
+                <option value="Lupu sveitiklis">Lūpų šveitiklis 2 Eur</option>
+              </select>
+            </div>
+-->
+            <div class="form-group vardas">
+                <label for="Shipping method"><i class="fas fa-shipping-fast" style="color: darkgray;"></i> Shipping method:</label>
+                <br>
+                <select name="Shipping method" id="Shipping method" required>
+                <option value="Pickup">Pickup - free</option>
+                <option value="Post">Lithuanian post - from 2 Eur</option>
+                <option value="Omniva parcel machine">Omniva parcel machine - 2,50 Eur</option>
+                <option value="DPD parcel machine">DPD parcel machine - from 2 Eur</option>
+                <option value="DPD courier">DPD courier - from 5 Eur</option>
+              </select>
+            </div>
+            <br>
+            <div class="form-group vardas">
+                <label for="Order pickup"><i class="fas fa-box-open" style="color: darkgray;"></i> Order pickup:</label>
+                <br>
+                <select name="Order pickup" id="Order pickup" required>
+                <option value="Buyer">Buyer</option>
+                <option value="Other">Other (write in the notes below)</option>
+              </select>
+            </div>
+            <div class="form-group vardas">
+                <label for="Gift"><i class="fas fa-gift" style="color: darkgray;"></i> Packing:</label>
+                <br>
+                <select name="Pack as a gift" id="Supakuoti kaip dovana" required>
+                <option value="No">Basic</option>
+                <option value="Yes">Gift (+1 Eur)</option>
+              </select>
+            </div>
+            <h1 style="margin-bottom: 20px; margin-top: 20px;"><i class="far fa-sticky-note" style="color: darkgray;"></i> Notes <span style="font-weight: 100; color: darkgray;">(not required)</span></h1>
+            <div class="form-group text">
+                <label for="Notes and questions"><i class="fas fa-sticky-note" style="color: darkgray;"></i> Notes and questions</label>
+                <textarea name="Notes and questions" id="Notes and questions" cols="25" rows="8" placeholder="ex., When will I get the item?"></textarea>
+            </div>
+            
+            
+            
+             <div style="margin-top: 20px;">
+                 <label class="switch">
+              <input type="checkbox" id="myCheck" onclick="myFunction()" required>
+              <span class="slider round"></span>
+            </label>
+            <div style="width: 80px; height: 80px; border-radius: 100%; background-color: white; display: flex; justify-content: center; align-items: center; position: absolute; margin-top: -60px; margin-left: -6px; transition: 0.3s; opacity: 0; z-index: -1" id="confirm">
+                <div style="width: 50px; height: 50px; border-radius: 100%; box-shadow: 2px 0 4px darkgray; display: flex; transition: 0.3s; justify-content: center; align-items: center; animation: spin 1s linear infinite;"></div>
+             </div>
+            <p style="margin: 10px; display: inline-block">I'm not a robot</p>
+                    <div style="width: 70px; height: 70px; border-radius: 50px; background-color: white; display: none; justify-content: center; align-items: center; position: absolute; margin-top: -55px; margin-left: -1px;" id="ok">
+                    <p style="text-align: center; color: darkseagreen; display: block; font-size: 45px;"><i class="fas fa-check"></i></p>
+                 </div>
+                    <div style="width: 70px; height: 70px; border-radius: 50px; background-color: white; display: none; justify-content: center; align-items: center; position: absolute; margin-top: -54px; margin-left: 190px;" id="text2">
+                    <p style="text-align: center; color: red; font-size: 30px;"><i class="far fa-clock" style="padding-right: 5px;"></i><i class="fas fa-times" style="opacity: 0;"></i></p>
+                 </div>
+             </div>
+              <div>
+                  <p class="taisykle">By continuing you agree to <a onclick="openForm()" style="cursor: pointer; color: blue; text-decoration-line: underline;">rules of purchase</a></p>
+                </div>
+                <div class="flex">
+                <button id="toliau" type="submit"><div><i class="fas fa-check" style="font-size: 35px; color: darkseagreen;" id="check"></i><div style="width: 50px; height: 50px; border-radius: 100%; box-shadow: 2px 0 4px darkgray; display: none; transition: 0.3s; justify-content: center; align-items: center; animation: spin 1s linear infinite; margin: 5px;" id="clock"></div></div></button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <script src="https://kit.fontawesome.com/a11707644f.js" crossorigin="anonymous"></script>
+    <script src="./eng-payment.js"></script>
+</body>
+</html>
