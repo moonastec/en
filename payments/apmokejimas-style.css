@@ -87,7 +87,7 @@ body{
 .info{
     width: 90%;
     background-color: white;
-    box-shadow: 0px 0px 20px black;
+    box-shadow: 0px 0px 20px darkgrey;
     height: 130px;
     margin-top: 20px;
     position: relative;
@@ -98,6 +98,8 @@ body{
     padding-right: 200px;
     margin-bottom: -50px;
     z-index: 5;
+    border-radius: 15px;
+    transition: 0.3s;
 }
 .info img{
     width: 100px;
@@ -332,7 +334,7 @@ select{
     width: 100%;
     max-width: 90%;
     margin: 0 auto;
-    box-shadow: 0px 0px 20px black;
+    box-shadow: 0px 0px 20px darkgrey;
     background-color: #FFF;
     margin-top: 50px;
     margin-bottom: 20px;
@@ -340,6 +342,7 @@ select{
     height: 0;
     overflow: hidden;
     transition: 0.3s;
+    border-radius: 0 0 15px 15px;
 }
 .form-group{
     width: 100%;
@@ -769,19 +772,18 @@ input:checked + .slider:before {
     .info{
         flex-direction: column;
         height: 420px;
-        width: 300px;
+        width: 95%;
         padding-left: 0;
         padding-right: 0;
         padding-top: 15px;
         padding-bottom: 15px;
-        margin-bottom: 20px;
-        border-radius: 15px;
     }
     .info img{
         position: static;
     }
     .info button{
-        top: 350px;
+        top: 15px;
         right: 15px;
+        border-radius: 15px;
     }
 }
