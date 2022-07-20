@@ -53,12 +53,12 @@ table {
     text-transform: lowercase;
 }
 ::-moz-selection { /* Code for Firefox */
-  color: darkgray;
+  color: darkgrey;
   background: azure;
 }
 
 ::selection {
-  color: darkgray;
+  color: darkgrey;
   background: azure;
 }
 /* width */
@@ -182,13 +182,13 @@ body{
     border-radius: 15px;
 }
 #navbar img:hover{
-    background-color: lightgray;
+    background-color: lightgrey;
 }
 #kalba{
     width: 50px;
     height: 50px;
     border: none;
-    background-color: lightgray;
+    background-color: lightgrey;
     font-family: 'Poppins', sans-serif;
     border-radius: 100%;
     font-size: 20px;
@@ -204,7 +204,7 @@ body{
     align-items: center;
 }
 #kalba:hover{
-    background-color: darkgray;
+    background-color: darkgrey;
     color: white;
     transform: rotate(10deg);
 }
@@ -223,7 +223,7 @@ body{
     z-index: 5;
     border-radius: 15px;
     z-index: 15;
-    box-shadow: 0px 0 10px darkgray;
+    box-shadow: 0px 0 10px darkgrey;
     transition: 0.7s;
 }
 #navbar a{
@@ -251,7 +251,7 @@ body{
     width: 40px;
     height: 40px;
     border-radius: 10px;
-    background-color: darkgray;
+    background-color: darkgrey;
     position: fixed;
     top: 10px;
     right: 10px;
@@ -278,7 +278,7 @@ body{
     right: -90%;
     bottom: 2%;
     z-index: 30;
-    box-shadow: 0 0 15px darkgray;
+    box-shadow: 0 0 15px darkgrey;
     transition: 0.3s;
     display: none;
     border-radius: 15px;
@@ -287,7 +287,7 @@ body{
     width: 90%;
     height: 50px;
     border-radius: 15px;
-    background-color: lightgray;
+    background-color: lightgrey;
     border: none;
     outline: none;
     font-family: 'Poppins', sans-serif;
@@ -300,7 +300,7 @@ body{
     width: 40px; 
     height: 40px;
     cursor: pointer;
-    background-color: lightgray;
+    background-color: lightgrey;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -317,7 +317,7 @@ body{
     width: 40px; 
     height: 40px;
     cursor: default;
-    background-color: lightgray;
+    background-color: lightgrey;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -337,7 +337,7 @@ body{
 #back{
     width: 100%;
     height: 100%;
-    background-color: black;
+    background-color: darkgrey;
     position: fixed;
     z-index: -1;
     opacity: 0;
@@ -509,18 +509,52 @@ body{
     top: 460px;
     left: 0;
     left: 0;
-    animation-name: bangavimas;
-    animation-duration: 20s;
+}
+.banga1{
+    animation-name: bangavimas1;
+    animation-duration: 30s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
-@keyframes bangavimas{
+@keyframes bangavimas1{
     0%{
         background-position: 0;
     }
     100%{
         background-position: 1360px;
     }
+}
+.banga2{
+    opacity: 0.5;
+    animation-name: bangavimas2;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 5s;
+}
+@keyframes bangavimas2{
+    0%{
+        background-position: 0;
+    }
+    100%{
+        background-position: -1360px;
+    }
+}
+.banga3{
+    opacity: 0.2;
+    animation-name: bangavimas1;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: -10s;
+}
+.banga4{
+    opacity: 0.7;
+    animation-name: bangavimas1;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: -15s;
 }
 main p{
     color:rgb(225,225,225);
@@ -548,11 +582,11 @@ section{
     left: 30px;
     background-color: azure;
     width: 450px;
-    border: 5px solid darkgray;
+    border: 5px solid darkgrey;
     border-radius: 10px;
     padding: 25px 25px 30px 25px;
     text-align: center;
-    box-shadow: 150px 150px 200px;
+    box-shadow: 150px 150px 200px darkgrey;
     height: 330px;
     z-index: 70;
 }
@@ -566,7 +600,7 @@ section{
     max-width: 120px;
 }
 .content p{
-    color: slategray;
+    color: slategrey;
     margin: 5px 0 20px 0;
 }
 .content .buttons{
@@ -577,7 +611,7 @@ section{
 .buttons button{
     padding: 10px 20px;
     cursor: pointer;
-    background-color: darkgray;
+    background-color: darkgrey;
     border: none;
     color: white;
     border-radius: 5px;
@@ -588,17 +622,17 @@ section{
     margin: 0 10px;
 }
 .buttons button:hover{
-    background-color: lightgray;
+    background-color: lightgrey;
     color: black;
 }
 .buttons a{
-    color: darkgray;
+    color: darkgrey;
     transition: .3s;
     text-decoration: underline;
     cursor: pointer;
 }
 .buttons a:hover{
-    color: lightgray;
+    color: lightgrey;
 }
 /*pagalba*/
 .chat-popup {
@@ -611,8 +645,8 @@ section{
   background-color: white;
     transition: 0.3s;
     border-radius: 10px;
-    border: 5px solid darkgray;
-    box-shadow: 2px 2px 5px;
+    border: 5px solid darkgrey;
+    box-shadow: 2px 2px 5px darkgrey;
 }
 
 
@@ -697,7 +731,7 @@ section{
 }
 .kalbos-keitimas:hover{
     transform: scale(1.2);
-    background-color: darkgray;
+    background-color: darkgrey;
 }
 /*parduotuve*/
 @keyframes load{
@@ -741,8 +775,8 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 5px solid lightgray;
-    box-shadow: 0 0 20px black;
+    border: 5px solid lightgrey;
+    box-shadow: 0 0 20px darkgrey;
 }
 #filter{
     width: 40px; 
@@ -752,7 +786,7 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: darkgray;
+    color: darkgrey;
     border-radius: 40px;
     transition: 0.3s;
     margin: 20px;
@@ -768,7 +802,7 @@ section{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    color: darkgray;
+    color: darkgrey;
     border-radius: 40px;
     transition: 0.3s;
     margin: 20px;
@@ -803,7 +837,7 @@ section{
 #back7{
     width: 100%;
     height: 100%;
-    background-color: black;
+    background-color: darkgrey;
     position: fixed;
     z-index: -1;
     opacity: 0;
@@ -835,7 +869,7 @@ section{
 #back8{
     width: 100%;
     height: 100%;
-    background-color: black;
+    background-color: darkgrey;
     position: fixed;
     z-index: -1;
     opacity: 0;
@@ -867,7 +901,7 @@ section{
 #back10{
     width: 100%;
     height: 100%;
-    background-color: black;
+    background-color: darkgrey;
     position: fixed;
     z-index: -1;
     opacity: 0;
@@ -899,7 +933,7 @@ section{
 #back11{
     width: 100%;
     height: 100%;
-    background-color: black;
+    background-color: darkgrey;
     position: fixed;
     z-index: -1;
     opacity: 0;
@@ -931,7 +965,7 @@ section{
 #back9{
     width: 100%;
     height: 100%;
-    background-color: black;
+    background-color: darkgrey;
     position: fixed;
     z-index: -1;
     opacity: 0;
@@ -963,7 +997,7 @@ section{
 #back12{
     width: 100%;
     height: 100%;
-    background-color: black;
+    background-color: darkgrey;
     position: fixed;
     z-index: -1;
     opacity: 0;
@@ -995,7 +1029,7 @@ section{
 #back13{
     width: 100%;
     height: 100%;
-    background-color: black;
+    background-color: darkgrey;
     position: fixed;
     z-index: -1;
     opacity: 0;
@@ -1027,7 +1061,7 @@ section{
 #back14{
     width: 100%;
     height: 100%;
-    background-color: black;
+    background-color: darkgrey;
     position: fixed;
     z-index: -1;
     opacity: 0;
@@ -1059,7 +1093,7 @@ section{
 #back15{
     width: 100%;
     height: 100%;
-    background-color: black;
+    background-color: darkgrey;
     position: fixed;
     z-index: -1;
     opacity: 0;
@@ -1091,7 +1125,7 @@ section{
 #back16{
     width: 100%;
     height: 100%;
-    background-color: black;
+    background-color: darkgrey;
     position: fixed;
     z-index: -1;
     opacity: 0;
@@ -1123,7 +1157,7 @@ section{
 #back17{
     width: 100%;
     height: 100%;
-    background-color: black;
+    background-color: darkgrey;
     position: fixed;
     z-index: -1;
     opacity: 0;
@@ -1155,7 +1189,7 @@ section{
 #back18{
     width: 100%;
     height: 100%;
-    background-color: black;
+    background-color: darkgrey;
     position: fixed;
     z-index: -1;
     opacity: 0;
@@ -1187,7 +1221,39 @@ section{
 #back19{
     width: 100%;
     height: 100%;
-    background-color: black;
+    background-color: darkgrey;
+    position: fixed;
+    z-index: -1;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    transition: 0.3s;
+}
+#gumyte {
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    top: -120%;
+    left: 5%;
+    right: 5%;
+    bottom: 0;
+    position: fixed;
+  text-align: center;
+  background-color: azure;
+    margin: 0 auto;
+  margin-top: 20px;
+    z-index: 20;
+    overflow: hidden;
+    transition: 0.3s;
+    padding-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 15px;
+}
+#back20{
+    width: 100%;
+    height: 100%;
+    background-color: darkgrey;
     position: fixed;
     z-index: -1;
     opacity: 0;
@@ -1209,8 +1275,8 @@ section{
     padding-right: 6.3px;
 }
 #closing:hover{
-    color: darkgray;
-    border-color: darkgray;
+    color: darkgrey;
+    border-color: darkgrey;
     animation-name: spin;
     animation-duration: 1s;
     animation-timing-function: linear;
@@ -1235,7 +1301,7 @@ section{
 .prekes-pirkimas-2{
     width: 150px;
     height: 50px;
-    background-color: darkgray;
+    background-color: darkgrey;
     color: black;
     display: flex;
     align-items: center;
@@ -1249,13 +1315,13 @@ section{
     border-radius: 10px;
     color: black;
     border: none;
-    background-color: darkgray;
+    background-color: darkgrey;
     font-size: 17px;
     cursor: pointer;
     transition: .5s;
 }
 .prekes-pirkimas-2 button:hover{
-    background-color: lightgray;
+    background-color: lightgrey;
     color: black;
     transform: scale(1.2);
 }
@@ -1293,7 +1359,7 @@ section{
     cursor: pointer;
 }
 .preke:hover{
-    background-color: darkgray;
+    background-color: darkgrey;
     transform: scale(1.1);
 }
 .prekes-nuotrauka{
@@ -1308,7 +1374,7 @@ section{
     border-radius: 50px 30px 50px 30px;
 }
 .readMore{
-    color: darkgray; 
+    color: darkgrey; 
     cursor: pointer;
     transition: 0.3s;
 }
@@ -1347,7 +1413,7 @@ section{
     transition: .5s;
 }
 .prekes-pirkimas button:hover{
-    background-color: lightgray;
+    background-color: lightgrey;
     color: black;
     transform: scale(1.1);
 }
@@ -1355,7 +1421,7 @@ section{
 .kontaktai{
     height: auto;
     border-radius: 15px 15px 0 0;
-    background-color: darkgray;
+    background-color: darkgrey;
     color: black;
     font-family: 'Poppins', sans-serif;
     padding-bottom: 20px;
@@ -1414,7 +1480,7 @@ h4{
 #back2{
     width: 100%;
     height: 100%;
-    background-color: black;
+    background-color: darkgrey;
     position: fixed;
     z-index: -1;
     opacity: 0;
@@ -1453,7 +1519,7 @@ h4{
 #back5{
     width: 100%;
     height: 100%;
-    background-color: black;
+    background-color: darkgrey;
     position: fixed;
     z-index: -1;
     opacity: 0;
@@ -1489,7 +1555,7 @@ h4{
 #back6{
     width: 100%;
     height: 100%;
-    background-color: black;
+    background-color: darkgrey;
     position: fixed;
     z-index: -1;
     opacity: 0;
@@ -1551,7 +1617,7 @@ h4{
 #back3{
     width: 100%;
     height: 100%;
-    background-color: black;
+    background-color: darkgrey;
     position: fixed;
     z-index: -1;
     opacity: 0;
@@ -1592,12 +1658,12 @@ h4{
     transition: 0.3s;
 }
 #help:hover{
-    background-color: lightgray;
+    background-color: lightgrey;
 }
 #back4{
     width: 100%;
     height: 100%;
-    background-color: black;
+    background-color: darkgrey;
     position: fixed;
     z-index: -1;
     opacity: 0;
@@ -1621,7 +1687,7 @@ h4{
     margin-top: 5px;
     margin-bottom: 15px;
     height: 50px;
-    border: 2px solid lightgray;
+    border: 2px solid lightgrey;
     background-color: azure;
 }
 .container{
@@ -1633,7 +1699,7 @@ h4{
     margin-top: 50px;
     margin-bottom: 20px;
     transition: .2s;
-    box-shadow: 5px 5px 10px;
+    box-shadow: 5px 5px 10px darkgrey;
 }
 button[type="button"]{
     width: 100%;
@@ -1648,7 +1714,7 @@ button[type="button"]{
     cursor: pointer;
     margin-top: 10px;
     transition: 0.3s;
-    background-color: lightgray;
+    background-color: lightgrey;
     padding: 5px;
 }
 button[type="button"] div{
@@ -1685,38 +1751,6 @@ button[type="button"]:hover div{
     }
 }
 
-@media only screen and (max-width: 800px){
-    .banga{
-        animation-duration: 10s;
-    }
-    .wrapper{
-        width: 100%;
-        height: 300px;
-        box-shadow: 0 0 200px;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        border-radius: 15px 15px 0 0;
-        border: none;
-    }
-    .apie p{
-        width: 95%;
-    }
-    .preke{
-        margin: 20px auto;
-        height: 280px;
-    }
-    .buttons button{
-        font-size: 10px;
-    }
-    /* #hide{
-        display: none;
-    } */
-}
 @media only screen and (max-width: 750px){
     #goToContent{
         margin-left: 60px;
@@ -1788,7 +1822,7 @@ button[type="button"]:hover div{
         border-radius: 15px;
     }
     #navbar img:hover{
-        background-color: lightgray;
+        background-color: lightgrey;
     }
     #sekimas{
         width: 90%;
@@ -1902,6 +1936,13 @@ button[type="button"]:hover div{
         top: -0.5%;
         bottom: 2%;
     }
+    #gumyte{
+        width: 90%;
+        height: 96%;
+        right: -200%;
+        top: -0.5%;
+        bottom: 2%;
+    }
     button[type="button"]:hover div{
         width: 60px;
         background-color: white;
@@ -1916,4 +1957,34 @@ button[type="button"]:hover div{
     #redirect{
         background-size: cover;
     }
+    .banga{
+        animation-duration: 10s;
+    }
+    .wrapper{
+        width: 100%;
+        height: 300px;
+        box-shadow: 0 0 200px darkgrey;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 15px 15px 0 0;
+        border: none;
+    }
+    .apie p{
+        width: 95%;
+    }
+    .preke{
+        margin: 20px auto;
+        height: 280px;
+    }
+    .buttons button{
+        font-size: 10px;
+    }
+    /* #hide{
+        display: none;
+    } */
 }

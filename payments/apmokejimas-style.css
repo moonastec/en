@@ -438,7 +438,7 @@ button[type="submit"] div{
 .prekes-info{
     border: 2px solid lightgray;
     padding: 20px;
-    transition: 0.5s;
+    transition: 0.3s;
     width: 40%;
     margin: 20px auto;
     height: 95%;
@@ -458,7 +458,7 @@ button[type="submit"] div{
 }
 .prekes-info input{
     background-color: lightgray;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 .prekes-info:hover input{
     background-color: azure;
@@ -492,7 +492,7 @@ button[type="submit"]:hover div{
 #back2{
     width: 100%;
     height: 100%;
-    background-color: black;
+    background-color: darkgrey;
     position: fixed;
     z-index: -1;
     opacity: 0;
@@ -552,7 +552,7 @@ button[type="submit"]:hover div{
     background-color: black;
     font-size: 17px;
     cursor: pointer;
-    transition: .5s;
+    transition: .3s;
            font-size: 25px;
        }
        .grizti button:hover{
@@ -573,7 +573,7 @@ button[type="submit"]:hover div{
     height: 50px; 
     font-size: 30px; 
     border-radius: 100%;
-    transition: 0.5s;
+    transition: 0.3s;
     font-weight: 600;
 }
 .prekes-uzdarymas:hover{
@@ -613,7 +613,7 @@ button[type="submit"]:hover div{
 #back{
     width: 100%;
     height: 100%;
-    background-color: black;
+    background-color: darkgrey;
     position: fixed;
     z-index: -1;
     opacity: 0;
@@ -629,7 +629,7 @@ button[type="submit"]:hover div{
     font-size: 17px;
     color: darkslateblue;
     text-decoration: none;
-    transition: .5s;
+    transition: .3s;
     cursor: pointer;
 }
 .taisykles:hover{
