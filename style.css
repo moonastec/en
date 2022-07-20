@@ -217,14 +217,15 @@ body{
     align-items: center;
     justify-content: space-between;
     position: fixed;
-    top: 15px;
+    top: -100px;
     left: 1%;
     right: 1%;
     z-index: 5;
     border-radius: 15px;
     z-index: 15;
     box-shadow: 0 0 10px darkgrey;
-    transition: 0.7s;
+    transition: 0.3s ease-out;
+    opacity: 0;
 }
 #navbar a{
     color: black;
@@ -238,7 +239,7 @@ body{
     position: absolute;
     height: 3px;
     width: 0%;
-    background: black;
+    background: darkgrey;
     bottom: 0;
     left: 0;
     transition: 0.3s;
@@ -253,7 +254,7 @@ body{
     border-radius: 10px;
     background-color: darkgrey;
     position: fixed;
-    top: 10px;
+    top: -100px;
     right: 10px;
     z-index: 16;
     display: none;
@@ -262,6 +263,7 @@ body{
     flex-direction: column;
     padding-top: 5px;
     padding-bottom: 5px;
+    transition: 0.3s ease-out;
 }
 #mobileNavigation div{
     width: 30px;
@@ -358,16 +360,19 @@ body{
     align-items: center;
     flex-direction: column;
     margin-bottom: 50px;
+    opacity: 1;
+    background-color: darkgrey;
 }
 .layer{
     width: 100%;
     height: 600px;
-    background-color: rgba(100,100,100,0.6);
+    background-color: rgba(100,100,100,1);
     color: #FFF;
     padding: 1px;
     display: flex;
     align-items: center;
     flex-direction: column;
+    transition: 0.3s ease-out;
 }
 .header1 h1{
     font-size: 50px;
@@ -792,7 +797,7 @@ section{
     margin: 20px;
     position: absolute;
     margin-top: -45px;
-    box-shadow: 0 0 15px azure;
+    box-shadow: 0 0 15px darkgrey;
 }
 #filter2{
     width: 40px; 
@@ -808,7 +813,7 @@ section{
     margin: 20px;
     position: absolute;
     margin-top: -45px;
-    box-shadow: 0 0 15px azure;
+    box-shadow: 0 0 15px darkgrey;
     overflow: hidden;
     display: none;
     padding-left: 40px;
@@ -1811,7 +1816,7 @@ button[type="button"]:hover div{
     #navbar{
         height: 50px;
         padding-left: 5px;
-        top: 5px;
+        top: -100px;
     }
     #navbar ul{
         height: 50px;
@@ -2002,7 +2007,6 @@ button[type="button"]:hover div{
     }
     .preke{
         margin: 20px auto;
-        height: 280px;
     }
     .buttons button{
         font-size: 10px;
