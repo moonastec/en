@@ -166,7 +166,7 @@ body{
     right: 0;
     bottom: 50px;
     background-color: azure;
-    box-shadow: 10px 10px 20px;
+    box-shadow: 0 0 20px darkgrey;
     z-index: 15;
     overflow: hidden;
     transition: 0.3s;
@@ -180,7 +180,7 @@ body{
     right: -350px;
     bottom: 50px;
     background-color: azure;
-    box-shadow: 10px 10px 20px;
+    box-shadow: 0 0 20px darkgrey;
     z-index: 16;
     display: flex;
     justify-content: center;
