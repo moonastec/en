@@ -1285,6 +1285,7 @@
             setTimeout(() => {    document.getElementById("layer").style.backgroundColor = "rgba(100,100,100,0.6)"; }, 1250);
             if ( window.innerWidth > 750) {     
                 setTimeout(() => {    document.getElementById("navbar").style.top = "15px"; }, 1150);
+                setTimeout(() => {    document.getElementById("mobileNavigation").style.top = "20px"; }, 1150);
                 setTimeout(() => {    document.getElementById("navbar").style.opacity = "1"; }, 1150);
             }
             else {
@@ -2537,7 +2538,10 @@
         }
 
         function openForm9() {
-            document.getElementById("klaidos-langas").style.bottom = "15px";
+            document.getElementById("klaidos-langas").style.bottom = "40px";
+            setTimeout(() => {
+                document.getElementById("klaidos-langas").style.bottom = "15px";
+            }, 240);
             document.getElementById("back2").style.zIndex = "20";
             setTimeout(() => {
                 document.getElementById("back2").style.opacity = "0.9";
@@ -2654,7 +2658,10 @@
         }
 
         function openForm12() {
-            document.getElementById("matthew").style.bottom = "15px";
+            document.getElementById("matthew").style.bottom = "40px";
+            setTimeout(() => {
+                document.getElementById("matthew").style.bottom = "15px";
+            }, 240);
             document.getElementById("back3").style.zIndex = "20";
             setTimeout(() => {
                 document.getElementById("back3").style.opacity = "0.9";
