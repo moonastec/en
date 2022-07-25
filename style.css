@@ -1501,7 +1501,7 @@ h4{
     transform: scale(1.2);
 }
 #klaidos-langas{
-    width: 300px;
+    width: 350px;
     height: 200px;
     overflow: hidden;
     position: absolute;
@@ -1516,9 +1516,15 @@ h4{
   text-align: center;
   background-color: azure;
     margin: 0 auto;
-  border-radius: 15px;
+  border-radius: 15px 15px 0 0;
     z-index: 25;
     transition: 0.3s;
+    cursor: default;
+}
+#klaidos-langas:hover{
+    border-radius: 25px 25px 0 0;
+    transform: scale(1.05);
+    background-color: lightgrey;
 }
 #back2{
     width: 100%;
@@ -1608,7 +1614,7 @@ h4{
     transition: 0.3s;
 }
 #matthew {
-    width: 300px;
+    width: 350px;
     height: 200px;
     overflow: hidden;
     position: absolute;
@@ -1623,9 +1629,14 @@ h4{
   text-align: center;
   background-color: azure;
     margin: 0 auto;
-  border-radius: 15px;
+  border-radius: 15px 15px 0 0;
     z-index: 25;
     transition: 0.3s;
+}
+#matthew:hover{
+    border-radius: 25px 25px 0 0;
+    transform: scale(1.05);
+    background-color: lightgrey;
 }
 .matthew-button {
     width: 100px;
@@ -1803,6 +1814,22 @@ button[type="button"]:hover div{
     #goToContent:focus{
         transform: translateY(25%); 
         border: none;
+    }
+    #klaidos-langas{
+        width: 90%;
+    }
+    #klaidos-langas:hover{
+        border-radius: 15px 15px 0 0;
+        transform: scale(1.0);
+        background-color: azure;
+    }
+    #matthew{
+        width: 90%;
+    }
+    #matthew:hover{
+        border-radius: 15px 15px 0 0;
+        transform: scale(1.0);
+        background-color: azure;
     }
     #filter{
         margin: 10px;
