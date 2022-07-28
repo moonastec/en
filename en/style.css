@@ -1,0 +1,2074 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/*START*/
+
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+    text-transform: lowercase;
+}
+::-moz-selection { /* Code for Firefox */
+  color: azure;
+  background: darkgrey;
+}
+
+::selection {
+    color: azure;
+    background: darkgrey;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 0;
+}
+
+body{
+    background-color: azure;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+}
+#screen{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: azure;
+    opacity: 1;
+    z-index: 100;
+    top: 0;
+    transition: 0.3s;
+}
+@keyframes size{
+    0%{
+        transform: scale(1.0);
+    }
+    8%{
+        transform: scale(1.1);
+    }
+    16%{
+        transform: scale(1.0);
+    }
+    24%{
+        transform: scale(1.1);
+    }
+    32%{
+        transform: scale(1.0);
+    }
+    100%{
+        transform: scale(1.0);
+    }
+}
+@keyframes atsiranda{
+    0%{
+        opacity: 1;
+        z-index: 100;
+    }
+    95%{
+        opacity: 1;
+        z-index: 100;
+    }
+    100%{
+        opacity: 0;
+        z-index: -1;
+    }
+}
+@keyframes spin{
+    0%{
+        transform: rotate(-360deg);
+    }
+    100%{
+        
+    }
+}
+#goToContent{
+    position: fixed; 
+    z-index: 20; 
+    width: 150px; 
+    height: 50px; 
+    background-color: black; 
+    border-radius: 15px; 
+    color: white; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    text-decoration: none; 
+    transform: translateY(-120%); 
+    margin-left: 150px;
+    transition: 0.3s;
+}
+#goToContent:focus{
+    transform: translateY(50%); 
+    border: none;
+}
+#navbar ul{
+    width: 90%;
+    height: 70px;
+    display: flex;
+    justify-content: flex-end;
+    background-color: azure;
+    border-radius: 15px;
+}
+#navbar li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: 60px;
+    margin: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: transparent;
+    margin: 5px;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    transition: 0.3s;
+    border-radius: 5px;
+    user-select: none;
+}
+#navbar img{
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+    margin: 5px;
+    margin-top: 10px;
+    transition: 0.3s;
+    border-radius: 15px;
+}
+#navbar img:hover{
+    background-color: lightgrey;
+}
+#kalba{
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: lightgrey;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 100%;
+    font-size: 20px;
+    cursor: default;
+    pointer-events: none;
+    margin: 10px;
+    transition: 0.3s;
+    user-select: none;
+    opacity: 0;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#kalba:hover{
+    background-color: darkgrey;
+    color: white;
+    transform: rotate(10deg);
+}
+#navbar{
+    width: 98%;
+    height: 70px;
+    background-color: azure;
+    display: flex;
+    padding-left: 50px;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: -100px;
+    left: 1%;
+    right: 1%;
+    z-index: 5;
+    border-radius: 15px;
+    z-index: 15;
+    box-shadow: 0 0 10px darkgrey;
+    transition: 0.3s ease-out;
+    opacity: 0;
+}
+#navbar a{
+    color: black;
+    text-decoration: none;
+    position: relative;
+    padding: 6px 0;
+    cursor: pointer;
+}
+#navbar a:before{
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 0%;
+    background: darkgrey;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s;
+    border-radius: 15px;
+}
+#navbar a:hover:before{
+    width: 100%;
+}
+#mobileNavigation{
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: darkgrey;
+    position: fixed;
+    top: -100px;
+    right: 10px;
+    z-index: 16;
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    transition: 0.3s ease-out;
+}
+#mobileNavigation div{
+    width: 30px;
+    height: 6px;
+    border-radius: 10px;
+    background-color: azure;
+}
+#mobileMenu{
+    width: 80%;
+    height: 96%;
+    background-color: azure;
+    position: fixed;
+    top: 2%;
+    right: -90%;
+    bottom: 2%;
+    z-index: 30;
+    box-shadow: 0 0 15px darkgrey;
+    transition: 0.3s;
+    display: none;
+    border-radius: 15px;
+}
+#mobileMenu button{
+    width: 90%;
+    height: 50px;
+    border-radius: 15px;
+    background-color: lightgrey;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    margin: 40px auto;
+    display: block;
+    font-size: 17px;
+    color: black;
+}
+#mobileLanguage{
+    width: 40px; 
+    height: 40px;
+    cursor: pointer;
+    background-color: lightgrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    border-radius: 40px;
+    transition: 0.3s;
+    margin: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    box-shadow: none;
+}
+#mobileLanguage2{
+    width: 40px; 
+    height: 40px;
+    cursor: default;
+    background-color: lightgrey;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: black;
+    border-radius: 40px;
+    transition: 0.3s;
+    margin: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    box-shadow: none;
+    overflow: hidden;
+    display: none;
+    padding-right: 40px;
+    padding-left: 10px;
+}
+#back{
+    width: 100%;
+    height: 100%;
+    background-color: darkgrey;
+    position: fixed;
+    z-index: -1;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    transition: 0.3s;
+    display: none;
+}
+.header1{
+    height: 600px;
+    width: 100%;
+    background-image: url(photos/background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+    opacity: 1;
+    background-color: darkgrey;
+}
+.layer{
+    width: 100%;
+    height: 600px;
+    background-color: rgba(100,100,100,1);
+    color: #FFF;
+    padding: 1px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.3s ease-out;
+}
+.header1 h1{
+    font-size: 50px;
+    margin: 20px;
+    margin-top: 200px;
+    color: white;
+    cursor: default;
+}
+.header1 h2{
+    font-size: 40px;
+    color: white;
+    margin: 20px;
+}
+.header1 h6{
+    font-size: 30px;
+    margin-top: 25px;
+}
+/* .christmas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: 580px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.first{
+    background-color: black;
+    box-shadow: 2px 2px 5px black;
+    animation-name: raudona;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.second{
+    background-color: black;
+    box-shadow: 2px 2px 5px black;
+    animation-name: zalia;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.third{
+    background-color: black;
+    box-shadow: 2px 2px 5px black;
+    animation-name: melyna;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.christmas div{
+    width: 20px;
+    height: 20px; 
+    border-radius: 100%;
+}
+@keyframes raudona{
+    0%{
+        background-color: red;
+        box-shadow: 2px 2px 5px red;
+    }
+    32%{
+        background-color: red;
+        box-shadow: 2px 2px 5px red;
+    }
+    33%{
+        background-color: green;
+        box-shadow: 2px 2px 5px green;
+    }
+    65%{
+        background-color: green;
+        box-shadow: 2px 2px 5px green;
+    }
+    66%{
+        background-color: blue;
+        box-shadow: 2px 2px 5px blue;
+    }
+    100%{
+        background-color: blue;
+        box-shadow: 2px 2px 5px blue;
+    }
+}
+@keyframes zalia{
+    0%{
+        background-color: green;
+        box-shadow: 2px 2px 5px green;
+    }
+    32%{
+        background-color: green;
+        box-shadow: 2px 2px 5px green;
+    }
+    33%{
+        background-color: blue;
+        box-shadow: 2px 2px 5px blue;
+    }
+    65%{
+        background-color: blue;
+        box-shadow: 2px 2px 5px blue;
+    }
+    66%{
+        background-color: red;
+        box-shadow: 2px 2px 5px red;
+    }
+    100%{
+        background-color: red;
+        box-shadow: 2px 2px 5px red;
+    }
+}
+@keyframes melyna{
+    0%{
+        background-color: blue;
+        box-shadow: 2px 2px 5px blue;
+    }
+    32%{
+        background-color: blue;
+        box-shadow: 2px 2px 5px blue;
+    }
+    33%{
+        background-color: red;
+        box-shadow: 2px 2px 5px red;
+    }
+    65%{
+        background-color: red;
+        box-shadow: 2px 2px 5px red;
+    }
+    66%{
+        background-color: green;
+        box-shadow: 2px 2px 5px green;
+    }
+    100%{
+        background-color: green;
+        box-shadow: 2px 2px 5px green;
+    }
+} */
+.banga{
+    width: 100%;
+    height: 140px;
+    background-image: url(photos/banga.png);
+    position: absolute;
+    top: 460px;
+    left: 0;
+    left: 0;
+}
+.banga1{
+    animation-name: bangavimas1;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes bangavimas1{
+    0%{
+        background-position: 0;
+    }
+    100%{
+        background-position: 1360px;
+    }
+}
+.banga2{
+    opacity: 0.5;
+    animation-name: bangavimas2;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 5s;
+}
+@keyframes bangavimas2{
+    0%{
+        background-position: 0;
+    }
+    100%{
+        background-position: -1360px;
+    }
+}
+.banga3{
+    opacity: 0.2;
+    animation-name: bangavimas1;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: -10s;
+}
+.banga4{
+    opacity: 0.7;
+    animation-name: bangavimas1;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: -15s;
+}
+main p{
+    color:rgb(225,225,225);
+}
+section{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+/*slapukai*/
+@keyframes spalva{
+    0%{
+        color: black;
+    }
+    50%{
+        color: azure;
+    }
+    100%{
+        color: black;
+    }
+}
+.wrapper{
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    background-color: azure;
+    width: 450px;
+    border: 5px solid darkgrey;
+    border-radius: 10px;
+    padding: 25px 25px 30px 25px;
+    text-align: center;
+    box-shadow: 0 0 200px darkgrey;
+    height: 330px;
+    z-index: 70;
+}
+.wrapper.hide{
+    opacity: 0;
+    visibility: hidden;
+    z-index: -1;
+    transition: all .3s ease;
+}
+.wrapper img{
+    max-width: 120px;
+}
+.content p{
+    color: slategrey;
+    margin: 5px 0 20px 0;
+}
+.content .buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.buttons button{
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: darkgrey;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    transition: .3s;
+    font-size: 15px;
+}
+.buttons .item{
+    margin: 0 10px;
+}
+.buttons button:hover{
+    background-color: lightgrey;
+    color: black;
+}
+.buttons a{
+    color: darkgrey;
+    transition: .3s;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.buttons a:hover{
+    color: lightgrey;
+}
+/*pagalba*/
+.chat-popup {
+  height: 165px;
+  position: fixed;
+  bottom: -170px;
+  right: 15px;
+  z-index: 11;
+    overflow: hidden;
+  background-color: white;
+    transition: 0.3s;
+    border-radius: 10px;
+    border: 5px solid darkgrey;
+    box-shadow: 0 0 10px darkgrey;
+}
+
+
+.form-container {
+  max-width: 300px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+.form-container .btn {
+    margin: 0 auto;
+  background-color: darkseagreen;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  margin-bottom:10px;
+  opacity: 1;
+    transition: 0.5s;
+    border-radius: 10px;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    width: 95%;
+}
+
+.form-container .cancel {
+  background-color: indianred;
+    transition: 0.5s;
+    font-size: 20px;
+     height: 60px;
+}
+      .form-container .btn:hover{
+          background-color: springgreen;
+          color: black;
+      }
+
+.form-container .cancel:hover {
+  background-color: orangered;
+}
+/*apie*/
+.apie{
+    background-color: rgb(205,205,205);
+    text-align: center;
+    border-radius: 15px 15px 0 0;
+    padding: 20px;
+}
+.apie:hover p{
+    transform: scale(1.3);
+}
+.apie h3{
+    color: black;
+    font-size: 50px;
+    margin-bottom: 70px;
+    padding-top: 70px;
+    cursor: default;
+}
+.apie p{
+    width: 60%;
+    margin: auto;
+    font-size: 20px;
+    padding-bottom: 100px; 
+    color: rgb(105, 105, 105);
+    transition: 0.3s;
+    cursor: default;
+}
+.kalbos-keitimas{
+    width: 200px; 
+    height: 50px; 
+    background-color: azure; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    border-radius: 10px; 
+    margin: 10px; 
+    border: none; 
+    font-family: 'Poppins', sans-serif; 
+    cursor: pointer; 
+    font-size: 15px;
+    transition: 0.5s;
+}
+.kalbos-keitimas:hover{
+    transform: scale(1.2);
+    background-color: darkgrey;
+}
+/*parduotuve*/
+@keyframes load{
+    0%{
+        background-position: 0;
+    }
+    100%{
+        background-position: 30000px;
+    }
+}
+@keyframes load2{
+    0%{
+        background-position: 0;
+    }
+    100%{
+        background-position: 15000px;
+    }
+}
+#redirect{
+    width: 100%;
+    height: 100%;
+    transition: 0.3s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 40;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    display: none;
+}
+#redi{
+    width: 300px;
+    height: 300px;
+    transition: 0.3s;
+    border-radius: 100%;
+    background-color: azure;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid lightgrey;
+    box-shadow: 0 0 20px darkgrey;
+}
+#filter{
+    width: 40px; 
+    height: 40px;
+    cursor: pointer;
+    background-color: azure;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: darkgrey;
+    border-radius: 40px;
+    transition: 0.3s;
+    margin: 20px;
+    position: absolute;
+    margin-top: -45px;
+    box-shadow: 0 0 15px darkgrey;
+}
+#filter:hover{
+    box-shadow: 0 0 15px azure;
+}
+#filter2{
+    width: 40px; 
+    height: 40px;
+    cursor: default;
+    background-color: azure;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: darkgrey;
+    border-radius: 40px;
+    transition: 0.3s;
+    margin: 20px;
+    position: absolute;
+    margin-top: -45px;
+    box-shadow: 0 0 15px azure;
+    overflow: hidden;
+    display: none;
+    padding-left: 40px;
+    padding-right: 10px;
+}
+#sveitiklis {
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    top: -120%;
+    left: 5%;
+    right: 5%;
+    bottom: 0;
+    position: fixed;
+  text-align: center;
+  background-color: azure;
+    margin: 0 auto;
+  margin-top: 20px;
+    z-index: 20;
+    overflow: hidden;
+    transition: 0.3s;
+    padding-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 15px;
+}
+#back7{
+    width: 100%;
+    height: 100%;
+    background-color: darkgrey;
+    position: fixed;
+    z-index: -1;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    transition: 0.3s;
+}
+#auskarai {
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    top: -120%;
+    left: 5%;
+    right: 5%;
+    bottom: 0;
+    position: fixed;
+  text-align: center;
+  background-color: azure;
+    margin: 0 auto;
+  margin-top: 20px;
+    z-index: 20;
+    overflow: hidden;
+    transition: 0.3s;
+    padding-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 15px;
+}
+#back8{
+    width: 100%;
+    height: 100%;
+    background-color: darkgrey;
+    position: fixed;
+    z-index: -1;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    transition: 0.3s;
+}
+#lipdukas {
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    top: -120%;
+    left: 5%;
+    right: 5%;
+    bottom: 0;
+    position: fixed;
+  text-align: center;
+  background-color: azure;
+    margin: 0 auto;
+  margin-top: 20px;
+    z-index: 20;
+    overflow: hidden;
+    transition: 0.3s;
+    padding-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 15px;
+}
+#back10{
+    width: 100%;
+    height: 100%;
+    background-color: darkgrey;
+    position: fixed;
+    z-index: -1;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    transition: 0.3s;
+}
+#meile {
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    top: -120%;
+    left: 5%;
+    right: 5%;
+    bottom: 0;
+    position: fixed;
+  text-align: center;
+  background-color: azure;
+    margin: 0 auto;
+  margin-top: 20px;
+    z-index: 20;
+    overflow: hidden;
+    transition: 0.3s;
+    padding-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 15px;
+}
+#back11{
+    width: 100%;
+    height: 100%;
+    background-color: darkgrey;
+    position: fixed;
+    z-index: -1;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    transition: 0.3s;
+}
+#lupu-scrub {
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    top: -120%;
+    left: 5%;
+    right: 5%;
+    bottom: 0;
+    position: fixed;
+  text-align: center;
+  background-color: azure;
+    margin: 0 auto;
+  margin-top: 20px;
+    z-index: 20;
+    overflow: hidden;
+    transition: 0.3s;
+    padding-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 15px;
+}
+#back9{
+    width: 100%;
+    height: 100%;
+    background-color: darkgrey;
+    position: fixed;
+    z-index: -1;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    transition: 0.3s;
+}
+#menulis {
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    top: -120%;
+    left: 5%;
+    right: 5%;
+    bottom: 0;
+    position: fixed;
+  text-align: center;
+  background-color: azure;
+    margin: 0 auto;
+  margin-top: 20px;
+    z-index: 20;
+    overflow: hidden;
+    transition: 0.3s;
+    padding-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 15px;
+}
+#back12{
+    width: 100%;
+    height: 100%;
+    background-color: darkgrey;
+    position: fixed;
+    z-index: -1;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    transition: 0.3s;
+}
+#pavasaris {
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    top: -120%;
+    left: 5%;
+    right: 5%;
+    bottom: 0;
+    position: fixed;
+  text-align: center;
+  background-color: azure;
+    margin: 0 auto;
+  margin-top: 20px;
+    z-index: 20;
+    overflow: hidden;
+    transition: 0.3s;
+    padding-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 15px;
+}
+#back13{
+    width: 100%;
+    height: 100%;
+    background-color: darkgrey;
+    position: fixed;
+    z-index: -1;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    transition: 0.3s;
+}
+#raide {
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    top: -120%;
+    left: 5%;
+    right: 5%;
+    bottom: 0;
+    position: fixed;
+  text-align: center;
+  background-color: azure;
+    margin: 0 auto;
+  margin-top: 20px;
+    z-index: 20;
+    overflow: hidden;
+    transition: 0.3s;
+    padding-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 15px;
+}
+#back14{
+    width: 100%;
+    height: 100%;
+    background-color: darkgrey;
+    position: fixed;
+    z-index: -1;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    transition: 0.3s;
+}
+#debeselis {
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    top: -120%;
+    left: 5%;
+    right: 5%;
+    bottom: 0;
+    position: fixed;
+  text-align: center;
+  background-color: azure;
+    margin: 0 auto;
+  margin-top: 20px;
+    z-index: 20;
+    overflow: hidden;
+    transition: 0.3s;
+    padding-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 15px;
+}
+#back15{
+    width: 100%;
+    height: 100%;
+    background-color: darkgrey;
+    position: fixed;
+    z-index: -1;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    transition: 0.3s;
+}
+#vandenynai {
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    top: -120%;
+    left: 5%;
+    right: 5%;
+    bottom: 0;
+    position: fixed;
+  text-align: center;
+  background-color: azure;
+    margin: 0 auto;
+  margin-top: 20px;
+    z-index: 20;
+    overflow: hidden;
+    transition: 0.3s;
+    padding-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 15px;
+}
+#back16{
+    width: 100%;
+    height: 100%;
+    background-color: darkgrey;
+    position: fixed;
+    z-index: -1;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    transition: 0.3s;
+}
+#ausines {
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    top: -120%;
+    left: 5%;
+    right: 5%;
+    bottom: 0;
+    position: fixed;
+  text-align: center;
+  background-color: azure;
+    margin: 0 auto;
+  margin-top: 20px;
+    z-index: 20;
+    overflow: hidden;
+    transition: 0.3s;
+    padding-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 15px;
+}
+#back17{
+    width: 100%;
+    height: 100%;
+    background-color: darkgrey;
+    position: fixed;
+    z-index: -1;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    transition: 0.3s;
+}
+#segtukai {
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    top: -120%;
+    left: 5%;
+    right: 5%;
+    bottom: 0;
+    position: fixed;
+  text-align: center;
+  background-color: azure;
+    margin: 0 auto;
+  margin-top: 20px;
+    z-index: 20;
+    overflow: hidden;
+    transition: 0.3s;
+    padding-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 15px;
+}
+#back18{
+    width: 100%;
+    height: 100%;
+    background-color: darkgrey;
+    position: fixed;
+    z-index: -1;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    transition: 0.3s;
+}
+#eliksyras {
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    top: -120%;
+    left: 5%;
+    right: 5%;
+    bottom: 0;
+    position: fixed;
+  text-align: center;
+  background-color: azure;
+    margin: 0 auto;
+  margin-top: 20px;
+    z-index: 20;
+    overflow: hidden;
+    transition: 0.3s;
+    padding-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 15px;
+}
+#back19{
+    width: 100%;
+    height: 100%;
+    background-color: darkgrey;
+    position: fixed;
+    z-index: -1;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    transition: 0.3s;
+}
+#gumyte {
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    top: -120%;
+    left: 5%;
+    right: 5%;
+    bottom: 0;
+    position: fixed;
+  text-align: center;
+  background-color: azure;
+    margin: 0 auto;
+  margin-top: 20px;
+    z-index: 20;
+    overflow: hidden;
+    transition: 0.3s;
+    padding-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 15px;
+}
+#back20{
+    width: 100%;
+    height: 100%;
+    background-color: darkgrey;
+    position: fixed;
+    z-index: -1;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    transition: 0.3s;
+}
+#showPhoto{
+    color: black; 
+    border-radius: 15px; 
+    border: 5px solid darkgrey;
+    transition: 0.3s;
+}
+#showPhoto:hover{
+    border-color: azure;
+    transform: scale(1.05);
+    border-radius: 30px;
+}
+#closing{
+    font-size: 35px; 
+    position: absolute; 
+    top: 15px; 
+    right: 25px; 
+    cursor: pointer;
+    transition: 0.3s;
+    border: 2px solid black;
+    border-radius: 100%;
+    padding-left: 6.3px;
+    padding-right: 6.3px;
+}
+#closing:hover{
+    color: darkgrey;
+    border-color: darkgrey;
+    animation-name: spin;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.preview-nuotraukos{
+    width: 70px;
+    height: 70px;
+    display: block;
+    margin: 15px auto;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+.preview-nuotraukos:hover{
+    transform: scale(1.1);
+    border-radius: 100%;
+}
+.prekes-nuotrauka-2{
+    width: 300px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+#shopping{
+    transition: 0.3s;
+}
+.prekes-pirkimas-2{
+    width: 150px;
+    height: 50px;
+    background-color: darkgrey;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    margin: 10px auto;
+}
+.prekes-pirkimas-2 button{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    background-color: darkgrey;
+    font-size: 17px;
+    cursor: pointer;
+    transition: .3s;
+}
+.prekes-pirkimas-2 button:hover{
+    background-color: lightgrey;
+    color: black;
+    transform: scale(1.2);
+}
+.parduotuve{
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    background-color: rgb(205,205,205);
+    justify-content: center;
+    align-items: center;
+}
+.parduotuve h1{
+    font-size: 50px;
+    color: black;
+    margin-bottom: 50px;
+    cursor: default;
+}
+.parduotuve p{
+    color: black;
+    transition: 0.3s;
+}
+.preke a{
+    text-decoration: none;
+}
+.preke{
+    background-color: azure;
+    width: 300px;
+    height: 300px;
+    margin: 5px;
+    padding: 20px;
+    display: inline-block;
+    transition: .3s;
+    vertical-align: top;
+    overflow: hidden;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.preke:hover{
+    background-color: darkgrey;
+    transform: scale(1.1);
+    box-shadow: 0 0 10px darkgrey;
+    border-radius: 100%;
+    color: white;
+}
+.preke:hover p{
+    color: white;
+}
+.prekes-nuotrauka{
+    width: 150px;
+    height: 150px;
+    margin-top: 15px;
+    transition: 0.3s;
+    border-radius: 15px;
+}
+.preke:hover img{
+    border-radius: 100%;
+}
+.readMore{
+    color: darkgrey; 
+    cursor: pointer;
+    transition: 0.3s;
+}
+.readMore:hover{
+    color: black;
+}
+.prekes-kaina{
+    margin: 10px auto;
+    margin-bottom: 20px;
+    font-size: 12px;
+}
+.prekes-pavadinimas{
+    margin-top: 5px;
+    font-size: 12px;
+}
+.prekes-pirkimas{
+    width: 150px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    margin: 10px auto;
+}
+.prekes-pirkimas button{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    background-color: black;
+    font-size: 17px;
+    cursor: pointer;
+    transition: .3s;
+}
+.prekes-pirkimas button:hover{
+    background-color: lightgrey;
+    color: black;
+    transform: scale(1.1);
+}
+/*kontaktai*/
+.kontaktai{
+    height: auto;
+    border-radius: 15px 15px 0 0;
+    background-color: darkgrey;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+.kontaktai:hover h2{
+    font-size: 50px;
+}
+h4{
+    padding: 20px;
+}
+.kontaktai h2{
+    font-size: 30px;
+    color: black;
+    margin: 10px;
+    margin-bottom: 50px;
+    font-weight: 500;
+    transition: 0.3s;
+    cursor: default;
+}
+.klaida{
+    width: 200px; 
+    height: 50px; 
+    background-color: black; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    border-radius: 10px; 
+    margin: 10px auto; 
+    border: none; 
+    font-family: 'Poppins', sans-serif; 
+    cursor: pointer; 
+    font-size: 15px;
+    transition: 0.3s;
+    color: white;
+}
+.klaida:hover{
+    background-color: red;
+    transform: scale(1.2);
+}
+#klaidos-langas{
+    width: 350px;
+    height: 200px;
+    overflow: hidden;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    right: 0;
+    bottom: -300px;
+    position: fixed;
+  text-align: center;
+  background-color: azure;
+    margin: 0 auto;
+  border-radius: 15px 15px 0 0;
+    z-index: 25;
+    transition: 0.3s;
+    cursor: default;
+}
+#klaidos-langas:hover{
+    border-radius: 25px 25px 0 0;
+    transform: scale(1.05);
+    background-color: lightgrey;
+}
+#back2{
+    width: 100%;
+    height: 100%;
+    background-color: darkgrey;
+    position: fixed;
+    z-index: -1;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    transition: 0.3s;
+}
+#taisykliu-langas{
+    width: 90%;
+    height: 90%;
+    overflow: hidden;
+    top: -100%;
+    left: 5%;
+    right: 5%;
+    position: fixed;
+  text-align: center;
+  background-color: azure;
+    color: black;
+    margin: 0 auto;
+  margin-top: 20px;
+    transition: 0.3s;
+    border-radius: 15px;
+}
+#taisykliu-langas li{
+    margin: 5px;
+    font-size: 15px;
+    text-align: left;
+}
+#taisykliu-langas p{
+    color: black;
+    font-weight: 800;
+    font-size: 20px;
+    margin: 20px;
+}
+#back5{
+    width: 100%;
+    height: 100%;
+    background-color: darkgrey;
+    position: fixed;
+    z-index: -1;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    transition: 0.3s;
+}
+#slapukai{
+    width: 90%;
+    height: 90%;
+    overflow: hidden;
+    top: -100%;
+    left: 5%;
+    right: 5%;
+    position: fixed;
+  text-align: center;
+  background-color: azure;
+    color: black;
+    margin: 0 auto;
+  margin-top: 20px;
+    transition: 0.3s;
+    border-radius: 15px;
+}
+#slapukai p{
+    color: black;
+    text-align: justify;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 15px;
+    margin: 10px;
+}
+#back6{
+    width: 100%;
+    height: 100%;
+    background-color: darkgrey;
+    position: fixed;
+    z-index: -1;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    transition: 0.3s;
+}
+#matthew {
+    width: 350px;
+    height: 200px;
+    overflow: hidden;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    right: 0;
+    bottom: -300px;
+    position: fixed;
+  text-align: center;
+  background-color: azure;
+    margin: 0 auto;
+  border-radius: 15px 15px 0 0;
+    z-index: 25;
+    transition: 0.3s;
+}
+#matthew:hover{
+    border-radius: 25px 25px 0 0;
+    transform: scale(1.05);
+    background-color: lightgrey;
+}
+.matthew-button {
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 15px;
+    background-color: transparent;
+    color: darkseagreen;
+    font-size: 17px;
+    transition: 0.3s;
+    display: inline-block;
+    cursor: pointer;
+}
+.matthew-button:hover{
+    transform: scale(1.5);
+}
+.matthew-button2 {
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 15px;
+    background-color: transparent;
+    color: red;
+    font-size: 17px;
+    transition: 0.3s;
+    display: inline-block;
+    cursor: pointer;
+}
+.matthew-button2:hover{
+    transform: scale(1.5);
+}
+#back3{
+    width: 100%;
+    height: 100%;
+    background-color: darkgrey;
+    position: fixed;
+    z-index: -1;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    transition: 0.3s;
+}
+#sekimas{
+    width: 90%;
+    height: 90%;
+    overflow: hidden;
+    top: -100%;
+    left: 0;
+    right: 0;
+    position: fixed;
+  text-align: center;
+  background-color: azure;
+    color: black;
+    margin: 0 auto;
+  margin-top: 20px;
+    transition: 0.3s;
+    border-radius: 15px;
+}
+#help{
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column; 
+    width: 80px; 
+    height: 80px; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    cursor: pointer;
+    border-radius: 0 0 15px 0;
+    background-color: azure;
+    transition: 0.3s;
+}
+#help:hover{
+    background-color: lightgrey;
+}
+#back4{
+    width: 100%;
+    height: 100%;
+    background-color: darkgrey;
+    position: fixed;
+    z-index: -1;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    transition: 0.3s;
+}
+.form-group{
+    width: 100%;
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif; 
+    text-align: center;
+    position: relative;
+}
+.form-group input{
+    width: 100%;
+    padding: 5px;
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    height: 50px;
+    border: 2px solid lightgrey;
+    background-color: azure;
+}
+.container{
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    transition: .2s;
+    box-shadow: 0 0 10px darkgrey;
+    border-radius: 15px;
+}
+button[type="button"]{
+    width: 100%;
+    border: none;
+    outline: none;
+    height: 70px;
+    font-size: 25px;
+    border-radius: 40px;
+    font-family: IBM Plex Sans;
+    color: springgreen;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+    background-color: lightgrey;
+    padding: 5px;
+}
+button[type="button"] div{
+    width: 60px; 
+    height: 60px; 
+    background-color: white; 
+    border-radius: 40px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;  
+    margin-right: 10px;
+    transition: 0.3s;
+}
+button[type="button"]:hover div{
+    background-color: azure;
+    width: 100%;
+}
+.flex{
+    width: 100%;
+    height: 70px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+@keyframes spalva{
+    0%{
+        color: black;
+    }
+    50%{
+        color: white;
+    }
+    100%{
+        color: black;
+    }
+}
+
+@media only screen and (max-width: 750px){
+    #goToContent{
+        margin-left: 60px;
+        height: 40px;
+    }
+    #goToContent:focus{
+        transform: translateY(25%); 
+        border: none;
+    }
+    #klaidos-langas{
+        width: 90%;
+    }
+    #klaidos-langas:hover{
+        border-radius: 15px 15px 0 0;
+        transform: scale(1.0);
+        background-color: azure;
+    }
+    #matthew{
+        width: 90%;
+    }
+    #matthew:hover{
+        border-radius: 15px 15px 0 0;
+        transform: scale(1.0);
+        background-color: azure;
+    }
+    #filter{
+        margin: 10px;
+        position: absolute;
+        margin-top: -35px;
+        box-shadow: 0 0 15px darkgrey;
+    }
+    #filter:hover{
+        box-shadow: 0 0 15px darkgrey;
+    }
+    #filter2{
+        margin: 10px;
+        position: absolute;
+        margin-top: -35px;
+        flex-direction: column;
+        align-items: flex-end;
+        padding-right: 10px;
+        box-shadow: 0 0 15px darkgrey;
+    }
+    #mobileNavigation{
+        display: flex;
+    }
+    #mobileMenu{
+        display: block;
+    }
+    #back{
+        display: block;
+    }
+    #nuoroda{
+        font-size: 12px;
+    }
+    #navbar{
+        height: 50px;
+        padding-left: 5px;
+        top: -100px;
+    }
+    #navbar ul{
+        height: 50px;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+    #navbar li{
+        height: 40px;
+        width: 40px;
+        font-size: 9px;
+        vertical-align: top;
+        display: none;
+    }
+    li a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .anglu{
+        margin-left: -64px;
+        margin-top: 50px;
+    }
+    #navbar img{
+        width: 50px;
+        height: 50px;
+        z-index: 15;
+        position: absolute;
+        top: -10px;
+        left: -5px;
+        border-radius: 15px;
+    }
+    #navbar img:hover{
+        background-color: lightgrey;
+    }
+    #sekimas{
+        width: 90%;
+        height: 96%;
+        right: -200%;
+        top: -0.5%;
+        bottom: 2%;
+    }
+    #taisykliu-langas{
+        width: 90%;
+        height: 96%;
+        right: -200%;
+        top: -0.5%;
+        bottom: 2%;
+    }
+    #slapukai{
+        width: 90%;
+        height: 96%;
+        right: -200%;
+        top: -0.5%;
+        bottom: 2%;
+    }
+    #sveitiklis{
+        width: 90%;
+        height: 96%;
+        right: -200%;
+        top: -0.5%;
+        bottom: 2%;
+    }
+    #auskarai{
+        width: 90%;
+        height: 96%;
+        right: -200%;
+        top: -0.5%;
+        bottom: 2%;
+    }
+    #lupu-scrub{
+        width: 90%;
+        height: 96%;
+        right: -200%;
+        top: -0.5%;
+        bottom: 2%;
+    }
+    #lipdukas{
+        width: 90%;
+        height: 96%;
+        right: -200%;
+        top: -0.5%;
+        bottom: 2%;
+    }
+    #meile{
+        width: 90%;
+        height: 96%;
+        right: -200%;
+        top: -0.5%;
+        bottom: 2%;
+    }
+    #menulis{
+        width: 90%;
+        height: 96%;
+        right: -200%;
+        top: -0.5%;
+        bottom: 2%;
+    }
+    #pavasaris{
+        width: 90%;
+        height: 96%;
+        right: -200%;
+        top: -0.5%;
+        bottom: 2%;
+    }
+    #raide{
+        width: 90%;
+        height: 96%;
+        right: -200%;
+        top: -0.5%;
+        bottom: 2%;
+    }
+    #debeselis{
+        width: 90%;
+        height: 96%;
+        right: -200%;
+        top: -0.5%;
+        bottom: 2%;
+    }
+    #vandenynai{
+        width: 90%;
+        height: 96%;
+        right: -200%;
+        top: -0.5%;
+        bottom: 2%;
+    }
+    #ausines{
+        width: 90%;
+        height: 96%;
+        right: -200%;
+        top: -0.5%;
+        bottom: 2%;
+    }
+    #segtukai{
+        width: 90%;
+        height: 96%;
+        right: -200%;
+        top: -0.5%;
+        bottom: 2%;
+    }
+    #eliksyras{
+        width: 90%;
+        height: 96%;
+        right: -200%;
+        top: -0.5%;
+        bottom: 2%;
+    }
+    #gumyte{
+        width: 90%;
+        height: 96%;
+        right: -200%;
+        top: -0.5%;
+        bottom: 2%;
+    }
+    button[type="button"]:hover div{
+        width: 60px;
+        background-color: white;
+    }
+    section{
+        width: 90%;
+    }
+    .kontaktai{
+        margin-bottom: 20px;
+        border-radius: 15px;
+    }
+    #redirect{
+        background-size: cover;
+    }
+    .banga{
+        animation-duration: 10s;
+    }
+    .wrapper{
+        width: 100%;
+        height: 300px;
+        box-shadow: 0 0 200px darkgrey;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 15px 15px 0 0;
+        border: none;
+    }
+    .apie p{
+        width: 95%;
+    }
+    .apie:hover p{
+        transform: scale(1.0);
+    }
+    .preke{
+        margin: 20px auto;
+    }
+    .buttons button{
+        font-size: 10px;
+    }
+    /* #hide{
+        display: none;
+    } */
+    .kontaktai h2{
+        font-size: 50px;
+    }
+    .kontaktai:hover h2{
+        font-size: 50px;
+    }
+}
