@@ -1294,6 +1294,38 @@ section{
     bottom: 0;
     transition: 0.3s;
 }
+#apyranke {
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    top: -120%;
+    left: 5%;
+    right: 5%;
+    bottom: 0;
+    position: fixed;
+  text-align: center;
+  background-color: azure;
+    margin: 0 auto;
+  margin-top: 20px;
+    z-index: 20;
+    overflow: hidden;
+    transition: 0.3s;
+    padding-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 15px;
+}
+#back21{
+    width: 100%;
+    height: 100%;
+    background-color: darkgrey;
+    position: fixed;
+    z-index: -1;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    transition: 0.3s;
+}
 #showPhoto{
     color: black; 
     border-radius: 15px; 
@@ -2030,6 +2062,13 @@ button[type="button"]:hover div{
         bottom: 2%;
     }
     #gumyte{
+        width: 90%;
+        height: 96%;
+        right: -200%;
+        top: -0.5%;
+        bottom: 2%;
+    }
+    #apyranke{
         width: 90%;
         height: 96%;
         right: -200%;
