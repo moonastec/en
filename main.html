@@ -125,7 +125,6 @@
     <div id="redirect">
         <div id="redi">
             <div style="width: 120px; height: 120px; border-radius: 100%; box-shadow: 5px 0 10px darkgrey; display: flex; justify-content: center; align-items: center; animation: spin 1s linear infinite;"></div>
-            <img src="photos/logo.png" alt="Moon_astec" style="width: 100px; height: 100px; position: absolute;">
         </div>
     </div>
     <nav id="navbar">
@@ -183,7 +182,7 @@
         <div id="mobileLanguage2"><div style="position: absolute; cursor: pointer; right: 12px;" onclick="mobLanguageClose()"><i class="fa-solid fa-globe"></i></div><div id="lithuanian" style="display: none; cursor: pointer; color: black;" onclick="main()">LT</div><div id="english" style="display: none; color: azure; cursor: pointer;" onclick="mobLanguageClose()">EN</div></div>
     </div>
     <div id="back" onclick="mobileMenuClose()"></div>
-    <header class="header1">
+    <header class="header1" id="start">
         <div class="layer" id="layer">
             <h1 style="transition: .3s ease-out; margin-left: -700px; opacity: 0.1;" id="h1">Moon_astec☽</h1>
             <h2 style="transition: .3s ease-out; margin-left: -700px; opacity: 0.1;" id="h2">Main page</h2>
@@ -232,6 +231,8 @@
             </div>
         </div>
         <!--slapuku pabaiga-->
+
+        <button id="up" onclick="scrollUp()"><i class="fa-solid fa-chevron-up"></i></button>
 
         <button id="open-button" onclick="openForm()"><i class="fa-solid fa-question" style="transition: 0.3s; position: absolute; left: 15px; background-color: lightgrey;"></i><p style="position: absolute; right: 20px; font-size: 15px; opacity: 1; display: block;" id="helpie">Need help?</p></button>
         <button id="open-button2" onclick="closeForm()"><i class="fa-solid fa-xmark" style="transition: 0.3s; position: absolute; left: 13px;" id="closeHelp"></i><p style="position: absolute; right: 13px; font-size: 15px; opacity: 1; display: block;" id="helpie2">Close</p></button></button>
@@ -585,7 +586,7 @@
 
                 <p style="margin-bottom: 20px; font-size: 15px; color: black; margin-top: 15px;"><b style="font-weight: 600;">Category:</b> decorations</p>
                 <p style="color: black; margin-top: 15px;"><b style="font-weight: 800;">Description:</b></p>
-                <p style="color: black; max-width: 600px; padding: 20px; text-align: center; margin: 5px auto;">You can put this cloud everywhere, for ex., on a nightsand, a desk, in a car or somewhere else. When looking at it, you'll feel better. This cloud is a warm, small toy, which can also help you have a better day.</p>
+                <p style="color: black; max-width: 600px; padding: 20px; text-align: center; margin: 5px auto;">You can put this cloud everywhere, for ex., on a nightsand, a desk, in a car or somewhere else. When looking at it, you'll feel better. This cloud is a small toy, made from wool, which can also help you have a better day.</p>
                 <p style="color: black; margin-top: 15px;"><b style="font-weight: 800;">Price:</b></p>
                 <p style="color: black; width: 70%; text-align: center; margin: 5px auto;">8 Eur</p>
                 <div class="prekes-pirkimas-2"><button onclick="payment9()">Buy</button></div>
@@ -678,7 +679,7 @@
 
                 <p style="margin-bottom: 20px; font-size: 15px; color: black; margin-top: 15px;"><b style="font-weight: 600;">Category:</b> music</p>
                 <p style="color: black; margin-top: 15px;"><b style="font-weight: 800;">Description:</b></p>
-                <p style="color: black; max-width: 600px; padding: 20px; text-align: center; margin: 5px auto;">This composition is written for a piano. There are 4 pages in total.</p>
+                <p style="color: black; max-width: 600px; padding: 20px; text-align: center; margin: 5px auto;">This composition is written for a piano. There are 4 pages in total. Playing or listening to this composition makes it easy to relax, forget all your problems and pains.</p>
                 <p style="color: black; margin-top: 15px;"><b style="font-weight: 800;">Price:</b></p>
                 <p style="color: black; width: 70%; text-align: center; margin: 5px auto;">20 Eur</p>
                 <div class="prekes-pirkimas-2"><button onclick="payment10()">Buy</button></div>
@@ -781,7 +782,7 @@
                     <img src="photos/lupu-scrub3.jpg" alt="Lip scrub" class="preview-nuotraukos" onclick="lupos6()">
                 </div>
                 <p style="color: black; margin-top: 10px;"><b style="font-weight: 800;">Description:</b></p>
-                <p style="color: black; max-width: 600px; text-align: center; margin: 10px auto;">Lip Scrub - helps lips to be... <span class="readMore" onclick="openForm11()">Read more</span></p>
+                <p style="color: black; max-width: 600px; text-align: center; margin: 10px auto;">Lip Scrub helps lips to be... <span class="readMore" onclick="openForm11()">Read more</span></p>
                 <h1 style="color: black; font-size: 20px; margin: 10px;">7 Eur</h1>
                 <div class="prekes-pirkimas-2"><button onclick="payment5()">Buy</button></div>
             </div>
@@ -1424,6 +1425,7 @@ document.onkeydown = (e) => {
         if (prevScrollpos > currentScrollPos) {
             document.getElementById("open-button").style.width = "155px";
             document.getElementById("open-button").style.borderRadius = "15px";
+            document.getElementById("up").style.transform = "scale(0.0)";
             setTimeout(() => {   document.getElementById("helpie").style.display = "block"; }, 150);
             document.getElementById("open-button2").style.width = "110px";
             document.getElementById("open-button2").style.borderRadius = "15px";
@@ -1432,6 +1434,7 @@ document.onkeydown = (e) => {
         } else {
         document.getElementById("open-button").style.width = "60px";
         document.getElementById("open-button").style.borderRadius = "40px";
+        document.getElementById("up").style.transform = "scale(1.0)";
         document.getElementById("helpie").style.display = "none";
         document.getElementById("open-button2").style.width = "60px";
         document.getElementById("open-button2").style.borderRadius = "40px";
@@ -1489,6 +1492,14 @@ document.onkeydown = (e) => {
                 document.getElementById("sekimas").style.overflowY = "scroll";
                 document.getElementById("sekimas").style.zIndex = "25";
             }
+        }
+        function scrollUp() {
+            document.querySelector('#start').scrollIntoView({
+                behavior: 'smooth'
+            });
+            setTimeout(() => {
+                document.getElementById("up").style.transform = "scale(0.0)";
+                }, 1000);
         }
 
         function sekimas2() {
@@ -1648,21 +1659,6 @@ document.onkeydown = (e) => {
             document.getElementById("redirect").style.opacity = "1";
             }, 50);
             setTimeout(() => {
-            document.getElementById("redi").style.width = "100%";
-            }, 3000);
-            setTimeout(() => {
-            document.getElementById("redi").style.height = "100%";
-            }, 3000);
-            setTimeout(() => {
-            document.getElementById("redi").style.border = "none";
-            }, 3000);
-            setTimeout(() => {
-            document.getElementById("redi").style.boxShadow = "none";
-            }, 3000);
-            setTimeout(() => {
-            document.getElementById("redi").style.borderRadius = "0";
-            }, 3000);
-            setTimeout(() => {
                 location.replace("https://moonastec.github.io/lt/pagrindinis")
             }, 5000);
         }
@@ -1681,21 +1677,6 @@ document.onkeydown = (e) => {
             setTimeout(() => {
             document.getElementById("redirect").style.opacity = "1";
             }, 50);
-            setTimeout(() => {
-            document.getElementById("redi").style.width = "100%";
-            }, 3000);
-            setTimeout(() => {
-            document.getElementById("redi").style.height = "100%";
-            }, 3000);
-            setTimeout(() => {
-            document.getElementById("redi").style.border = "none";
-            }, 3000);
-            setTimeout(() => {
-            document.getElementById("redi").style.boxShadow = "none";
-            }, 3000);
-            setTimeout(() => {
-            document.getElementById("redi").style.borderRadius = "0";
-            }, 3000);
             setTimeout(() => {
                 location.replace("https://moonastec.github.io/en/payments/summer-sugar-scrub")
             }, 5000);
@@ -1716,21 +1697,6 @@ document.onkeydown = (e) => {
             document.getElementById("redirect").style.opacity = "1";
             }, 50);
             setTimeout(() => {
-            document.getElementById("redi").style.width = "100%";
-            }, 3000);
-            setTimeout(() => {
-            document.getElementById("redi").style.height = "100%";
-            }, 3000);
-            setTimeout(() => {
-            document.getElementById("redi").style.border = "none";
-            }, 3000);
-            setTimeout(() => {
-            document.getElementById("redi").style.boxShadow = "none";
-            }, 3000);
-            setTimeout(() => {
-            document.getElementById("redi").style.borderRadius = "0";
-            }, 3000);
-            setTimeout(() => {
                 location.replace("https://moonastec.github.io/en/payments/cloud-earrings")
             }, 5000);
         }
@@ -1749,21 +1715,6 @@ document.onkeydown = (e) => {
             setTimeout(() => {
             document.getElementById("redirect").style.opacity = "1";
             }, 50);
-            setTimeout(() => {
-            document.getElementById("redi").style.width = "100%";
-            }, 3000);
-            setTimeout(() => {
-            document.getElementById("redi").style.height = "100%";
-            }, 3000);
-            setTimeout(() => {
-            document.getElementById("redi").style.border = "none";
-            }, 3000);
-            setTimeout(() => {
-            document.getElementById("redi").style.boxShadow = "none";
-            }, 3000);
-            setTimeout(() => {
-            document.getElementById("redi").style.borderRadius = "0";
-            }, 3000);
             setTimeout(() => {
                 location.replace("https://moonastec.github.io/en/payments/stickers")
             }, 5000);
@@ -1784,21 +1735,6 @@ document.onkeydown = (e) => {
             document.getElementById("redirect").style.opacity = "1";
             }, 50);
             setTimeout(() => {
-            document.getElementById("redi").style.width = "100%";
-            }, 3000);
-            setTimeout(() => {
-            document.getElementById("redi").style.height = "100%";
-            }, 3000);
-            setTimeout(() => {
-            document.getElementById("redi").style.border = "none";
-            }, 3000);
-            setTimeout(() => {
-            document.getElementById("redi").style.boxShadow = "none";
-            }, 3000);
-            setTimeout(() => {
-            document.getElementById("redi").style.borderRadius = "0";
-            }, 3000);
-            setTimeout(() => {
                 location.replace("https://moonastec.github.io/en/payments/portrait")
             }, 5000);
         }
@@ -1817,21 +1753,6 @@ document.onkeydown = (e) => {
             setTimeout(() => {
             document.getElementById("redirect").style.opacity = "1";
             }, 50);
-            setTimeout(() => {
-            document.getElementById("redi").style.width = "100%";
-            }, 3000);
-            setTimeout(() => {
-            document.getElementById("redi").style.height = "100%";
-            }, 3000);
-            setTimeout(() => {
-            document.getElementById("redi").style.border = "none";
-            }, 3000);
-            setTimeout(() => {
-            document.getElementById("redi").style.boxShadow = "none";
-            }, 3000);
-            setTimeout(() => {
-            document.getElementById("redi").style.borderRadius = "0";
-            }, 3000);
             setTimeout(() => {
                 location.replace("https://moonastec.github.io/en/payments/lip-scrub")
             }, 5000);
@@ -1852,21 +1773,6 @@ document.onkeydown = (e) => {
             document.getElementById("redirect").style.opacity = "1";
             }, 50);
             setTimeout(() => {
-            document.getElementById("redi").style.width = "100%";
-            }, 3000);
-            setTimeout(() => {
-            document.getElementById("redi").style.height = "100%";
-            }, 3000);
-            setTimeout(() => {
-            document.getElementById("redi").style.border = "none";
-            }, 3000);
-            setTimeout(() => {
-            document.getElementById("redi").style.boxShadow = "none";
-            }, 3000);
-            setTimeout(() => {
-            document.getElementById("redi").style.borderRadius = "0";
-            }, 3000);
-            setTimeout(() => {
                 location.replace("https://moonastec.github.io/en/payments/moon-on-a-canvas")
             }, 5000);
         }
@@ -1885,21 +1791,6 @@ document.onkeydown = (e) => {
             setTimeout(() => {
             document.getElementById("redirect").style.opacity = "1";
             }, 50);
-            setTimeout(() => {
-            document.getElementById("redi").style.width = "100%";
-            }, 3000);
-            setTimeout(() => {
-            document.getElementById("redi").style.height = "100%";
-            }, 3000);
-            setTimeout(() => {
-            document.getElementById("redi").style.border = "none";
-            }, 3000);
-            setTimeout(() => {
-            document.getElementById("redi").style.boxShadow = "none";
-            }, 3000);
-            setTimeout(() => {
-            document.getElementById("redi").style.borderRadius = "0";
-            }, 3000);
             setTimeout(() => {
                 location.replace("https://moonastec.github.io/en/payments/springs-photo")
             }, 5000);
@@ -1920,21 +1811,6 @@ document.onkeydown = (e) => {
             document.getElementById("redirect").style.opacity = "1";
             }, 50);
             setTimeout(() => {
-            document.getElementById("redi").style.width = "100%";
-            }, 3000);
-            setTimeout(() => {
-            document.getElementById("redi").style.height = "100%";
-            }, 3000);
-            setTimeout(() => {
-            document.getElementById("redi").style.border = "none";
-            }, 3000);
-            setTimeout(() => {
-            document.getElementById("redi").style.boxShadow = "none";
-            }, 3000);
-            setTimeout(() => {
-            document.getElementById("redi").style.borderRadius = "0";
-            }, 3000);
-            setTimeout(() => {
                 location.replace("https://moonastec.github.io/en/payments/letters-painting")
             }, 5000);
         }
@@ -1954,21 +1830,6 @@ document.onkeydown = (e) => {
             document.getElementById("redirect").style.opacity = "1";
             }, 50);
             setTimeout(() => {
-            document.getElementById("redi").style.width = "100%";
-            }, 3000);
-            setTimeout(() => {
-            document.getElementById("redi").style.height = "100%";
-            }, 3000);
-            setTimeout(() => {
-            document.getElementById("redi").style.border = "none";
-            }, 3000);
-            setTimeout(() => {
-            document.getElementById("redi").style.boxShadow = "none";
-            }, 3000);
-            setTimeout(() => {
-            document.getElementById("redi").style.borderRadius = "0";
-            }, 3000);
-            setTimeout(() => {
                 location.replace("https://moonastec.github.io/en/payments/funny-cloud")
             }, 5000);
         }
@@ -1986,21 +1847,6 @@ document.onkeydown = (e) => {
             setTimeout(() => {
             document.getElementById("redirect").style.opacity = "1";
             }, 50);
-            setTimeout(() => {
-            document.getElementById("redi").style.width = "100%";
-            }, 3000);
-            setTimeout(() => {
-            document.getElementById("redi").style.height = "100%";
-            }, 3000);
-            setTimeout(() => {
-            document.getElementById("redi").style.border = "none";
-            }, 3000);
-            setTimeout(() => {
-            document.getElementById("redi").style.boxShadow = "none";
-            }, 3000);
-            setTimeout(() => {
-            document.getElementById("redi").style.borderRadius = "0";
-            }, 3000);
             setTimeout(() => {
                 location.replace("https://moonastec.github.io/en/payments/music-composition-oceans")
             }, 5000);
@@ -2021,21 +1867,6 @@ document.onkeydown = (e) => {
             document.getElementById("redirect").style.opacity = "1";
             }, 50);
             setTimeout(() => {
-            document.getElementById("redi").style.width = "100%";
-            }, 3000);
-            setTimeout(() => {
-            document.getElementById("redi").style.height = "100%";
-            }, 3000);
-            setTimeout(() => {
-            document.getElementById("redi").style.border = "none";
-            }, 3000);
-            setTimeout(() => {
-            document.getElementById("redi").style.boxShadow = "none";
-            }, 3000);
-            setTimeout(() => {
-            document.getElementById("redi").style.borderRadius = "0";
-            }, 3000);
-            setTimeout(() => {
                 location.replace("https://moonastec.github.io/en/payments/earphone-holder")
             }, 5000);
         }
@@ -2054,21 +1885,6 @@ document.onkeydown = (e) => {
             document.getElementById("redirect").style.opacity = "1";
             }, 50);
             setTimeout(() => {
-            document.getElementById("redi").style.width = "100%";
-            }, 3000);
-            setTimeout(() => {
-            document.getElementById("redi").style.height = "100%";
-            }, 3000);
-            setTimeout(() => {
-            document.getElementById("redi").style.border = "none";
-            }, 3000);
-            setTimeout(() => {
-            document.getElementById("redi").style.boxShadow = "none";
-            }, 3000);
-            setTimeout(() => {
-            document.getElementById("redi").style.borderRadius = "0";
-            }, 3000);
-            setTimeout(() => {
                 location.replace("https://moonastec.github.io/en/payments/clothespins")
             }, 5000);
         }
@@ -2086,21 +1902,6 @@ document.onkeydown = (e) => {
             setTimeout(() => {
             document.getElementById("redirect").style.opacity = "1";
             }, 50);
-            setTimeout(() => {
-            document.getElementById("redi").style.width = "100%";
-            }, 3000);
-            setTimeout(() => {
-            document.getElementById("redi").style.height = "100%";
-            }, 3000);
-            setTimeout(() => {
-            document.getElementById("redi").style.border = "none";
-            }, 3000);
-            setTimeout(() => {
-            document.getElementById("redi").style.boxShadow = "none";
-            }, 3000);
-            setTimeout(() => {
-            document.getElementById("redi").style.borderRadius = "0";
-            }, 3000);
             setTimeout(() => {
                 location.replace("https://moonastec.github.io/en/payments/beauty-elixir")
             }, 5000);
@@ -2121,21 +1922,6 @@ document.onkeydown = (e) => {
             document.getElementById("redirect").style.opacity = "1";
             }, 50);
             setTimeout(() => {
-            document.getElementById("redi").style.width = "100%";
-            }, 3000);
-            setTimeout(() => {
-            document.getElementById("redi").style.height = "100%";
-            }, 3000);
-            setTimeout(() => {
-            document.getElementById("redi").style.border = "none";
-            }, 3000);
-            setTimeout(() => {
-            document.getElementById("redi").style.boxShadow = "none";
-            }, 3000);
-            setTimeout(() => {
-            document.getElementById("redi").style.borderRadius = "0";
-            }, 3000);
-            setTimeout(() => {
                 location.replace("https://moonastec.github.io/en/payments/hair-band")
             }, 5000);
         }
@@ -2145,21 +1931,6 @@ document.onkeydown = (e) => {
             setTimeout(() => {
             document.getElementById("redirect").style.opacity = "1";
             }, 50);
-            setTimeout(() => {
-            document.getElementById("redi").style.width = "100%";
-            }, 3000);
-            setTimeout(() => {
-            document.getElementById("redi").style.height = "100%";
-            }, 3000);
-            setTimeout(() => {
-            document.getElementById("redi").style.border = "none";
-            }, 3000);
-            setTimeout(() => {
-            document.getElementById("redi").style.boxShadow = "none";
-            }, 3000);
-            setTimeout(() => {
-            document.getElementById("redi").style.borderRadius = "0";
-            }, 3000);
             setTimeout(() => {
                 location.replace("https://moonastec.github.io/en/help")
             }, 5000);

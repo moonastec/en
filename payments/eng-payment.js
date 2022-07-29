@@ -29,11 +29,12 @@ window.addEventListener("DOMContentLoaded", function() {
     function success() {
       if ( window.innerWidth > 750) {  
         document.getElementById("toliau").style.width = "70px";
+        document.getElementById("toliau").style.pointerEvents = "none";
         setTimeout(() => {   document.getElementById("check").style.display = "none"; }, 150);
         setTimeout(() => {   document.getElementById("clock").style.display = "block"; }, 150);
         setTimeout(() => {   document.getElementById("pavyko").style.top = "-20px"; }, 6000);
         setTimeout(() => {   document.getElementById("text").style.display = "none"; }, 6000);
-        setTimeout(() => {   document.getElementById("toliau").style.width = "100%"; }, 6000);
+        setTimeout(() => {   document.getElementById("toliau").style.width = "100%"; document.getElementById("toliau").style.pointerEvents = "all"; }, 6000);
         setTimeout(() => {   document.getElementById("check").style.display = "block"; }, 6150);
         setTimeout(() => {   document.getElementById("clock").style.display = "none"; }, 6150);
         setTimeout(() => {   document.getElementById("po-to").style.display = "block"; }, 6000);
@@ -49,11 +50,12 @@ window.addEventListener("DOMContentLoaded", function() {
     }
     else {
       document.getElementById("toliau").style.width = "70px";
+      document.getElementById("toliau").style.pointerEvents = "none";
         setTimeout(() => {   document.getElementById("check").style.display = "none"; }, 150);
         setTimeout(() => {   document.getElementById("clock").style.display = "block"; }, 150);
         setTimeout(() => {   document.getElementById("pavyko").style.top = "-20px"; }, 6000);
         setTimeout(() => {   document.getElementById("text").style.display = "none"; }, 6000);
-        setTimeout(() => {   document.getElementById("toliau").style.width = "100%"; }, 6000);
+        setTimeout(() => {   document.getElementById("toliau").style.width = "100%"; document.getElementById("toliau").style.pointerEvents = "all"; }, 6000);
         setTimeout(() => {   document.getElementById("check").style.display = "block"; }, 6150);
         setTimeout(() => {   document.getElementById("clock").style.display = "none"; }, 6150);
         setTimeout(() => {   document.getElementById("po-to").style.display = "block"; }, 6000);
@@ -70,11 +72,12 @@ window.addEventListener("DOMContentLoaded", function() {
 
     function error() {
       document.getElementById("toliau").style.width = "70px";
+      document.getElementById("toliau").style.pointerEvents = "none";
       setTimeout(() => {   document.getElementById("check").style.display = "none"; }, 150);
       setTimeout(() => {   document.getElementById("clock").style.display = "block"; }, 150);
       setTimeout(() => {   document.getElementById("nepavyko").style.top = "-20px"; }, 6000);
       setTimeout(() => {   document.getElementById("text").style.display = "none"; }, 6000);
-      setTimeout(() => {   document.getElementById("toliau").style.width = "100%"; }, 6000);
+      setTimeout(() => {   document.getElementById("toliau").style.width = "100%"; document.getElementById("toliau").style.pointerEvents = "all"; }, 6000);
       setTimeout(() => {   document.getElementById("check").style.display = "block"; }, 6150);
       setTimeout(() => {   document.getElementById("clock").style.display = "none"; }, 6150);
       setTimeout(() => {   document.getElementById("nepavyko").style.top = "-250px"; }, 9000);
@@ -121,10 +124,10 @@ function myFunction() {
       setTimeout(() => {   document.getElementById("ok").style.display = "flex"; }, 3700);
       setTimeout(() => {   document.getElementById("confirm").style.opacity = "0"; }, 3700);
       setTimeout(() => {   document.getElementById("confirm").style.zIndex = "-1"; }, 3700);
-      setTimeout(() => {   document.getElementById("toliau").style.width = "70px"; }, 350);
+      setTimeout(() => {   document.getElementById("toliau").style.width = "70px"; document.getElementById("toliau").style.pointerEvents = "none"; }, 350);
       setTimeout(() => {   document.getElementById("check").style.display = "none"; }, 500);
       setTimeout(() => {   document.getElementById("clock").style.display = "block"; }, 500);
-      setTimeout(() => {   document.getElementById("toliau").style.width = "100%"; }, 3700);
+      setTimeout(() => {   document.getElementById("toliau").style.width = "100%"; document.getElementById("toliau").style.pointerEvents = "all"; }, 3700);
       setTimeout(() => {   document.getElementById("clock").style.display = "none"; }, 3750);
       setTimeout(() => {   document.getElementById("check").style.display = "block"; }, 3750);
       setTimeout(() => {   document.getElementById("text2").style.display = "flex"; }, 45000);
@@ -224,9 +227,6 @@ function pavykoClose() {
       }, 5500);
       setTimeout(() => {
         document.getElementById("finished").style.opacity = "1";
-      }, 300);
-      setTimeout(() => {
-        document.getElementById("finished2").style.opacity = "1";
       }, 300);
       setTimeout(() => {
         document.getElementById("back2").style.backgroundColor = "azure";

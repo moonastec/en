@@ -701,6 +701,25 @@ section{
 .form-container .cancel:hover {
   background-color: orangered;
 }
+#up{
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    border: 3px solid black;
+    font-size: 35px;
+    border-radius: 100%;
+    z-index: 20;
+    cursor: pointer;
+    background-color: lightgrey;
+    transition: 0.3s;
+    transform: scale(0.0);
+}
+#up:hover{
+    border-color: white;
+    color: white;
+}
 /*apie*/
 .apie{
     background-color: rgb(205,205,205);
@@ -778,18 +797,15 @@ section{
     align-items: center;
     opacity: 0;
     display: none;
+    background-color: azure;
 }
 #redi{
     width: 300px;
     height: 300px;
     transition: 0.3s;
-    border-radius: 100%;
-    background-color: azure;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 5px solid lightgrey;
-    box-shadow: 0 0 20px darkgrey;
 }
 #filter{
     width: 40px; 
