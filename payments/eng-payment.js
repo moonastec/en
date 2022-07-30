@@ -118,7 +118,6 @@ function myFunction() {
 
   // If the checkbox is checked, display the output text
   if (checkBox.checked == true){
-      document.getElementById("text2").style.display = "none";
       document.getElementById("confirm").style.zIndex = "21";
       setTimeout(() => {   document.getElementById("confirm").style.opacity = "1"; }, 350);
       setTimeout(() => {   document.getElementById("ok").style.display = "flex"; }, 3700);
@@ -130,9 +129,6 @@ function myFunction() {
       setTimeout(() => {   document.getElementById("toliau").style.width = "100%"; document.getElementById("toliau").style.pointerEvents = "all"; }, 3700);
       setTimeout(() => {   document.getElementById("clock").style.display = "none"; }, 3750);
       setTimeout(() => {   document.getElementById("check").style.display = "block"; }, 3750);
-      setTimeout(() => {   document.getElementById("text2").style.display = "flex"; }, 45000);
-      setTimeout(() => {   document.getElementById("ok").style.display = "none"; }, 45000);
-      setTimeout(() => {   checkBox.checked = false; }, 45000);
   } else {
     text.style.display = "none";
   }
