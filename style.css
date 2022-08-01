@@ -648,7 +648,7 @@ section{
   bottom: -170px;
   right: 15px;
   z-index: 11;
-    overflow: hidden;
+    overflow: visible;
   background-color: white;
     transition: 0.3s;
     border-radius: 10px;
@@ -700,25 +700,6 @@ section{
 
 .form-container .cancel:hover {
   background-color: orangered;
-}
-#up{
-    width: 60px;
-    height: 60px;
-    position: fixed;
-    left: 20px;
-    bottom: 20px;
-    border: 3px solid black;
-    font-size: 35px;
-    border-radius: 100%;
-    z-index: 20;
-    cursor: pointer;
-    background-color: lightgrey;
-    transition: 0.3s;
-    transform: scale(0.0);
-}
-#up:hover{
-    border-color: white;
-    color: white;
 }
 /*apie*/
 .apie{

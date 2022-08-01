@@ -232,12 +232,11 @@
         </div>
         <!--slapuku pabaiga-->
 
-        <button id="up" onclick="scrollUp()"><i class="fa-solid fa-chevron-up"></i></button>
-
         <button id="open-button" onclick="openForm()"><i class="fa-solid fa-question" style="transition: 0.3s; position: absolute; left: 15px; background-color: lightgrey;"></i><p style="position: absolute; right: 20px; font-size: 15px; opacity: 1; display: block;" id="helpie">Need help?</p></button>
         <button id="open-button2" onclick="closeForm()"><i class="fa-solid fa-xmark" style="transition: 0.3s; position: absolute; left: 13px;" id="closeHelp"></i><p style="position: absolute; right: 13px; font-size: 15px; opacity: 1; display: block;" id="helpie2">Close</p></button></button>
         <div class="chat-popup" id="myForm">
             <div class="form-container">
+                <div style="width: 15px; height: 15px; position: absolute; border-bottom: 5px solid darkgrey; border-right: 5px solid darkgrey; z-index: 10; background-color: white; bottom: -11px; right: 23px; transform: rotate(45deg);"></div>
                 <h1 style="margin-bottom: 10px; font-size: 20px; text-align: center; margin-top: 10px;">Help</h1>
                 <p style="margin-bottom: 10px; font-size: 13px; color: black; padding-left: 10px; padding-right: 10px;">Need help? You can view an instruction, how this page works. Still don't understand? <a href="mailto: moon.astec.shop@gmail.com">Email us</a></p>
 
@@ -308,7 +307,7 @@
 
                 <p style="margin-bottom: 20px; font-size: 15px; color: black; margin-top: 15px;"><b style="font-weight: 600;">Category:</b> beauty</p>
                 <p style="color: black; margin-top: 15px;"><b style="font-weight: 800;">Description:</b></p>
-                <p style="color: black; max-width: 600px; padding: 20px; text-align: center; margin: 5px auto;">These earrings – as if from clouds – are light and fluffy. Suitable for children and adults. In order to make them not rainy, but cloudy earrings, clean them cleaned with wet wipes, or wash with ~22 degrees water (without soap!).</p>
+                <p style="color: black; max-width: 600px; padding: 20px; text-align: center; margin: 5px auto;">These earrings – as if from clouds – are light and fluffy. Suitable for children and adults. In order to make them not rainy, but cloudy earrings, clean them cleaned with wet wipes, or wash with ~22 degrees water (without soap!). <span style="color: red;">Important!</span> While cleaning/washing the earrings, do not rub them.</p>
                 <p style="color: black; margin-top: 15px;"><b style="font-weight: 800;">Price:</b></p>
                 <p style="color: black; width: 70%; text-align: center; margin: 5px auto;">15 Eur</p>
                 <div class="prekes-pirkimas-2"><button onclick="payment2()">Buy</button></div>
@@ -463,7 +462,7 @@
                 </div>
                 <p style="margin-bottom: 20px; font-size: 15px; color: black; margin-top: 15px;"><b style="font-weight: 600;">Category:</b> decorations</p>
                 <p style="color: black; margin-top: 15px;"><b style="font-weight: 800;">Description:</b></p>
-                <p style="color: black; max-width: 600px; padding: 20px; text-align: center; margin: 5px auto;">You can stick these stickers on a computer, a wardrobe, a door and other places. You can order it with different colors, pictures, details. Stickers are handmade. Stickers included in the package: 5 - 25 (including notes and titles).</p>
+                <p style="color: black; max-width: 600px; padding: 20px; text-align: center; margin: 5px auto;">You can stick these stickers on a computer, a wardrobe, a door and other places. You can order it with different colors, pictures, details. Stickers are handmade. Stickers included in the package: 5 - 25 (including notes and titles)(depending on amount of stickers, price may vary).</p>
                 <p style="color: black; margin-top: 15px;"><b style="font-weight: 800;">Price:</b></p>
                 <p style="color: black; width: 70%; text-align: center; margin: 5px auto;">5 Eur</p>
                 <div class="prekes-pirkimas-2"><button onclick="payment3()">Buy</button></div>
@@ -1551,7 +1550,6 @@ document.onkeydown = (e) => {
         if (prevScrollpos > currentScrollPos) {
             document.getElementById("open-button").style.width = "155px";
             document.getElementById("open-button").style.borderRadius = "15px";
-            document.getElementById("up").style.transform = "scale(0.0)";
             setTimeout(() => {   document.getElementById("helpie").style.display = "block"; }, 150);
             document.getElementById("open-button2").style.width = "110px";
             document.getElementById("open-button2").style.borderRadius = "15px";
@@ -1560,7 +1558,6 @@ document.onkeydown = (e) => {
         } else {
         document.getElementById("open-button").style.width = "60px";
         document.getElementById("open-button").style.borderRadius = "40px";
-        document.getElementById("up").style.transform = "scale(1.0)";
         document.getElementById("helpie").style.display = "none";
         document.getElementById("open-button2").style.width = "60px";
         document.getElementById("open-button2").style.borderRadius = "40px";
@@ -1574,9 +1571,11 @@ document.onkeydown = (e) => {
             if(form.numeris.value == "######144245542152")
                 {
                     document.getElementById("toliau").style.width = "70px";
+                    document.getElementById("toliau").style.pointerEvents = "none";
                     setTimeout(() => {   document.getElementById("check").style.display = "none"; }, 150);
                     setTimeout(() => {   document.getElementById("clok").style.display = "flex"; }, 150);
-                    setTimeout(() => {   location.replace("uzsakymai/ma00003.html"); }, 4000);
+                    setTimeout(() => {   location.replace("orders/ma00003.html"); }, 4000);
+                    setTimeout(() => {   document.getElementById("toliau").style.pointerEvents = "all"; }, 4000);
                     setTimeout(() => {   document.getElementById("text").style.display = "none"; }, 4000);
                     setTimeout(() => {   document.getElementById("toliau").style.width = "100%"; }, 4000);
                     setTimeout(() => {   document.getElementById("check").style.display = "block"; }, 4150);
@@ -1584,9 +1583,11 @@ document.onkeydown = (e) => {
                 }
             else{
                     document.getElementById("toliau").style.width = "70px";
+                    document.getElementById("toliau").style.pointerEvents = "none";
                     setTimeout(() => {   document.getElementById("check").style.display = "none"; }, 150);
                     setTimeout(() => {   document.getElementById("clok").style.display = "flex"; }, 150);
                     setTimeout(() => {   document.getElementById("text").style.display = "none"; }, 4000);
+                    setTimeout(() => {   document.getElementById("toliau").style.pointerEvents = "all"; }, 4000);
                     setTimeout(() => {   document.getElementById("clos").style.display = "block"; }, 4150);
                     setTimeout(() => {   document.getElementById("clok").style.display = "none"; }, 4150);
                     setTimeout(() => {   document.getElementById("clos").style.display = "none"; }, 7150);
@@ -1618,14 +1619,6 @@ document.onkeydown = (e) => {
                 document.getElementById("sekimas").style.overflowY = "scroll";
                 document.getElementById("sekimas").style.zIndex = "25";
             }
-        }
-        function scrollUp() {
-            document.querySelector('#start').scrollIntoView({
-                behavior: 'smooth'
-            });
-            setTimeout(() => {
-                document.getElementById("up").style.transform = "scale(0.0)";
-                }, 1000);
         }
 
         function sekimas2() {

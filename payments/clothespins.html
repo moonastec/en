@@ -229,8 +229,8 @@
         <p style="margin: 10px;">In stock</p>
         </div>
         <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
-            <p>Amount</p>
-            <input type="number" id="Amount" name="Amount" value="1" required style="width: 100px; border: 2px solid black;">
+            <p><i class="fa-solid fa-arrow-down-1-9"></i> Amount</p>
+            <input type="number" id="amount" name="amount" value="1" required style="width: 100px; border: 2px solid black;">
         </div>
         <button onclick="next()" id="next">Continue</button>
     </div>
@@ -238,37 +238,37 @@
             <form action="https://formspree.io/f/mzbwpbor" method="POST" id="my-form">
             <h1 style="margin-bottom: 20px;"><i class="fas fa-user-circle" style="color: darkgray;"></i> Buyer info</h1>
             <div class="form-group vardas">
-                <label for="First name"><i class="far fa-user" style="color: darkgray;"></i> First name</label>
-                <input type="text" id="First name" name="First name" placeholder="ex., Eve" required>
+                <label for="first name"><i class="far fa-user" style="color: darkgray;"></i> First name</label>
+                <input type="text" id="first name" name="first name" placeholder="ex., Eve" required>
             </div>
             <div class="form-group vardas">
-                <label for="Last name"><i class="fas fa-user" style="color: darkgray;"></i> Last name</label>
-                <input type="text" id="Last name" name="Last name" placeholder="ex., Smith" required>
+                <label for="last name"><i class="fas fa-user" style="color: darkgray;"></i> Last name</label>
+                <input type="text" id="last name" name="last name" placeholder="ex., Smith" required>
             </div>
             <br>
             <div class="form-group vardas">
-                <label for="Email"><i class="fas fa-envelope" style="color: darkgray;"></i> Email</label>
-                <input type="email" id="Email" name="Email" placeholder="ex., ievakasparav@gmail.com" required>
+                <label for="email"><i class="fas fa-envelope" style="color: darkgray;"></i> Email</label>
+                <input type="email" id="email" name="email" placeholder="ex., ievakasparav@gmail.com" required>
             </div>
             <div class="form-group vardas" style="margin-top: 15px;" style="color: darkgray;">
-                <label for="Payment method"><i class="fas fa-money-bill-wave" style="color: darkgray;"></i> Payment method:</label>
+                <label for="payment method"><i class="fas fa-money-bill-wave" style="color: darkgray;"></i> Payment method:</label>
                 <br>
-                <select name="Payment method" id="Payment method" required>
-                <option value="Cash">Cash</option>
-                <option value="Bank transfer">Bank transfer</option>
+                <select name="payment method" id="payment method" required>
+                <option value="cash">Cash</option>
+                <option value="bank transfer">Bank transfer</option>
               </select>
             </div>
-            <select name="Item" id="Item" style="display: none;">
-                <option value="Clothespins">Clothespins</option>
+            <select name="item" id="item" style="display: none;">
+                <option value="clothespins">Clothespins</option>
             </select>
             <h1 style="margin-bottom: 20px; margin-top: 20px;"><i class="fas fa-shopping-bag" style="color: darkgray;"></i> Shipping information</h1>
             
             <div class="form-group vardas place">
-                <label for="Shipping country"><i class="fas fa-globe-europe" style="color: darkgray;"></i> Shipping country:</label>
+                <label for="shipping country"><i class="fas fa-globe-europe" style="color: darkgray;"></i> Shipping country:</label>
                 <br>
-                <select name="Shipping country" id="Shipping country" required>
-                <option value="Belgium">Belgium</option>
-                <option value="Lithuania">Lithuania</option>
+                <select name="shipping country" id="shipping country" required>
+                <option value="belgium">Belgium</option>
+                <option value="lithuania">Lithuania</option>
               </select>
             </div>
 <!--
@@ -288,37 +288,34 @@
             </div>
 -->
             <div class="form-group vardas">
-                <label for="Shipping method"><i class="fas fa-shipping-fast" style="color: darkgray;"></i> Shipping method:</label>
+                <label for="shipping method"><i class="fas fa-shipping-fast" style="color: darkgray;"></i> Shipping method:</label>
                 <br>
-                <select name="Shipping method" id="Shipping method" required>
-                <option value="Pickup">Pickup - free</option>
-                <option value="Post">Lithuanian post - from 2 Eur</option>
-                <option value="Omniva parcel machine">Omniva parcel machine - 2,50 Eur</option>
-                <option value="DPD parcel machine">DPD parcel machine - from 2 Eur</option>
-                <option value="DPD courier">DPD courier - from 5 Eur</option>
+                <select name="shipping method" id="shipping method" required>
+                <option value="pickup">Pickup - free</option>
+                <option value="dpd courier">DPD courier - from 5 Eur</option>
               </select>
             </div>
             <br>
             <div class="form-group vardas">
-                <label for="Order pickup"><i class="fas fa-box-open" style="color: darkgray;"></i> Order pickup:</label>
+                <label for="order pickup"><i class="fas fa-box-open" style="color: darkgray;"></i> Order pickup:</label>
                 <br>
-                <select name="Order pickup" id="Order pickup" required>
-                <option value="Buyer">Buyer</option>
-                <option value="Other">Other (write in the notes below)</option>
+                <select name="order pickup" id="order pickup" required>
+                <option value="buyer">Buyer</option>
+                <option value="other">Other (write in the notes below)</option>
               </select>
             </div>
             <div class="form-group vardas">
-                <label for="Gift"><i class="fas fa-gift" style="color: darkgray;"></i> Packing:</label>
+                <label for="gift"><i class="fas fa-gift" style="color: darkgray;"></i> Packing:</label>
                 <br>
-                <select name="Pack as a gift" id="Supakuoti kaip dovana" required>
-                <option value="No">Basic</option>
-                <option value="Yes">Gift (+1 Eur)</option>
+                <select name="pack as a gift" id="pack as a gift" required>
+                <option value="no">Basic</option>
+                <option value="yes">Gift (+1 Eur)</option>
               </select>
             </div>
             <h1 style="margin-bottom: 20px; margin-top: 20px;"><i class="far fa-sticky-note" style="color: darkgray;"></i> Notes <span style="font-weight: 100; color: darkgray;">(not required)</span></h1>
             <div class="form-group text">
-                <label for="Notes and questions"><i class="fas fa-sticky-note" style="color: darkgray;"></i> Notes and questions</label>
-                <textarea name="Notes and questions" id="Notes and questions" cols="25" rows="8" placeholder="ex., When will I get the item?"></textarea>
+                <label for="notes and questions"><i class="fas fa-sticky-note" style="color: darkgray;"></i> Notes and questions</label>
+                <textarea name="notes and questions" id="notes and questions" cols="25" rows="8" placeholder="ex., When will I get the item?"></textarea>
             </div>
             
             

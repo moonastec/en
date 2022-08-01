@@ -101,6 +101,9 @@ body{
     border-radius: 15px;
     transition: 0.3s;
 }
+.info:hover{
+    box-shadow: 0 0 20px lightgrey;
+}
 .info img{
     width: 100px;
     border-radius: 15px;
@@ -180,6 +183,9 @@ body{
     cursor: pointer;
     border-radius: 15px 0 0 15px;
 }
+.safe:hover{
+    box-shadow: 0 0 20px lightgrey;
+}
 .safe2{
     width: 350px;
     height: 100px;
@@ -195,6 +201,9 @@ body{
     overflow: hidden;
     transition: 0.3s;
     border-radius: 15px 0 0 15px;
+}
+.safe2:hover{
+    box-shadow: 0 0 20px lightgrey;
 }
 label{
     padding-top: 10px;
@@ -669,6 +678,10 @@ button[type="submit"]:hover div{
   background-color: #ccc;
   -webkit-transition: .4s;
   transition: .4s;
+}
+
+.slider:hover{
+    box-shadow: 0 0 5px darkgrey;
 }
 
 .slider:before {
