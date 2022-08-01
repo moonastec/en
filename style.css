@@ -253,12 +253,12 @@ body{
     width: 0%;
     background: darkgrey;
     bottom: 0;
-    left: 0;
+    left: -2.5%;
     transition: 0.3s;
     border-radius: 15px;
 }
 #navbar a:hover:before{
-    width: 100%;
+    width: 105%;
 }
 #mobileNavigation{
     width: 40px;
@@ -666,11 +666,12 @@ section{
     border-radius: 10px;
     border: 5px solid darkgrey;
     box-shadow: 0 0 10px darkgrey;
+    width: 300px;
 }
 
 
 .form-container {
-  max-width: 300px;
+  width: 300px;
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -1815,12 +1816,13 @@ h4{
     margin-top: 5px;
     margin-bottom: 15px;
     height: 50px;
-    border: 2px solid lightgrey;
+    border: 2px solid black;
     background-color: azure;
+    border-radius: 15px;
 }
 .container{
     width: 100%;
-    max-width: 350px;
+    max-width: 300px;
     margin: 0 auto;
     padding: 20px;
     background-color: white;
