@@ -126,6 +126,18 @@ body{
         
     }
 }
+#skip{
+    position: absolute; 
+    font-size: 13px; 
+    color: darkgrey; 
+    transition: 0.3s; 
+    margin-bottom: -2000px; 
+    cursor: pointer;
+}
+#skip:hover{
+    color: black;
+    transform: scale(1.1);
+}
 #goToContent{
     position: fixed; 
     z-index: 20; 

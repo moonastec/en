@@ -113,9 +113,10 @@
   }
     </style>
     <div id="screen">
-        <p style="position: absolute; font-size: 13px; color: red; transition: 0.3s; margin-top: -2000px;" id="wifi"><i class="fa-solid fa-wifi"></i> Poor internet connection</p>
+        <p style="position: absolute; font-size: 13px; cursor: default; color: red; transition: 0.3s; margin-top: -2000px;" id="wifi"><i class="fa-solid fa-wifi"></i> Poor internet connection</p>
         <div style="width: 120px; height: 120px; border-radius: 100%; box-shadow: 5px 0 10px darkgrey; display: flex; justify-content: center; align-items: center; animation: spin 1s linear infinite;"></div>
         <img src="photos/logo.png" alt="Moon_astec" width="100px" height="100px" style="position: absolute;">
+        <p onclick="loadFunction()" id="skip">Skip and show partially loaded page? <i class="fa-solid fa-arrow-right-long"></i></p>
     </div>
 
     <a href="#about" id="goToContent">
@@ -1518,7 +1519,9 @@ document.onkeydown = (e) => {
             setTimeout(() => {    document.getElementById("screen").style.opacity = "0"; }, 1100);
             setTimeout(() => {    document.getElementById("screen").style.zIndex = "-1"; }, 1200);
             document.getElementById("wifi").style.marginTop = "-2000px";
+            document.getElementById("skip").style.marginBottom = "-2000px";
             setTimeout(() => {    document.getElementById("wifi").style.display = "none"; }, 300);
+            setTimeout(() => {    document.getElementById("skip").style.display = "none"; }, 300);
             setTimeout(() => {    document.getElementById("h1").style.opacity = "1"; }, 1150);
             setTimeout(() => {    document.getElementById("h1").style.marginLeft = "0"; }, 1150);
             setTimeout(() => {    document.getElementById("h2").style.opacity = "1"; }, 1200);
@@ -1543,6 +1546,7 @@ document.onkeydown = (e) => {
         }
         setTimeout(() => {    document.getElementById("wifi").style.marginTop = "-200px"; }, 35000);
         setTimeout(() => {    document.getElementById("wifi").style.animation = "size 1.5s linear infinite"; }, 35300);
+        setTimeout(() => {    document.getElementById("skip").style.marginBottom = "-200px"; }, 40000);
 
         var prevScrollpos = window.pageYOffset;
         window.onscroll = function() {
