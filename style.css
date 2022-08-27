@@ -82,7 +82,7 @@ body{
     opacity: 1;
     z-index: 100;
     top: 0;
-    transition: 0.3s;
+    transition: 0.3s ease-out;
 }
 @keyframes size{
     0%{
@@ -130,7 +130,7 @@ body{
     position: absolute; 
     font-size: 13px; 
     color: darkgrey; 
-    transition: 0.3s; 
+    transition: 0.3s ease-out; 
     margin-bottom: -2000px; 
     cursor: pointer;
 }
@@ -152,7 +152,7 @@ body{
     text-decoration: none; 
     transform: translateY(-120%); 
     margin-left: 150px;
-    transition: 0.3s;
+    transition: 0.3s ease-out;
 }
 #goToContent:focus{
     transform: translateY(50%); 
@@ -180,7 +180,7 @@ body{
     color: black;
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
-    transition: 0.3s;
+    transition: 0.3s ease-out;
     border-radius: 5px;
     user-select: none;
 }
@@ -190,7 +190,7 @@ body{
     display: inline-block;
     margin: 5px;
     margin-top: 10px;
-    transition: 0.3s;
+    transition: 0.3s ease-out;
     border-radius: 15px;
 }
 #navbar img:hover{
@@ -207,7 +207,7 @@ body{
     cursor: default;
     pointer-events: none;
     margin: 10px;
-    transition: 0.3s;
+    transition: 0.3s ease-out;
     user-select: none;
     opacity: 0;
     color: black;
@@ -236,7 +236,7 @@ body{
     border-radius: 15px;
     z-index: 15;
     box-shadow: 0 0 10px darkgrey;
-    transition: 0.3s ease-out;
+    transition: 0.3s ease-out ease-out;
     opacity: 0;
 }
 #navbar a{
@@ -254,7 +254,7 @@ body{
     background: darkgrey;
     bottom: 0;
     left: -2.5%;
-    transition: 0.3s;
+    transition: 0.3s ease-out;
     border-radius: 15px;
 }
 #navbar a:hover:before{
@@ -275,7 +275,7 @@ body{
     flex-direction: column;
     padding-top: 5px;
     padding-bottom: 5px;
-    transition: 0.3s ease-out;
+    transition: 0.3s ease-out ease-out;
 }
 #mobileNavigation div{
     width: 30px;
@@ -293,7 +293,7 @@ body{
     bottom: 2%;
     z-index: 30;
     box-shadow: 0 0 15px darkgrey;
-    transition: 0.3s;
+    transition: 0.3s ease-out;
     display: none;
     border-radius: 15px;
 }
@@ -320,7 +320,7 @@ body{
     align-items: center;
     color: black;
     border-radius: 40px;
-    transition: 0.3s;
+    transition: 0.3s ease-out;
     margin: 20px;
     position: absolute;
     top: 0;
@@ -337,7 +337,7 @@ body{
     align-items: center;
     color: black;
     border-radius: 40px;
-    transition: 0.3s;
+    transition: 0.3s ease-out;
     margin: 20px;
     position: absolute;
     top: 0;
@@ -358,7 +358,7 @@ body{
     top: 0;
     left: 0;
     bottom: 0;
-    transition: 0.3s;
+    transition: 0.3s ease-out;
     display: none;
 }
 .header1{
@@ -613,7 +613,7 @@ section{
     opacity: 0;
     visibility: hidden;
     z-index: -1;
-    transition: all .3s ease;
+    transition: all .3s  ease-out;
 }
 .wrapper img{
     max-width: 120px;
@@ -634,7 +634,7 @@ section{
     border: none;
     color: white;
     border-radius: 5px;
-    transition: .3s;
+    transition: .3s ease-out;
     font-size: 15px;
 }
 .buttons .item{
@@ -646,7 +646,7 @@ section{
 }
 .buttons a{
     color: darkgrey;
-    transition: .3s;
+    transition: .3s ease-out;
     text-decoration: underline;
     cursor: pointer;
 }
@@ -662,7 +662,7 @@ section{
   z-index: 11;
     overflow: visible;
   background-color: white;
-    transition: 0.3s;
+    transition: 0.3s ease-out;
     border-radius: 10px;
     border: 5px solid darkgrey;
     box-shadow: 0 0 10px darkgrey;
@@ -693,7 +693,7 @@ section{
   cursor: pointer;
   margin-bottom:10px;
   opacity: 1;
-    transition: 0.5s;
+    transition: 0.3s ease-out;
     border-radius: 10px;
     font-size: 17px;
     font-family: 'Poppins', sans-serif;
@@ -702,7 +702,7 @@ section{
 
 .form-container .cancel {
   background-color: indianred;
-    transition: 0.5s;
+    transition: 0.3s ease-out;
     font-size: 20px;
      height: 60px;
 }
@@ -737,7 +737,7 @@ section{
     font-size: 20px;
     padding-bottom: 100px; 
     color: rgb(105, 105, 105);
-    transition: 0.3s;
+    transition: 0.3s ease-out;
     cursor: default;
 }
 .kalbos-keitimas{
@@ -753,7 +753,7 @@ section{
     font-family: 'Poppins', sans-serif; 
     cursor: pointer; 
     font-size: 15px;
-    transition: 0.5s;
+    transition: 0.3s ease-out;
 }
 .kalbos-keitimas:hover{
     transform: scale(1.2);
@@ -779,7 +779,7 @@ section{
 #redirect{
     width: 100%;
     height: 100%;
-    transition: 0.3s;
+    transition: 0.3s ease-out;
     position: fixed;
     top: 0;
     left: 0;
@@ -796,7 +796,7 @@ section{
 #redi{
     width: 300px;
     height: 300px;
-    transition: 0.3s;
+    transition: 0.3s ease-out;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -811,7 +811,7 @@ section{
     align-items: center;
     color: darkgrey;
     border-radius: 40px;
-    transition: 0.3s;
+    transition: 0.3s ease-out;
     margin: 20px;
     position: absolute;
     margin-top: -45px;
@@ -830,7 +830,7 @@ section{
     align-items: center;
     color: darkgrey;
     border-radius: 40px;
-    transition: 0.3s;
+    transition: 0.3s ease-out;
     margin: 20px;
     position: absolute;
     margin-top: -45px;
@@ -855,7 +855,7 @@ section{
   margin-top: 20px;
     z-index: 20;
     overflow: hidden;
-    transition: 0.3s;
+    transition: 0.3s ease-out;
     padding-bottom: 20px;
     font-family: 'Poppins', sans-serif;
     border-radius: 15px;
@@ -870,7 +870,7 @@ section{
     top: 0;
     left: 0;
     bottom: 0;
-    transition: 0.3s;
+    transition: 0.3s ease-out;
 }
 #auskarai {
     width: 90%;
@@ -887,7 +887,7 @@ section{
   margin-top: 20px;
     z-index: 20;
     overflow: hidden;
-    transition: 0.3s;
+    transition: 0.3s ease-out;
     padding-bottom: 20px;
     font-family: 'Poppins', sans-serif;
     border-radius: 15px;
@@ -902,7 +902,7 @@ section{
     top: 0;
     left: 0;
     bottom: 0;
-    transition: 0.3s;
+    transition: 0.3s ease-out;
 }
 #lipdukas {
     width: 90%;
@@ -919,7 +919,7 @@ section{
   margin-top: 20px;
     z-index: 20;
     overflow: hidden;
-    transition: 0.3s;
+    transition: 0.3s ease-out;
     padding-bottom: 20px;
     font-family: 'Poppins', sans-serif;
     border-radius: 15px;
@@ -934,7 +934,7 @@ section{
     top: 0;
     left: 0;
     bottom: 0;
-    transition: 0.3s;
+    transition: 0.3s ease-out;
 }
 #meile {
     width: 90%;
@@ -951,7 +951,7 @@ section{
   margin-top: 20px;
     z-index: 20;
     overflow: hidden;
-    transition: 0.3s;
+    transition: 0.3s ease-out;
     padding-bottom: 20px;
     font-family: 'Poppins', sans-serif;
     border-radius: 15px;
@@ -966,7 +966,7 @@ section{
     top: 0;
     left: 0;
     bottom: 0;
-    transition: 0.3s;
+    transition: 0.3s ease-out;
 }
 #lupu-scrub {
     width: 90%;
@@ -983,7 +983,7 @@ section{
   margin-top: 20px;
     z-index: 20;
     overflow: hidden;
-    transition: 0.3s;
+    transition: 0.3s ease-out;
     padding-bottom: 20px;
     font-family: 'Poppins', sans-serif;
     border-radius: 15px;
@@ -998,7 +998,7 @@ section{
     top: 0;
     left: 0;
     bottom: 0;
-    transition: 0.3s;
+    transition: 0.3s ease-out;
 }
 #menulis {
     width: 90%;
@@ -1015,7 +1015,7 @@ section{
   margin-top: 20px;
     z-index: 20;
     overflow: hidden;
-    transition: 0.3s;
+    transition: 0.3s ease-out;
     padding-bottom: 20px;
     font-family: 'Poppins', sans-serif;
     border-radius: 15px;
@@ -1030,7 +1030,7 @@ section{
     top: 0;
     left: 0;
     bottom: 0;
-    transition: 0.3s;
+    transition: 0.3s ease-out;
 }
 #pavasaris {
     width: 90%;
@@ -1047,7 +1047,7 @@ section{
   margin-top: 20px;
     z-index: 20;
     overflow: hidden;
-    transition: 0.3s;
+    transition: 0.3s ease-out;
     padding-bottom: 20px;
     font-family: 'Poppins', sans-serif;
     border-radius: 15px;
@@ -1062,7 +1062,7 @@ section{
     top: 0;
     left: 0;
     bottom: 0;
-    transition: 0.3s;
+    transition: 0.3s ease-out;
 }
 #raide {
     width: 90%;
@@ -1079,7 +1079,7 @@ section{
   margin-top: 20px;
     z-index: 20;
     overflow: hidden;
-    transition: 0.3s;
+    transition: 0.3s ease-out;
     padding-bottom: 20px;
     font-family: 'Poppins', sans-serif;
     border-radius: 15px;
@@ -1094,7 +1094,7 @@ section{
     top: 0;
     left: 0;
     bottom: 0;
-    transition: 0.3s;
+    transition: 0.3s ease-out;
 }
 #debeselis {
     width: 90%;
@@ -1111,7 +1111,7 @@ section{
   margin-top: 20px;
     z-index: 20;
     overflow: hidden;
-    transition: 0.3s;
+    transition: 0.3s ease-out;
     padding-bottom: 20px;
     font-family: 'Poppins', sans-serif;
     border-radius: 15px;
@@ -1126,7 +1126,7 @@ section{
     top: 0;
     left: 0;
     bottom: 0;
-    transition: 0.3s;
+    transition: 0.3s ease-out;
 }
 #vandenynai {
     width: 90%;
@@ -1143,7 +1143,7 @@ section{
   margin-top: 20px;
     z-index: 20;
     overflow: hidden;
-    transition: 0.3s;
+    transition: 0.3s ease-out;
     padding-bottom: 20px;
     font-family: 'Poppins', sans-serif;
     border-radius: 15px;
@@ -1158,7 +1158,7 @@ section{
     top: 0;
     left: 0;
     bottom: 0;
-    transition: 0.3s;
+    transition: 0.3s ease-out;
 }
 #ausines {
     width: 90%;
@@ -1175,7 +1175,7 @@ section{
   margin-top: 20px;
     z-index: 20;
     overflow: hidden;
-    transition: 0.3s;
+    transition: 0.3s ease-out;
     padding-bottom: 20px;
     font-family: 'Poppins', sans-serif;
     border-radius: 15px;
@@ -1190,7 +1190,7 @@ section{
     top: 0;
     left: 0;
     bottom: 0;
-    transition: 0.3s;
+    transition: 0.3s ease-out;
 }
 #segtukai {
     width: 90%;
@@ -1207,7 +1207,7 @@ section{
   margin-top: 20px;
     z-index: 20;
     overflow: hidden;
-    transition: 0.3s;
+    transition: 0.3s ease-out;
     padding-bottom: 20px;
     font-family: 'Poppins', sans-serif;
     border-radius: 15px;
@@ -1222,7 +1222,7 @@ section{
     top: 0;
     left: 0;
     bottom: 0;
-    transition: 0.3s;
+    transition: 0.3s ease-out;
 }
 #eliksyras {
     width: 90%;
@@ -1239,7 +1239,7 @@ section{
   margin-top: 20px;
     z-index: 20;
     overflow: hidden;
-    transition: 0.3s;
+    transition: 0.3s ease-out;
     padding-bottom: 20px;
     font-family: 'Poppins', sans-serif;
     border-radius: 15px;
@@ -1254,7 +1254,7 @@ section{
     top: 0;
     left: 0;
     bottom: 0;
-    transition: 0.3s;
+    transition: 0.3s ease-out;
 }
 #gumyte {
     width: 90%;
@@ -1271,7 +1271,7 @@ section{
   margin-top: 20px;
     z-index: 20;
     overflow: hidden;
-    transition: 0.3s;
+    transition: 0.3s ease-out;
     padding-bottom: 20px;
     font-family: 'Poppins', sans-serif;
     border-radius: 15px;
@@ -1286,7 +1286,7 @@ section{
     top: 0;
     left: 0;
     bottom: 0;
-    transition: 0.3s;
+    transition: 0.3s ease-out;
 }
 #apyranke {
     width: 90%;
@@ -1303,7 +1303,7 @@ section{
   margin-top: 20px;
     z-index: 20;
     overflow: hidden;
-    transition: 0.3s;
+    transition: 0.3s ease-out;
     padding-bottom: 20px;
     font-family: 'Poppins', sans-serif;
     border-radius: 15px;
@@ -1318,7 +1318,7 @@ section{
     top: 0;
     left: 0;
     bottom: 0;
-    transition: 0.3s;
+    transition: 0.3s ease-out;
 }
 #magnetai {
     width: 90%;
@@ -1335,7 +1335,7 @@ section{
   margin-top: 20px;
     z-index: 20;
     overflow: hidden;
-    transition: 0.3s;
+    transition: 0.3s ease-out;
     padding-bottom: 20px;
     font-family: 'Poppins', sans-serif;
     border-radius: 15px;
@@ -1350,13 +1350,13 @@ section{
     top: 0;
     left: 0;
     bottom: 0;
-    transition: 0.3s;
+    transition: 0.3s ease-out;
 }
 #showPhoto{
     color: black; 
     border-radius: 15px; 
     border: 5px solid darkgrey;
-    transition: 0.3s;
+    transition: 0.3s ease-out;
 }
 #showPhoto:hover{
     border-color: azure;
@@ -1369,7 +1369,7 @@ section{
     top: 15px; 
     right: 25px; 
     cursor: pointer;
-    transition: 0.3s;
+    transition: 0.3s ease-out;
     border: 2px solid black;
     border-radius: 100%;
     padding-left: 6.3px;
@@ -1390,7 +1390,7 @@ section{
     margin: 15px auto;
     cursor: pointer;
     border-radius: 15px;
-    transition: 0.3s;
+    transition: 0.3s ease-out;
 }
 .preview-nuotraukos:hover{
     transform: scale(1.1);
@@ -1399,10 +1399,10 @@ section{
 .prekes-nuotrauka-2{
     width: 300px;
     border-radius: 15px;
-    transition: 0.3s;
+    transition: 0.3s ease-out;
 }
 #shopping{
-    transition: 0.3s;
+    transition: 0.3s ease-out;
 }
 .prekes-pirkimas-2{
     width: 150px;
@@ -1424,7 +1424,7 @@ section{
     background-color: darkgrey;
     font-size: 17px;
     cursor: pointer;
-    transition: .3s;
+    transition: .3s ease-out;
 }
 .prekes-pirkimas-2 button:hover{
     background-color: lightgrey;
@@ -1448,7 +1448,7 @@ section{
 }
 .parduotuve p{
     color: black;
-    transition: 0.3s;
+    transition: 0.3s ease-out;
 }
 .preke a{
     text-decoration: none;
@@ -1460,7 +1460,7 @@ section{
     margin: 5px;
     padding: 20px;
     display: inline-block;
-    transition: .3s;
+    transition: 0.3s ease-out;
     vertical-align: top;
     overflow: hidden;
     border-radius: 15px;
@@ -1480,7 +1480,7 @@ section{
     width: 150px;
     height: 150px;
     margin-top: 15px;
-    transition: 0.3s;
+    transition: 0.3s ease-out;
     border-radius: 15px;
 }
 .preke:hover img{
@@ -1489,7 +1489,7 @@ section{
 .readMore{
     color: darkgrey; 
     cursor: pointer;
-    transition: 0.3s;
+    transition: 0.3s ease-out;
 }
 .readMore:hover{
     color: black;
@@ -1523,7 +1523,7 @@ section{
     background-color: black;
     font-size: 17px;
     cursor: pointer;
-    transition: .3s;
+    transition: .3s ease-out;
 }
 .prekes-pirkimas button:hover{
     background-color: lightgrey;
@@ -1552,7 +1552,7 @@ h4{
     margin: 10px;
     margin-bottom: 50px;
     font-weight: 500;
-    transition: 0.3s;
+    transition: 0.3s ease-out;
     cursor: default;
 }
 .klaida{
@@ -1568,7 +1568,7 @@ h4{
     font-family: 'Poppins', sans-serif; 
     cursor: pointer; 
     font-size: 15px;
-    transition: 0.3s;
+    transition: 0.3s ease-out;
     color: white;
 }
 .klaida:hover{
@@ -1593,7 +1593,7 @@ h4{
     margin: 0 auto;
   border-radius: 15px 15px 0 0;
     z-index: 25;
-    transition: 0.3s;
+    transition: 0.3s ease-out;
     cursor: default;
 }
 #klaidos-langas:hover{
@@ -1611,7 +1611,7 @@ h4{
     top: 0;
     left: 0;
     bottom: 0;
-    transition: 0.3s;
+    transition: 0.3s ease-out;
 }
 #taisykliu-langas{
     width: 90%;
@@ -1626,7 +1626,7 @@ h4{
     color: black;
     margin: 0 auto;
   margin-top: 20px;
-    transition: 0.3s;
+    transition: 0.3s ease-out;
     border-radius: 15px;
 }
 #taisykliu-langas li{
@@ -1650,7 +1650,7 @@ h4{
     top: 0;
     left: 0;
     bottom: 0;
-    transition: 0.3s;
+    transition: 0.3s ease-out;
 }
 #slapukai{
     width: 90%;
@@ -1665,7 +1665,7 @@ h4{
     color: black;
     margin: 0 auto;
   margin-top: 20px;
-    transition: 0.3s;
+    transition: 0.3s ease-out;
     border-radius: 15px;
 }
 #slapukai p{
@@ -1686,7 +1686,7 @@ h4{
     top: 0;
     left: 0;
     bottom: 0;
-    transition: 0.3s;
+    transition: 0.3s ease-out;
 }
 #matthew {
     width: 350px;
@@ -1706,7 +1706,7 @@ h4{
     margin: 0 auto;
   border-radius: 15px 15px 0 0;
     z-index: 25;
-    transition: 0.3s;
+    transition: 0.3s ease-out;
 }
 #matthew:hover{
     border-radius: 25px 25px 0 0;
@@ -1721,7 +1721,7 @@ h4{
     background-color: transparent;
     color: darkseagreen;
     font-size: 17px;
-    transition: 0.3s;
+    transition: 0.3s ease-out;
     display: inline-block;
     cursor: pointer;
 }
@@ -1736,7 +1736,7 @@ h4{
     background-color: transparent;
     color: red;
     font-size: 17px;
-    transition: 0.3s;
+    transition: 0.3s ease-out;
     display: inline-block;
     cursor: pointer;
 }
@@ -1753,7 +1753,7 @@ h4{
     top: 0;
     left: 0;
     bottom: 0;
-    transition: 0.3s;
+    transition: 0.3s ease-out;
 }
 #sekimas{
     width: 90%;
@@ -1768,7 +1768,7 @@ h4{
     color: black;
     margin: 0 auto;
   margin-top: 20px;
-    transition: 0.3s;
+    transition: 0.3s ease-out;
     border-radius: 15px;
 }
 #help{
@@ -1784,7 +1784,7 @@ h4{
     cursor: pointer;
     border-radius: 0 0 15px 0;
     background-color: azure;
-    transition: 0.3s;
+    transition: 0.3s ease-out;
 }
 #help:hover{
     background-color: lightgrey;
@@ -1799,7 +1799,7 @@ h4{
     top: 0;
     left: 0;
     bottom: 0;
-    transition: 0.3s;
+    transition: 0.3s ease-out;
 }
 .form-group{
     width: 100%;
@@ -1828,9 +1828,26 @@ h4{
     background-color: white;
     margin-top: 50px;
     margin-bottom: 20px;
-    transition: .2s;
+    transition: 0.3s ease-out;
     box-shadow: 0 0 10px darkgrey;
     border-radius: 15px;
+}
+#matthewRedirect{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: azure;
+    z-index: 50;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.3s ease-out;
+    opacity: 0;
 }
 button[type="button"]{
     width: 100%;
@@ -1844,7 +1861,7 @@ button[type="button"]{
     text-align: center;
     cursor: pointer;
     margin-top: 10px;
-    transition: 0.3s;
+    transition: 0.3s ease-out;
     background-color: lightgrey;
     padding: 5px;
 }
@@ -1857,7 +1874,7 @@ button[type="button"] div{
     justify-content: center; 
     align-items: center;  
     margin-right: 10px;
-    transition: 0.3s;
+    transition: 0.3s ease-out;
 }
 button[type="button"]:hover div{
     background-color: azure;

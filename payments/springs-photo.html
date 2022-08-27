@@ -13,7 +13,7 @@
 <body onload="loadFunction()">
     <section>
         <div id="screen">
-            <p style="position: absolute; font-size: 13px; color: red; transition: 0.3s; margin-top: -2000px;" id="wifi"><i class="fa-solid fa-wifi"></i> Poor internet connection</p>
+            <p style="position: absolute; font-size: 13px; color: red; transition: 0.3s ease-out; margin-top: -2000px;" id="wifi"><i class="fa-solid fa-wifi"></i> Poor internet connection</p>
             <div style="width: 120px; height: 120px; border-radius: 100%; box-shadow: 5px 0 10px darkgray; display: flex; justify-content: center; align-items: center; animation: spin 1s linear infinite;"></div>
             <img src="photos/logo.png" alt="Moon_astec" width="100px" height="100px" style="position: absolute;">
         </div>
@@ -183,14 +183,16 @@
                 <i class="fas fa-times" id="closing" onclick="pavykoClose()"></i>
                     <h1 style="margin: 20px; color: darkseagreen;"><i class="fas fa-check-square" style="color: darkseagreen; margin: 10px; margin-top: 60px;"></i>Order request sent</h1>
                     <h1 style="margin: 20px; color: slategray;">You will receive a confirmation email soon.</h1>
-                    <h1 style="text-align: center; margin-top: 20px;">What to do after the payment?</h1>
-                    <p style="width: 50%; margin: 40px auto;">1. After payment confirmation you will get an automatic confirmation email to the email you entered, which will show your order number.</p>
+                    <h1 style="text-align: center; margin-top: 20px;">What to do after placing the order?</h1>
+                    <p style="width: 50%; margin: 40px auto;">1. After order confirmation you will get a confirmation email to the email you entered.</p>
                     <p style="width: 50%; margin: 40px auto; color: red;">2. By replying to the email you'll have to specify painting you want.</p>
-                    <p style="width: 50%; margin: 40px auto;">3. After that (in 5 days), you will get another email, in which you will get a payment method and confirm your data.</p>
-                    <p style="width: 50%; margin: 40px auto;">4. After paying for the order, we will send it to you in 5 days (if in stock) through your selected shipping method.</p>
+                    <p style="width: 50%; margin: 40px auto;">3. After that (in 5 business days), you will get another email, in which you will get a payment information and confirm your data.</p>
+                    <p style="width: 50%; margin: 40px auto;">4. After paying for the order, we will send it to you in 5 business days (if in stock) via your selected shipping method.</p>
                     <p style="width: 50%; margin: 40px auto; color: darkgray;">You also can leave a review for us after the item has been delivered: write you name, last name, email and rating 1-5 to <a href="mailto: moon.astec.shop@gmail.com" style="color: blue; text-decoration: underline;">our email</a>.</p>
+                    <p class="emailError" onclick="emailShow()">Didn't receive the confirmation email?</p>
+                    <div style="width: 100%; height: auto; padding-top: 10px; padding-bottom: 10px; background-color: azure; box-shadow: 0 0 15px darkgrey; border-radius: 15px; margin: 12px; margin-bottom: 0; margin-left: 0; transition: 0.3s ease-out; opacity: 0; display: none;" id="emailErrorInfo"><p style="margin-bottom: 5px;">the confirmation email may take up to 1 business day to be sent to you.</p><p>if you do not receive any email from us within 1 business day from your purchase, please <a href="mailto: moon.astec.shop@gmail.com" style="color: blue; text-decoration: underline;">email us</a> your name and email and we will sort everything out for you.</p></div>
             </div>
-            <p id="nepavyko" style="color: red; text-align: center; position: fixed; top: -250px; width: 100%; height: 50px; overflow: hidden; transition: 0.3s; display: flex; justify-content: center; align-items: center; background-color: azure; z-index: 15;">Order request not sent, try again.</p>
+            <p id="nepavyko" style="color: red; text-align: center; position: fixed; top: -250px; width: 100%; height: 50px; overflow: hidden; transition: 0.3s ease-out; display: flex; justify-content: center; align-items: center; background-color: azure; z-index: 15;">Order request not sent, try again.</p>
      <form action="https://moonastec.github.io/en/main">
       <div class="grizti"><button><i class="fas fa-arrow-left"></i></button></div>
       </form>
@@ -230,7 +232,7 @@
         </div>
         <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
             <p><i class="fa-solid fa-arrow-down-1-9"></i> Amount</p>
-            <input type="number" id="amount" name="amount" value="1" required style="width: 100px; border: 2px solid black;">
+            <input type="number" id="amount" name="amount" value="1" required style="width: 100px; border: 2px solid darkgrey;">
         </div>
         <button onclick="next()" id="next">Continue</button>
     </div>
@@ -325,8 +327,8 @@
               <input type="checkbox" id="myCheck" onclick="myFunction()" required>
               <span class="slider round"></span>
             </label>
-            <div style="width: 80px; height: 80px; border-radius: 100%; background-color: white; display: flex; justify-content: center; align-items: center; position: absolute; margin-top: -60px; margin-left: -6px; transition: 0.3s; opacity: 0; z-index: -1" id="confirm">
-                <div style="width: 50px; height: 50px; border-radius: 100%; box-shadow: 2px 0 4px darkgray; display: flex; transition: 0.3s; justify-content: center; align-items: center; animation: spin 1s linear infinite;"></div>
+            <div style="width: 80px; height: 80px; border-radius: 100%; background-color: white; display: flex; justify-content: center; align-items: center; position: absolute; margin-top: -60px; margin-left: -6px; transition: 0.3s ease-out; opacity: 0; z-index: -1" id="confirm">
+                <div style="width: 50px; height: 50px; border-radius: 100%; box-shadow: 2px 0 4px darkgray; display: flex; transition: 0.3s ease-out; justify-content: center; align-items: center; animation: spin 1s linear infinite;"></div>
              </div>
             <p style="margin: 10px; display: inline-block">I'm not a robot</p>
                     <div style="width: 70px; height: 70px; border-radius: 50px; background-color: white; display: none; justify-content: center; align-items: center; position: absolute; margin-top: -55px; margin-left: -1px;" id="ok">
@@ -337,7 +339,7 @@
                   <p class="taisykle">By continuing you agree to <a onclick="openForm()" style="cursor: pointer; color: blue; text-decoration-line: underline;">rules of purchase</a></p>
                 </div>
                 <div class="flex">
-                <button id="toliau" type="submit"><div><i class="fas fa-check" style="font-size: 35px; color: darkseagreen;" id="check"></i><div style="width: 50px; height: 50px; border-radius: 100%; box-shadow: 2px 0 4px darkgray; display: none; transition: 0.3s; justify-content: center; align-items: center; animation: spin 1s linear infinite; margin: 5px;" id="clock"></div></div></button>
+                <button id="toliau" type="submit"><div><i class="fas fa-check" style="font-size: 35px; color: darkseagreen;" id="check"></i><div style="width: 50px; height: 50px; border-radius: 100%; box-shadow: 2px 0 4px darkgray; display: none; transition: 0.3s ease-out; justify-content: center; align-items: center; animation: spin 1s linear infinite; margin: 5px;" id="clock"></div></div></button>
                 </div>
             </form>
         </div>

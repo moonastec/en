@@ -15,7 +15,7 @@
         .pastas {
             color: black;
             text-decoration: none;
-            transition: .3s;
+            transition: 0.3s ease-out;
         }
 
         .pastas:hover {
@@ -34,7 +34,7 @@
   right:  20px;
   width: 160px;
     height: 60px;
-    transition: .3s;
+    transition: 0.3s ease-out;
     font-size: 35px;
     border-radius: 15px;
     padding: 0;
@@ -71,7 +71,7 @@
         right:  20px;
         width: 110px;
           height: 60px;
-          transition: .3s;
+          transition: 0.3s ease-out;
           font-size: 35px;
           border-radius: 15px;
           color: white;
@@ -86,7 +86,7 @@
         margin: 0 auto; 
       font-weight: 900; 
       color: red;
-      transition: .3s;
+      transition: 0.3s ease-out;
       }
             #open-button2:hover{
                   background-color: red;
@@ -103,7 +103,7 @@
   }
     </style>
     <div id="screen">
-        <p style="position: absolute; font-size: 13px; cursor: default; color: red; transition: 0.3s; margin-top: -2000px;" id="wifi"><i class="fa-solid fa-wifi"></i> Poor internet connection</p>
+        <p style="position: absolute; font-size: 13px; cursor: default; color: red; transition: 0.3s ease-out; margin-top: -2000px;" id="wifi"><i class="fa-solid fa-wifi"></i> Poor internet connection</p>
         <div style="width: 120px; height: 120px; border-radius: 100%; box-shadow: 5px 0 10px darkgrey; display: flex; justify-content: center; align-items: center; animation: spin 1s linear infinite;"></div>
         <img src="photos/logo.png" alt="Moon_astec" width="100px" height="100px" style="position: absolute;">
         <p onclick="loadFunction()" id="skip">Skip and show partially loaded page? <i class="fa-solid fa-arrow-right-long"></i></p>
@@ -119,7 +119,7 @@
         </div>
     </div>
     <nav id="navbar">
-        <form action="https://moonastec.github.io/en/pagrindinis">
+        <form action="https://moonastec.github.io/en/main">
         <button style="border: none; background-color: transparent; cursor: pointer;"><img src="photos/logo.png" alt="Moon_astec&#9789;"></button>
         </form>
         <ul>
@@ -175,8 +175,8 @@
     <div id="back" onclick="mobileMenuClose()"></div>
     <header class="header1" id="start">
         <div class="layer" id="layer">
-            <h1 style="transition: .3s ease-out; margin-left: -700px; opacity: 0.1;" id="h1">Moon_astec☽</h1>
-            <h2 style="transition: .3s ease-out; margin-left: -700px; opacity: 0.1;" id="h2">Main page</h2>
+            <h1 style="transition: 0.3s ease-out; margin-left: -700px; opacity: 0.1;" id="h1">Moon_astec☽</h1>
+            <h2 style="transition: 0.3s ease-out; margin-left: -700px; opacity: 0.1;" id="h2">Main page</h2>
             <div class="banga banga1"></div>
             <div class="banga banga2"></div>
             <div class="banga banga3"></div>
@@ -216,15 +216,15 @@
                 <p id="cookiesError" style="color: red; display: none; margin-top: 10px;">Error! Try again.</p>
                 <div class="buttons">
                     <button class="item" style="font-family: 'Poppins', sans-serif;">I understand</button>
-                    <div style="width: 50px; height: 50px; border-radius: 100%; box-shadow: 2px 0 4px darkgrey; display: flex; opacity: 0; transition: 0.3s; justify-content: center; align-items: center; animation: spin 1s linear infinite;" id="cookieLoader"></div>
+                    <div style="width: 50px; height: 50px; border-radius: 100%; box-shadow: 2px 0 4px darkgrey; display: flex; opacity: 0; transition: 0.3s ease-out; justify-content: center; align-items: center; animation: spin 1s linear infinite;" id="cookieLoader"></div>
                     <a  onclick="cookies()" class="item">Learn more</a>
                 </div>
             </div>
         </div>
         <!--slapuku pabaiga-->
 
-        <button id="open-button" onclick="openForm()"><i class="fa-solid fa-question" style="transition: 0.3s; position: absolute; left: 15px; background-color: lightgrey;"></i><p style="position: absolute; right: 20px; font-size: 15px; opacity: 1; display: block;" id="helpie">Need help?</p></button>
-        <button id="open-button2" onclick="closeForm()"><i class="fa-solid fa-xmark" style="transition: 0.3s; position: absolute; left: 13px;" id="closeHelp"></i><p style="position: absolute; right: 13px; font-size: 15px; opacity: 1; display: block;" id="helpie2">Close</p></button></button>
+        <button id="open-button" onclick="openForm()"><i class="fa-solid fa-question" style="transition: 0.3s ease-out; position: absolute; left: 15px; background-color: lightgrey;"></i><p style="position: absolute; right: 20px; font-size: 15px; opacity: 1; display: block;" id="helpie">Need help?</p></button>
+        <button id="open-button2" onclick="closeForm()"><i class="fa-solid fa-xmark" style="transition: 0.3s ease-out; position: absolute; left: 13px;" id="closeHelp"></i><p style="position: absolute; right: 13px; font-size: 15px; opacity: 1; display: block;" id="helpie2">Close</p></button></button>
         <div class="chat-popup" id="myForm">
             <div class="form-container">
                 <h1 style="margin-bottom: 10px; font-size: 20px; text-align: center; margin-top: 10px;">Help</h1>
@@ -247,15 +247,15 @@
                 <i class="fas fa-times" id="closing" onclick="closeForm4()"></i>
                 <h5 style="color: black; font-size: 20px; margin: 20px; margin-top: 70px;">Summer sugar scrub</h5>
                 
-                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: flex; opacity: 1; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s;" id="photo85">
+                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: flex; opacity: 1; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s ease-out;" id="photo85">
                     <img src="photos/scrub.jpg" alt="Summer sugar scrub" id="showPhoto" class="prekes-nuotrauka-2">
                 </div>
 
-                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s;" id="photo86">
+                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s ease-out;" id="photo86">
                     <img src="photos/scrub2.jpg" alt="Summer sugar scrub" id="showPhoto" class="prekes-nuotrauka-2">
                 </div>
 
-                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s;" id="photo87">
+                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s ease-out;" id="photo87">
                     <img src="photos/scrub3.jpg" alt="Summer sugar scrub" id="showPhoto" class="prekes-nuotrauka-2">
                 </div>
                 <div style="display: flex; justify-content: center; align-items: center; width: 240px; margin: 0 auto;">
@@ -278,15 +278,15 @@
                 <i class="fas fa-times" id="closing" onclick="closeForm5()"></i>
                 <h5 style="color: black; font-size: 20px; margin: 20px; margin-top: 70px;">Cloud earrings</h5>
 
-                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: flex; opacity: 1; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s;" id="photo7">
+                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: flex; opacity: 1; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s ease-out;" id="photo7">
                     <img src="photos/auskarai.jpg" alt="Cloud earrings"id="showPhoto" class="prekes-nuotrauka-2">
                 </div>
 
-                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s;" id="photo8">
+                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s ease-out;" id="photo8">
                     <img src="photos/auskarai2.jpg" alt="Cloud earrings"id="showPhoto" class="prekes-nuotrauka-2">
                 </div>
 
-                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s;" id="photo9">
+                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s ease-out;" id="photo9">
                     <img src="photos/auskarai3.jpg" alt="Cloud earrings"id="showPhoto" class="prekes-nuotrauka-2">
                 </div>
                 <div style="display: flex; justify-content: center; align-items: center; width: 240px; margin: 0 auto;">
@@ -309,15 +309,15 @@
                 <i class="fas fa-times" id="closing" onclick="closeForm11()"></i>
                 <h5 style="color: black; font-size: 20px; margin: 20px; margin-top: 70px;">Lip scrub</h5>
 
-                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: flex; opacity: 1; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s;" id="photo1">
+                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: flex; opacity: 1; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s ease-out;" id="photo1">
                     <img src="photos/lupu-scrub.jpg" alt="Lip scrub"id="showPhoto" class="prekes-nuotrauka-2">
                 </div>
 
-                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s;" id="photo2">
+                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s ease-out;" id="photo2">
                     <img src="photos/lupu-scrub2.jpg" alt="Lip scrub"id="showPhoto" class="prekes-nuotrauka-2">
                 </div>
 
-                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s;" id="photo3">
+                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s ease-out;" id="photo3">
                     <img src="photos/lupu-scrub3.jpg" alt="Lip scrub"id="showPhoto" class="prekes-nuotrauka-2">
                 </div>
                 <div style="display: flex; justify-content: center; align-items: center; width: 240px; margin: 0 auto;">
@@ -340,15 +340,15 @@
                 <i class="fas fa-times" id="closing" onclick="closeForm34()"></i>
                 <h5 style="color: black; font-size: 20px; margin: 20px; margin-top: 70px;">Beauty elixir</h5>
 
-                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: flex; opacity: 1; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s;" id="photo73">
+                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: flex; opacity: 1; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s ease-out;" id="photo73">
                     <img src="photos/eliksyras.jpg" alt="Beauty elixir"id="showPhoto" class="prekes-nuotrauka-2">
                 </div>
 
-                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s;" id="photo74">
+                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s ease-out;" id="photo74">
                     <img src="photos/eliksyras2.jpg" alt="Beauty elixir"id="showPhoto" class="prekes-nuotrauka-2">
                 </div>
 
-                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s;" id="photo75">
+                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s ease-out;" id="photo75">
                     <img src="photos/eliksyras3.jpg" alt="Beauty elixir"id="showPhoto" class="prekes-nuotrauka-2">
                 </div>
                 <div style="display: flex; justify-content: center; align-items: center; width: 240px; margin: 0 auto;">
@@ -371,15 +371,15 @@
                 <i class="fas fa-times" id="closing" onclick="closeForm36()"></i>
                 <h5 style="color: black; font-size: 20px; margin: 20px; margin-top: 70px;">Hair band</h5>
 
-                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: flex; opacity: 1; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s;" id="photo79">
+                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: flex; opacity: 1; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s ease-out;" id="photo79">
                     <img src="photos/gumyte.jpg" alt="Hair band"id="showPhoto" class="prekes-nuotrauka-2">
                 </div>
 
-                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s;" id="photo80">
+                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s ease-out;" id="photo80">
                     <img src="photos/gumyte2.jpg" alt="Hair band"id="showPhoto" class="prekes-nuotrauka-2">
                 </div>
 
-                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s;" id="photo81">
+                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s ease-out;" id="photo81">
                     <img src="photos/gumyte3.jpg" alt="Hair band"id="showPhoto" class="prekes-nuotrauka-2">
                 </div>
                 <div style="display: flex; justify-content: center; align-items: center; width: 240px; margin: 0 auto;">
@@ -402,15 +402,15 @@
                 <i class="fas fa-times" id="closing" onclick="closeForm38()"></i>
                 <h5 style="color: black; font-size: 20px; margin: 20px; margin-top: 70px;">Happiness bracelet</h5>
 
-                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: flex; opacity: 1; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s;" id="photo91">
+                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: flex; opacity: 1; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s ease-out;" id="photo91">
                     <img src="photos/apyranke.jpg" alt="Happiness bracelet"id="showPhoto" class="prekes-nuotrauka-2">
                 </div>
 
-                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s;" id="photo92">
+                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s ease-out;" id="photo92">
                     <img src="photos/apyranke2.jpg" alt="Happiness bracelet"id="showPhoto" class="prekes-nuotrauka-2">
                 </div>
 
-                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s;" id="photo93">
+                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s ease-out;" id="photo93">
                     <img src="photos/apyranke3.jpg" alt="Happiness bracelet"id="showPhoto" class="prekes-nuotrauka-2">
                 </div>
                 <div style="display: flex; justify-content: center; align-items: center; width: 240px; margin: 0 auto;">
@@ -433,15 +433,15 @@
                 <i class="fas fa-times" id="closing" onclick="closeForm6()"></i>
                 <h5 style="color: black; font-size: 20px; margin: 20px; margin-top: 70px;">Stickers</h5>
                 
-                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: flex; opacity: 1; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s;" id="photo31">
+                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: flex; opacity: 1; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s ease-out;" id="photo31">
                     <img src="photos/lipdukas.jpg" alt="Stickers"id="showPhoto" class="prekes-nuotrauka-2">
                 </div>
 
-                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s;" id="photo32">
+                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s ease-out;" id="photo32">
                     <img src="photos/lipdukas2.jpg" alt="Stickers"id="showPhoto" class="prekes-nuotrauka-2">
                 </div>
 
-                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s;" id="photo33">
+                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s ease-out;" id="photo33">
                     <img src="photos/lipdukas3.jpg" alt="Stickers"id="showPhoto" class="prekes-nuotrauka-2">
                 </div>
 
@@ -464,15 +464,15 @@
                 <i class="fas fa-times" id="closing" onclick="closeForm7()"></i>
                 <h5 style="color: black; font-size: 20px; margin: 20px; margin-top: 70px;">Portrait</h5>
                 
-                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: flex; opacity: 1; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s;" id="photo37">
+                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: flex; opacity: 1; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s ease-out;" id="photo37">
                     <img src="photos/love.jpg" alt="Portrait"id="showPhoto" class="prekes-nuotrauka-2">
                 </div>
 
-                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s;" id="photo38">
+                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s ease-out;" id="photo38">
                     <img src="photos/love2.jpg" alt="Portrait"id="showPhoto" class="prekes-nuotrauka-2">
                 </div>
 
-                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s;" id="photo39">
+                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s ease-out;" id="photo39">
                     <img src="photos/love3.jpg" alt="Portrait"id="showPhoto" class="prekes-nuotrauka-2">
                 </div>
 
@@ -495,15 +495,15 @@
                 <i class="fas fa-times" id="closing" onclick="closeForm20()"></i>
                 <h5 style="color: black; font-size: 20px; margin: 20px; margin-top: 70px;">Moon on a canvas</h5>
 
-                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: flex; opacity: 1; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s;" id="photo19">
+                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: flex; opacity: 1; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s ease-out;" id="photo19">
                     <img src="photos/menulis.jpg" alt="Moon on a canvas"id="showPhoto" class="prekes-nuotrauka-2">
                 </div>
 
-                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s;" id="photo20">
+                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s ease-out;" id="photo20">
                     <img src="photos/menulis2.jpg" alt="Moon on a canvas"id="showPhoto" class="prekes-nuotrauka-2">
                 </div>
 
-                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s;" id="photo21">
+                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s ease-out;" id="photo21">
                     <img src="photos/menulis3.jpg" alt="Moon on a canvas"id="showPhoto" class="prekes-nuotrauka-2">
                 </div>
                 <div style="display: flex; justify-content: center; align-items: center; width: 240px; margin: 0 auto;">
@@ -525,15 +525,15 @@
                 <i class="fas fa-times" id="closing" onclick="closeForm22()"></i>
                 <h5 style="color: black; font-size: 20px; margin: 20px; margin-top: 70px;">Spring's photo</h5>
 
-                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: flex; opacity: 1; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s;" id="photo25">
+                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: flex; opacity: 1; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s ease-out;" id="photo25">
                     <img src="photos/pavasaris.jpg" alt="Spring's photo"id="showPhoto" class="prekes-nuotrauka-2">
                 </div>
 
-                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s;" id="photo26">
+                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s ease-out;" id="photo26">
                     <img src="photos/pavasaris2.jpg" alt="Spring's photo"id="showPhoto" class="prekes-nuotrauka-2">
                 </div>
 
-                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s;" id="photo27">
+                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s ease-out;" id="photo27">
                     <img src="photos/pavasaris3.jpg" alt="Spring's photo"id="showPhoto" class="prekes-nuotrauka-2">
                 </div>
                 <div style="display: flex; justify-content: center; align-items: center; width: 240px; margin: 0 auto;">
@@ -556,15 +556,15 @@
                 <i class="fas fa-times" id="closing" onclick="closeForm24()"></i>
                 <h5 style="color: black; font-size: 20px; margin: 20px; margin-top: 70px;">Letter's painting</h5>
 
-                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: flex; opacity: 1; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s;" id="photo43">
+                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: flex; opacity: 1; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s ease-out;" id="photo43">
                     <img src="photos/raide.jpg" alt="Letter's painting"id="showPhoto" class="prekes-nuotrauka-2">
                 </div>
 
-                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s;" id="photo44">
+                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s ease-out;" id="photo44">
                     <img src="photos/raide2.jpg" alt="Letter's painting"id="showPhoto" class="prekes-nuotrauka-2">
                 </div>
 
-                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s;" id="photo45">
+                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s ease-out;" id="photo45">
                     <img src="photos/raide3.jpg" alt="Letter's painting"id="showPhoto" class="prekes-nuotrauka-2">
                 </div>
                 <div style="display: flex; justify-content: center; align-items: center; width: 240px; margin: 0 auto;">
@@ -587,15 +587,15 @@
                 <i class="fas fa-times" id="closing" onclick="closeForm26()"></i>
                 <h5 style="color: black; font-size: 20px; margin: 20px; margin-top: 70px;">Funny cloud</h5>
 
-                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: flex; opacity: 1; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s;" id="photo49">
+                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: flex; opacity: 1; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s ease-out;" id="photo49">
                     <img src="photos/debeselis.jpg" alt="Funny cloud"id="showPhoto" class="prekes-nuotrauka-2">
                 </div>
 
-                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s;" id="photo50">
+                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s ease-out;" id="photo50">
                     <img src="photos/debeselis2.jpg" alt="Funny cloud"id="showPhoto" class="prekes-nuotrauka-2">
                 </div>
 
-                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s;" id="photo51">
+                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s ease-out;" id="photo51">
                     <img src="photos/debeselis3.jpg" alt="Funny cloud"id="showPhoto" class="prekes-nuotrauka-2">
                 </div>
                 <div style="display: flex; justify-content: center; align-items: center; width: 240px; margin: 0 auto;">
@@ -618,15 +618,15 @@
                 <i class="fas fa-times" id="closing" onclick="closeForm30()"></i>
                 <h5 style="color: black; font-size: 20px; margin: 20px; margin-top: 70px;">Earphone holder</h5>
 
-                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: flex; opacity: 1; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s;" id="photo61">
+                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: flex; opacity: 1; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s ease-out;" id="photo61">
                     <img src="photos/ausines.jpg" alt="Earphone holder"id="showPhoto" class="prekes-nuotrauka-2">
                 </div>
 
-                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s;" id="photo62">
+                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s ease-out;" id="photo62">
                     <img src="photos/ausines2.jpg" alt="Earphone holder"id="showPhoto" class="prekes-nuotrauka-2">
                 </div>
 
-                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s;" id="photo63">
+                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s ease-out;" id="photo63">
                     <img src="photos/ausines3.jpg" alt="Earphone holder"id="showPhoto" class="prekes-nuotrauka-2">
                 </div>
                 <div style="display: flex; justify-content: center; align-items: center; width: 240px; margin: 0 auto;">
@@ -649,15 +649,15 @@
                 <i class="fas fa-times" id="closing" onclick="closeForm32()"></i>
                 <h5 style="color: black; font-size: 20px; margin: 20px; margin-top: 70px;">Clothespins</h5>
 
-                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: flex; opacity: 1; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s;" id="photo67">
+                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: flex; opacity: 1; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s ease-out;" id="photo67">
                     <img src="photos/segtukai.jpg" alt="Clothespins"id="showPhoto" class="prekes-nuotrauka-2">
                 </div>
 
-                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s;" id="photo68">
+                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s ease-out;" id="photo68">
                     <img src="photos/segtukai2.jpg" alt="Clothespins"id="showPhoto" class="prekes-nuotrauka-2">
                 </div>
 
-                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s;" id="photo69">
+                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s ease-out;" id="photo69">
                     <img src="photos/segtukai3.jpg" alt="Clothespins"id="showPhoto" class="prekes-nuotrauka-2">
                 </div>
                 <div style="display: flex; justify-content: center; align-items: center; width: 240px; margin: 0 auto;">
@@ -680,15 +680,15 @@
                 <i class="fas fa-times" id="closing" onclick="closeForm40()"></i>
                 <h5 style="color: black; font-size: 20px; margin: 20px; margin-top: 70px;">Magnets</h5>
 
-                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: flex; opacity: 1; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s;" id="photo97">
+                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: flex; opacity: 1; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s ease-out;" id="photo97">
                     <img src="photos/magnetai.jpg" alt="Magnets"id="showPhoto" class="prekes-nuotrauka-2">
                 </div>
 
-                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s;" id="photo98">
+                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s ease-out;" id="photo98">
                     <img src="photos/magnetai2.jpg" alt="Magnets"id="showPhoto" class="prekes-nuotrauka-2">
                 </div>
 
-                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s;" id="photo99">
+                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s ease-out;" id="photo99">
                     <img src="photos/magnetai3.jpg" alt="Magnets"id="showPhoto" class="prekes-nuotrauka-2">
                 </div>
                 <div style="display: flex; justify-content: center; align-items: center; width: 240px; margin: 0 auto;">
@@ -711,15 +711,15 @@
                 <i class="fas fa-times" id="closing" onclick="closeForm28()"></i>
                 <h5 style="color: black; font-size: 20px; margin: 20px; margin-top: 70px;">Music composition "Oceans"</h5>
 
-                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: flex; opacity: 1; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s;" id="photo55">
+                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: flex; opacity: 1; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s ease-out;" id="photo55">
                     <img src="photos/vandenynai.jpg" alt="Music composition Oceans"id="showPhoto" class="prekes-nuotrauka-2">
                 </div>
 
-                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s;" id="photo56">
+                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s ease-out;" id="photo56">
                     <img src="photos/vandenynai2.jpg" alt="Music composition Oceans"id="showPhoto" class="prekes-nuotrauka-2">
                 </div>
 
-                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s;" id="photo57">
+                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s ease-out;" id="photo57">
                     <img src="photos/vandenynai3.jpg" alt="Music composition Oceans"id="showPhoto" class="prekes-nuotrauka-2">
                 </div>
                 <div style="display: flex; justify-content: center; align-items: center; width: 240px; margin: 0 auto;">
@@ -747,19 +747,19 @@
                 <p class="prekes-kaina">10 Eur</p>
                 <p style="margin-bottom: 45px; font-size: 11px;"><b style="font-weight: 600;">Category:</b> beauty</p>
             </div>
-            <div style="width: 350px; height: 100%; background-color: azure; opacity: 1; position: fixed; display: flex; top: 0; bottom: 0; right: -400px; justify-content: center; align-items: center; flex-direction: column; z-index: 20; transition: 0.3s; overflow: hidden; border-radius: 15px 0 0 15px; box-shadow: 0 0 30px darkgrey;" id="perziura1">
+            <div style="width: 350px; height: 100%; background-color: azure; opacity: 1; position: fixed; display: flex; top: 0; bottom: 0; right: -400px; justify-content: center; align-items: center; flex-direction: column; z-index: 20; transition: 0.3s ease-out; overflow: hidden; border-radius: 15px 0 0 15px; box-shadow: 0 0 30px darkgrey;" id="perziura1">
                 <i class="fas fa-times" id="closing" onclick="closeForm15()"></i>
                 <h1 style="color: black; font-size: 20px; margin: 20px;">Summer sugar scrub</h1>
                 
-                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: flex; opacity: 1; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s;" id="photo88">
+                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: flex; opacity: 1; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s ease-out;" id="photo88">
                     <img src="photos/scrub.jpg" alt="Summer sugar scrub" id="showPhoto" class="prekes-nuotrauka-2">
                 </div>
 
-                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s;" id="photo89">
+                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s ease-out;" id="photo89">
                     <img src="photos/scrub2.jpg" alt="Summer sugar scrub" id="showPhoto" class="prekes-nuotrauka-2">
                 </div>
 
-                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s;" id="photo90">
+                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s ease-out;" id="photo90">
                     <img src="photos/scrub3.jpg" alt="Summer sugar scrub" id="showPhoto" class="prekes-nuotrauka-2">
                 </div>
                 <div style="display: flex; justify-content: center; align-items: center; width: 240px; margin: 0 auto;">
@@ -780,19 +780,19 @@
                 <p class="prekes-kaina">15 Eur</p>
                 <p style="margin-bottom: 45px; font-size: 11px;"><b style="font-weight: 600;">Category:</b> beauty</p>
             </div>
-            <div style="width: 350px; height: 100%; background-color: azure; opacity: 1; position: fixed; display: flex; top: 0; bottom: 0; right: -400px; justify-content: center; align-items: center; flex-direction: column; z-index: 20; transition: 0.3s; overflow: hidden; border-radius: 15px 0 0 15px; box-shadow: 0 0 30px darkgrey;" id="perziura2">
+            <div style="width: 350px; height: 100%; background-color: azure; opacity: 1; position: fixed; display: flex; top: 0; bottom: 0; right: -400px; justify-content: center; align-items: center; flex-direction: column; z-index: 20; transition: 0.3s ease-out; overflow: hidden; border-radius: 15px 0 0 15px; box-shadow: 0 0 30px darkgrey;" id="perziura2">
                 <i class="fas fa-times" id="closing" onclick="closeForm16()"></i>
                 <h1 style="color: black; font-size: 20px; margin: 20px;">Cloud earrings</h1>
 
-                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: flex; opacity: 1; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s;" id="photo13">
+                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: flex; opacity: 1; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s ease-out;" id="photo13">
                     <img src="photos/auskarai.jpg" alt="Cloud earrings"id="showPhoto" class="prekes-nuotrauka-2">
                 </div>
 
-                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s;" id="photo14">
+                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s ease-out;" id="photo14">
                     <img src="photos/auskarai2.jpg" alt="Cloud earrings"id="showPhoto" class="prekes-nuotrauka-2">
                 </div>
 
-                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s;" id="photo15">
+                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s ease-out;" id="photo15">
                     <img src="photos/auskarai3.jpg" alt="Cloud earrings"id="showPhoto" class="prekes-nuotrauka-2">
                 </div>
                 <div style="display: flex; justify-content: center; align-items: center; width: 240px; margin: 0 auto;">
@@ -812,19 +812,19 @@
                 <p class="prekes-kaina">7 Eur</p>
                 <p style="margin-bottom: 45px; font-size: 11px;"><b style="font-weight: 600;">Category:</b> beauty</p>
             </div>
-            <div style="width: 350px; height: 100%; background-color: azure; opacity: 1; position: fixed; display: flex; top: 0; bottom: 0; right: -400px; justify-content: center; align-items: center; flex-direction: column; z-index: 20; transition: 0.3s; overflow: hidden; border-radius: 15px 0 0 15px; box-shadow: 0 0 30px darkgrey;" id="perziura5">
+            <div style="width: 350px; height: 100%; background-color: azure; opacity: 1; position: fixed; display: flex; top: 0; bottom: 0; right: -400px; justify-content: center; align-items: center; flex-direction: column; z-index: 20; transition: 0.3s ease-out; overflow: hidden; border-radius: 15px 0 0 15px; box-shadow: 0 0 30px darkgrey;" id="perziura5">
                 <i class="fas fa-times" id="closing" onclick="closeForm19()"></i>
                 <h1 style="color: black; font-size: 20px; margin: 20px;">Lip scrub</h1>
 
-                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: flex; opacity: 1; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s;" id="photo16">
+                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: flex; opacity: 1; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s ease-out;" id="photo16">
                     <img src="photos/lupu-scrub.jpg" alt="Lip scrub"id="showPhoto" class="prekes-nuotrauka-2">
                 </div>
 
-                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s;" id="photo17">
+                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s ease-out;" id="photo17">
                     <img src="photos/lupu-scrub2.jpg" alt="Lip scrub"id="showPhoto" class="prekes-nuotrauka-2">
                 </div>
 
-                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s;" id="photo18">
+                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s ease-out;" id="photo18">
                     <img src="photos/lupu-scrub3.jpg" alt="Lip scrub"id="showPhoto" class="prekes-nuotrauka-2">
                 </div>
                 <div style="display: flex; justify-content: center; align-items: center; width: 240px; margin: 0 auto;">
@@ -844,19 +844,19 @@
                 <p class="prekes-kaina">10 Eur</p>
                 <p style="margin-bottom: 45px; font-size: 11px;"><b style="font-weight: 600;">Category:</b> beauty</p>
             </div>
-            <div style="width: 350px; height: 100%; background-color: azure; opacity: 1; position: fixed; display: flex; top: 0; bottom: 0; right: -400px; justify-content: center; align-items: center; flex-direction: column; z-index: 20; transition: 0.3s; overflow: hidden; border-radius: 15px 0 0 15px; box-shadow: 0 0 30px darkgrey;" id="perziura13">
+            <div style="width: 350px; height: 100%; background-color: azure; opacity: 1; position: fixed; display: flex; top: 0; bottom: 0; right: -400px; justify-content: center; align-items: center; flex-direction: column; z-index: 20; transition: 0.3s ease-out; overflow: hidden; border-radius: 15px 0 0 15px; box-shadow: 0 0 30px darkgrey;" id="perziura13">
                 <i class="fas fa-times" id="closing" onclick="closeForm35()"></i>
                 <h1 style="color: black; font-size: 20px; margin: 20px;">Beauty elixir</h1>
 
-                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: flex; opacity: 1; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s;" id="photo76">
+                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: flex; opacity: 1; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s ease-out;" id="photo76">
                     <img src="photos/eliksyras.jpg" alt="Beauty elixir"id="showPhoto" class="prekes-nuotrauka-2">
                 </div>
 
-                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s;" id="photo77">
+                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s ease-out;" id="photo77">
                     <img src="photos/eliksyras2.jpg" alt="Beauty elixir"id="showPhoto" class="prekes-nuotrauka-2">
                 </div>
 
-                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s;" id="photo78">
+                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s ease-out;" id="photo78">
                     <img src="photos/eliksyras3.jpg" alt="Beauty elixir"id="showPhoto" class="prekes-nuotrauka-2">
                 </div>
                 <div style="display: flex; justify-content: center; align-items: center; width: 240px; margin: 0 auto;">
@@ -876,19 +876,19 @@
                 <p class="prekes-kaina">5 Eur</p>
                 <p style="margin-bottom: 45px; font-size: 11px;"><b style="font-weight: 600;">Category:</b> beauty</p>
             </div>
-            <div style="width: 350px; height: 100%; background-color: azure; opacity: 1; position: fixed; display: flex; top: 0; bottom: 0; right: -400px; justify-content: center; align-items: center; flex-direction: column; z-index: 20; transition: 0.3s; overflow: hidden; border-radius: 15px 0 0 15px; box-shadow: 0 0 30px darkgrey;" id="perziura14">
+            <div style="width: 350px; height: 100%; background-color: azure; opacity: 1; position: fixed; display: flex; top: 0; bottom: 0; right: -400px; justify-content: center; align-items: center; flex-direction: column; z-index: 20; transition: 0.3s ease-out; overflow: hidden; border-radius: 15px 0 0 15px; box-shadow: 0 0 30px darkgrey;" id="perziura14">
                 <i class="fas fa-times" id="closing" onclick="closeForm37()"></i>
                 <h1 style="color: black; font-size: 20px; margin: 20px;">Hair band</h1>
 
-                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: flex; opacity: 1; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s;" id="photo82">
+                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: flex; opacity: 1; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s ease-out;" id="photo82">
                     <img src="photos/gumyte.jpg" alt="Hair band"id="showPhoto" class="prekes-nuotrauka-2">
                 </div>
 
-                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s;" id="photo83">
+                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s ease-out;" id="photo83">
                     <img src="photos/gumyte2.jpg" alt="Hair band"id="showPhoto" class="prekes-nuotrauka-2">
                 </div>
 
-                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s;" id="photo84">
+                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s ease-out;" id="photo84">
                     <img src="photos/gumyte3.jpg" alt="Hair band"id="showPhoto" class="prekes-nuotrauka-2">
                 </div>
                 <div style="display: flex; justify-content: center; align-items: center; width: 240px; margin: 0 auto;">
@@ -908,19 +908,19 @@
                 <p class="prekes-kaina">10 Eur</p>
                 <p style="margin-bottom: 45px; font-size: 11px;"><b style="font-weight: 600;">Category:</b> beauty</p>
             </div>
-            <div style="width: 350px; height: 100%; background-color: azure; opacity: 1; position: fixed; display: flex; top: 0; bottom: 0; right: -400px; justify-content: center; align-items: center; flex-direction: column; z-index: 20; transition: 0.3s; overflow: hidden; border-radius: 15px 0 0 15px; box-shadow: 0 0 30px darkgrey;" id="perziura15">
+            <div style="width: 350px; height: 100%; background-color: azure; opacity: 1; position: fixed; display: flex; top: 0; bottom: 0; right: -400px; justify-content: center; align-items: center; flex-direction: column; z-index: 20; transition: 0.3s ease-out; overflow: hidden; border-radius: 15px 0 0 15px; box-shadow: 0 0 30px darkgrey;" id="perziura15">
                 <i class="fas fa-times" id="closing" onclick="closeForm39()"></i>
                 <h1 style="color: black; font-size: 20px; margin: 20px;">Happiness bracelet</h1>
 
-                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: flex; opacity: 1; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s;" id="photo94">
+                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: flex; opacity: 1; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s ease-out;" id="photo94">
                     <img src="photos/apyranke.jpg" alt="Happiness bracelet"id="showPhoto" class="prekes-nuotrauka-2">
                 </div>
 
-                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s;" id="photo95">
+                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s ease-out;" id="photo95">
                     <img src="photos/apyranke2.jpg" alt="Happiness bracelet"id="showPhoto" class="prekes-nuotrauka-2">
                 </div>
 
-                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s;" id="photo96">
+                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s ease-out;" id="photo96">
                     <img src="photos/apyranke3.jpg" alt="Happiness bracelet"id="showPhoto" class="prekes-nuotrauka-2">
                 </div>
                 <div style="display: flex; justify-content: center; align-items: center; width: 240px; margin: 0 auto;">
@@ -940,19 +940,19 @@
                 <p class="prekes-kaina">5 Eur</p>
                 <p style="margin-bottom: 45px; font-size: 11px;"><b style="font-weight: 600;">Category:</b> decorations</p>
             </div>
-            <div style="width: 350px; height: 100%; background-color: azure; opacity: 1; position: fixed; display: flex; top: 0; bottom: 0; right: -400px; justify-content: center; align-items: center; flex-direction: column; z-index: 20; transition: 0.3s; overflow: hidden; border-radius: 15px 0 0 15px; box-shadow: 0 0 30px darkgrey;" id="perziura3">
+            <div style="width: 350px; height: 100%; background-color: azure; opacity: 1; position: fixed; display: flex; top: 0; bottom: 0; right: -400px; justify-content: center; align-items: center; flex-direction: column; z-index: 20; transition: 0.3s ease-out; overflow: hidden; border-radius: 15px 0 0 15px; box-shadow: 0 0 30px darkgrey;" id="perziura3">
                 <i class="fas fa-times" id="closing" onclick="closeForm17()"></i>
                 <h1 style="color: black; font-size: 20px; margin: 20px;">Stickers</h1>
                 
-                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: flex; opacity: 1; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s;" id="photo34">
+                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: flex; opacity: 1; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s ease-out;" id="photo34">
                     <img src="photos/lipdukas.jpg" alt="Stickers"id="showPhoto" class="prekes-nuotrauka-2">
                 </div>
 
-                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s;" id="photo35">
+                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s ease-out;" id="photo35">
                     <img src="photos/lipdukas2.jpg" alt="Stickers"id="showPhoto" class="prekes-nuotrauka-2">
                 </div>
 
-                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s;" id="photo36">
+                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s ease-out;" id="photo36">
                     <img src="photos/lipdukas3.jpg" alt="Stickers"id="showPhoto" class="prekes-nuotrauka-2">
                 </div>
 
@@ -973,19 +973,19 @@
                 <p class="prekes-kaina">18 Eur</p>
                 <p style="margin-bottom: 45px; font-size: 11px;"><b style="font-weight: 600;">Category:</b> decorations</p>
             </div>
-            <div style="width: 350px; height: 100%; background-color: azure; opacity: 1; position: fixed; display: flex; top: 0; bottom: 0; right: -400px; justify-content: center; align-items: center; flex-direction: column; z-index: 20; transition: 0.3s; overflow: hidden; border-radius: 15px 0 0 15px; box-shadow: 0 0 30px darkgrey;" id="perziura4">
+            <div style="width: 350px; height: 100%; background-color: azure; opacity: 1; position: fixed; display: flex; top: 0; bottom: 0; right: -400px; justify-content: center; align-items: center; flex-direction: column; z-index: 20; transition: 0.3s ease-out; overflow: hidden; border-radius: 15px 0 0 15px; box-shadow: 0 0 30px darkgrey;" id="perziura4">
                 <i class="fas fa-times" id="closing" onclick="closeForm18()"></i>
                 <h1 style="color: black; font-size: 20px; margin: 20px;">Portrait</h1>
                 
-                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: flex; opacity: 1; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s;" id="photo40">
+                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: flex; opacity: 1; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s ease-out;" id="photo40">
                     <img src="photos/love.jpg" alt="Portrait"id="showPhoto" class="prekes-nuotrauka-2">
                 </div>
 
-                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s;" id="photo41">
+                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s ease-out;" id="photo41">
                     <img src="photos/love2.jpg" alt="Portrait"id="showPhoto" class="prekes-nuotrauka-2">
                 </div>
 
-                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s;" id="photo42">
+                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s ease-out;" id="photo42">
                     <img src="photos/love3.jpg" alt="Portrait"id="showPhoto" class="prekes-nuotrauka-2">
                 </div>
 
@@ -1006,19 +1006,19 @@
                 <p class="prekes-kaina">12 Eur</p>
                 <p style="margin-bottom: 45px; font-size: 11px;"><b style="font-weight: 600;">Category:</b> decorations</p>
             </div>
-            <div style="width: 350px; height: 100%; background-color: azure; opacity: 1; position: fixed; display: flex; top: 0; bottom: 0; right: -400px; justify-content: center; align-items: center; flex-direction: column; z-index: 20; transition: 0.3s; overflow: hidden; border-radius: 15px 0 0 15px; box-shadow: 0 0 30px darkgrey;" id="perziura6">
+            <div style="width: 350px; height: 100%; background-color: azure; opacity: 1; position: fixed; display: flex; top: 0; bottom: 0; right: -400px; justify-content: center; align-items: center; flex-direction: column; z-index: 20; transition: 0.3s ease-out; overflow: hidden; border-radius: 15px 0 0 15px; box-shadow: 0 0 30px darkgrey;" id="perziura6">
                 <i class="fas fa-times" id="closing" onclick="closeForm21()"></i>
                 <h1 style="color: black; font-size: 20px; margin: 20px;">Moon on a canvas</h1>
 
-                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: flex; opacity: 1; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s;" id="photo22">
+                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: flex; opacity: 1; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s ease-out;" id="photo22">
                     <img src="photos/menulis.jpg" alt="MMoon on a canvas"id="showPhoto" class="prekes-nuotrauka-2">
                 </div>
 
-                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s;" id="photo23">
+                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s ease-out;" id="photo23">
                     <img src="photos/menulis2.jpg" alt="Moon on a canvas"id="showPhoto" class="prekes-nuotrauka-2">
                 </div>
 
-                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s;" id="photo24">
+                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s ease-out;" id="photo24">
                     <img src="photos/menulis3.jpg" alt="Moon on a canvas"id="showPhoto" class="prekes-nuotrauka-2">
                 </div>
                 <div style="display: flex; justify-content: center; align-items: center; width: 240px; margin: 0 auto;">
@@ -1038,19 +1038,19 @@
                 <p class="prekes-kaina">12 Eur</p>
                 <p style="margin-bottom: 45px; font-size: 11px;"><b style="font-weight: 600;">Category:</b> decorations</p>
             </div>
-            <div style="width: 350px; height: 100%; background-color: azure; opacity: 1; position: fixed; display: flex; top: 0; bottom: 0; right: -400px; justify-content: center; align-items: center; flex-direction: column; z-index: 20; transition: 0.3s; overflow: hidden; border-radius: 15px 0 0 15px; box-shadow: 0 0 30px darkgrey;" id="perziura7">
+            <div style="width: 350px; height: 100%; background-color: azure; opacity: 1; position: fixed; display: flex; top: 0; bottom: 0; right: -400px; justify-content: center; align-items: center; flex-direction: column; z-index: 20; transition: 0.3s ease-out; overflow: hidden; border-radius: 15px 0 0 15px; box-shadow: 0 0 30px darkgrey;" id="perziura7">
                 <i class="fas fa-times" id="closing" onclick="closeForm23()"></i>
                 <h1 style="color: black; font-size: 20px; margin: 20px;">Spring's photo</h1>
 
-                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: flex; opacity: 1; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s;" id="photo28">
+                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: flex; opacity: 1; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s ease-out;" id="photo28">
                     <img src="photos/pavasaris.jpg" alt="Spring's photo"id="showPhoto" class="prekes-nuotrauka-2">
                 </div>
 
-                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s;" id="photo29">
+                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s ease-out;" id="photo29">
                     <img src="photos/pavasaris2.jpg" alt="Spring's photo"id="showPhoto" class="prekes-nuotrauka-2">
                 </div>
 
-                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s;" id="photo30">
+                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s ease-out;" id="photo30">
                     <img src="photos/pavasaris3.jpg" alt="Spring's photo"id="showPhoto" class="prekes-nuotrauka-2">
                 </div>
                 <div style="display: flex; justify-content: center; align-items: center; width: 240px; margin: 0 auto;">
@@ -1070,19 +1070,19 @@
                 <p class="prekes-kaina">15 Eur</p>
                 <p style="margin-bottom: 45px; font-size: 11px;"><b style="font-weight: 600;">Category:</b> decorations</p>
             </div>
-            <div style="width: 350px; height: 100%; background-color: azure; opacity: 1; position: fixed; display: flex; top: 0; bottom: 0; right: -400px; justify-content: center; align-items: center; flex-direction: column; z-index: 20; transition: 0.3s; overflow: hidden; border-radius: 15px 0 0 15px; box-shadow: 0 0 30px darkgrey;" id="perziura8">
+            <div style="width: 350px; height: 100%; background-color: azure; opacity: 1; position: fixed; display: flex; top: 0; bottom: 0; right: -400px; justify-content: center; align-items: center; flex-direction: column; z-index: 20; transition: 0.3s ease-out; overflow: hidden; border-radius: 15px 0 0 15px; box-shadow: 0 0 30px darkgrey;" id="perziura8">
                 <i class="fas fa-times" id="closing" onclick="closeForm25()"></i>
                 <h1 style="color: black; font-size: 20px; margin: 20px;">Letter's painting</h1>
 
-                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: flex; opacity: 1; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s;" id="photo46">
+                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: flex; opacity: 1; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s ease-out;" id="photo46">
                     <img src="photos/raide.jpg" alt="Letter's painting"id="showPhoto" class="prekes-nuotrauka-2">
                 </div>
 
-                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s;" id="photo47">
+                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s ease-out;" id="photo47">
                     <img src="photos/raide2.jpg" alt="Letter's painting"id="showPhoto" class="prekes-nuotrauka-2">
                 </div>
 
-                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s;" id="photo48">
+                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s ease-out;" id="photo48">
                     <img src="photos/raide3.jpg" alt="Letter's painting"id="showPhoto" class="prekes-nuotrauka-2">
                 </div>
                 <div style="display: flex; justify-content: center; align-items: center; width: 240px; margin: 0 auto;">
@@ -1102,19 +1102,19 @@
                 <p class="prekes-kaina">8 Eur</p>
                 <p style="margin-bottom: 45px; font-size: 11px;"><b style="font-weight: 600;">Category:</b> decorations</p>
             </div>
-            <div style="width: 350px; height: 100%; background-color: azure; opacity: 1; position: fixed; display: flex; top: 0; bottom: 0; right: -400px; justify-content: center; align-items: center; flex-direction: column; z-index: 20; transition: 0.3s; overflow: hidden; border-radius: 15px 0 0 15px; box-shadow: 0 0 30px darkgrey;" id="perziura9">
+            <div style="width: 350px; height: 100%; background-color: azure; opacity: 1; position: fixed; display: flex; top: 0; bottom: 0; right: -400px; justify-content: center; align-items: center; flex-direction: column; z-index: 20; transition: 0.3s ease-out; overflow: hidden; border-radius: 15px 0 0 15px; box-shadow: 0 0 30px darkgrey;" id="perziura9">
                 <i class="fas fa-times" id="closing" onclick="closeForm27()"></i>
                 <h1 style="color: black; font-size: 20px; margin: 20px;">Funny cloud</h1>
 
-                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: flex; opacity: 1; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s;" id="photo52">
+                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: flex; opacity: 1; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s ease-out;" id="photo52">
                     <img src="photos/debeselis.jpg" alt="Funny cloud"id="showPhoto" class="prekes-nuotrauka-2">
                 </div>
 
-                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s;" id="photo53">
+                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s ease-out;" id="photo53">
                     <img src="photos/debeselis2.jpg" alt="Funny cloud"id="showPhoto" class="prekes-nuotrauka-2">
                 </div>
 
-                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s;" id="photo54">
+                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s ease-out;" id="photo54">
                     <img src="photos/debeselis3.jpg" alt="Funny cloud"id="showPhoto" class="prekes-nuotrauka-2">
                 </div>
                 <div style="display: flex; justify-content: center; align-items: center; width: 240px; margin: 0 auto;">
@@ -1134,19 +1134,19 @@
                 <p class="prekes-kaina">7 Eur</p>
                 <p style="margin-bottom: 45px; font-size: 11px;"><b style="font-weight: 600;">Category:</b> decorations</p>
             </div>
-            <div style="width: 350px; height: 100%; background-color: azure; opacity: 1; position: fixed; display: flex; top: 0; bottom: 0; right: -400px; justify-content: center; align-items: center; flex-direction: column; z-index: 20; transition: 0.3s; overflow: hidden; border-radius: 15px 0 0 15px; box-shadow: 0 0 30px darkgrey;" id="perziura11">
+            <div style="width: 350px; height: 100%; background-color: azure; opacity: 1; position: fixed; display: flex; top: 0; bottom: 0; right: -400px; justify-content: center; align-items: center; flex-direction: column; z-index: 20; transition: 0.3s ease-out; overflow: hidden; border-radius: 15px 0 0 15px; box-shadow: 0 0 30px darkgrey;" id="perziura11">
                 <i class="fas fa-times" id="closing" onclick="closeForm31()"></i>
                 <h1 style="color: black; font-size: 20px; margin: 20px;">Earphone holder</h1>
 
-                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: flex; opacity: 1; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s;" id="photo64">
+                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: flex; opacity: 1; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s ease-out;" id="photo64">
                     <img src="photos/ausines.jpg" alt="Earphone holder"id="showPhoto" class="prekes-nuotrauka-2">
                 </div>
 
-                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s;" id="photo65">
+                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s ease-out;" id="photo65">
                     <img src="photos/ausines2.jpg" alt="Earphone holder"id="showPhoto" class="prekes-nuotrauka-2">
                 </div>
 
-                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s;" id="photo66">
+                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s ease-out;" id="photo66">
                     <img src="photos/ausines3.jpg" alt="Earphone holder"id="showPhoto" class="prekes-nuotrauka-2">
                 </div>
                 <div style="display: flex; justify-content: center; align-items: center; width: 240px; margin: 0 auto;">
@@ -1166,19 +1166,19 @@
                 <p class="prekes-kaina">4 Eur</p>
                 <p style="margin-bottom: 45px; font-size: 11px;"><b style="font-weight: 600;">Category:</b> decorations</p>
             </div>
-            <div style="width: 350px; height: 100%; background-color: azure; opacity: 1; position: fixed; display: flex; top: 0; bottom: 0; right: -400px; justify-content: center; align-items: center; flex-direction: column; z-index: 20; transition: 0.3s; overflow: hidden; border-radius: 15px 0 0 15px; box-shadow: 0 0 30px darkgrey;" id="perziura12">
+            <div style="width: 350px; height: 100%; background-color: azure; opacity: 1; position: fixed; display: flex; top: 0; bottom: 0; right: -400px; justify-content: center; align-items: center; flex-direction: column; z-index: 20; transition: 0.3s ease-out; overflow: hidden; border-radius: 15px 0 0 15px; box-shadow: 0 0 30px darkgrey;" id="perziura12">
                 <i class="fas fa-times" id="closing" onclick="closeForm33()"></i>
                 <h1 style="color: black; font-size: 20px; margin: 20px;">Clothespins</h1>
 
-                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: flex; opacity: 1; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s;" id="photo70">
+                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: flex; opacity: 1; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s ease-out;" id="photo70">
                     <img src="photos/segtukai.jpg" alt="Clothespins"id="showPhoto" class="prekes-nuotrauka-2">
                 </div>
 
-                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s;" id="photo71">
+                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s ease-out;" id="photo71">
                     <img src="photos/segtukai2.jpg" alt="Clothespins"id="showPhoto" class="prekes-nuotrauka-2">
                 </div>
 
-                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s;" id="photo72">
+                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s ease-out;" id="photo72">
                     <img src="photos/segtukai3.jpg" alt="Clothespins"id="showPhoto" class="prekes-nuotrauka-2">
                 </div>
                 <div style="display: flex; justify-content: center; align-items: center; width: 240px; margin: 0 auto;">
@@ -1198,19 +1198,19 @@
                 <p class="prekes-kaina">7 Eur</p>
                 <p style="margin-bottom: 45px; font-size: 11px;"><b style="font-weight: 600;">Category:</b> decorations</p>
             </div>
-            <div style="width: 350px; height: 100%; background-color: azure; opacity: 1; position: fixed; display: flex; top: 0; bottom: 0; right: -400px; justify-content: center; align-items: center; flex-direction: column; z-index: 20; transition: 0.3s; overflow: hidden; border-radius: 15px 0 0 15px; box-shadow: 0 0 30px darkgrey;" id="perziura16">
+            <div style="width: 350px; height: 100%; background-color: azure; opacity: 1; position: fixed; display: flex; top: 0; bottom: 0; right: -400px; justify-content: center; align-items: center; flex-direction: column; z-index: 20; transition: 0.3s ease-out; overflow: hidden; border-radius: 15px 0 0 15px; box-shadow: 0 0 30px darkgrey;" id="perziura16">
                 <i class="fas fa-times" id="closing" onclick="closeForm41()"></i>
                 <h1 style="color: black; font-size: 20px; margin: 20px;">Magnets</h1>
 
-                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: flex; opacity: 1; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s;" id="photo100">
+                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: flex; opacity: 1; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s ease-out;" id="photo100">
                     <img src="photos/magnetai.jpg" alt="Magnets"id="showPhoto" class="prekes-nuotrauka-2">
                 </div>
 
-                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s;" id="photo101">
+                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s ease-out;" id="photo101">
                     <img src="photos/magnetai2.jpg" alt="Magnets"id="showPhoto" class="prekes-nuotrauka-2">
                 </div>
 
-                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s;" id="photo102">
+                <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s ease-out;" id="photo102">
                     <img src="photos/magnetai3.jpg" alt="Magnets"id="showPhoto" class="prekes-nuotrauka-2">
                 </div>
                 <div style="display: flex; justify-content: center; align-items: center; width: 240px; margin: 0 auto;">
@@ -1230,19 +1230,19 @@
                     <p class="prekes-kaina">20 Eur</p>
                     <p style="margin-bottom: 45px; font-size: 11px;"><b style="font-weight: 600;">Category:</b> music</p>
                 </div>
-                <div style="width: 350px; height: 100%; background-color: azure; opacity: 1; position: fixed; display: flex; top: 0; bottom: 0; right: -400px; justify-content: center; align-items: center; flex-direction: column; z-index: 20; transition: 0.3s; overflow: hidden; border-radius: 15px 0 0 15px; box-shadow: 0 0 30px darkgrey;" id="perziura10">
+                <div style="width: 350px; height: 100%; background-color: azure; opacity: 1; position: fixed; display: flex; top: 0; bottom: 0; right: -400px; justify-content: center; align-items: center; flex-direction: column; z-index: 20; transition: 0.3s ease-out; overflow: hidden; border-radius: 15px 0 0 15px; box-shadow: 0 0 30px darkgrey;" id="perziura10">
                     <i class="fas fa-times" id="closing" onclick="closeForm29()"></i>
                     <h1 style="color: black; font-size: 20px; margin: 20px;">Music composition "Oceans"</h1>
 
-                    <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: flex; opacity: 1; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s;" id="photo58">
+                    <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: flex; opacity: 1; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s ease-out;" id="photo58">
                         <img src="photos/vandenynai.jpg" alt="Music composition Oceans"id="showPhoto" class="prekes-nuotrauka-2">
                     </div>
 
-                    <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s;" id="photo59">
+                    <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s ease-out;" id="photo59">
                         <img src="photos/vandenynai2.jpg" alt="Music composition Oceans"id="showPhoto" class="prekes-nuotrauka-2">
                     </div>
 
-                    <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s;" id="photo60">
+                    <div style="width: 300px; margin: 0 auto; height: 300px; position: relative; display: none; opacity: 0; justify-content: space-around; flex-direction: column; align-items: center; transition: 0.3s ease-out;" id="photo60">
                         <img src="photos/vandenynai3.jpg" alt="Music composition Oceans"id="showPhoto" class="prekes-nuotrauka-2">
                     </div>
                     <div style="display: flex; justify-content: center; align-items: center; width: 240px; margin: 0 auto;">
@@ -1261,8 +1261,8 @@
             <h2>Contacts</h2>
             <div id="back2" onclick="closeForm9()"></div>
             <div id="klaidos-langas">
-                <h5 style="color: black; font-size: 20px; margin: 20px; font-weight: 600;">Found an error?</h5>
-                <p style="color: black; width: 80%; text-align: center; margin: 5px auto;"><a href="mailto: moon.astec.shop@gmail.com" style="color: blue; text-decoration-line: underline;">Email us</a> and we will try to fix it as soon as possible.</p>
+                <h5 style="color: black; font-size: 20px; margin: 20px; font-weight: 600;">Submit feedback</h5>
+                <p style="color: black; width: 80%; text-align: center; margin: 5px auto;">Found an error or want to tell us your ideas to make this page better? <a href="mailto: moon.astec.shop@gmail.com" style="color: blue; text-decoration-line: underline;">Email us</a>.</p>
             </div>
             <div id="back5" onclick="closeForm10()"></div>
             <div id="taisykliu-langas">
@@ -1446,35 +1446,34 @@
              <input name="numeris" id="numeris" type="text" placeholder="Format: MA*****" aria-required="true" style="font-family: 'Poppins', sans-serif; text-align: center;">
               
          <div class="flex">
-                 <button id="toliau" type="button" onclick="check(this.form)"><div><i class="fas fa-search-location" style="font-size: 35px; color: black;" id="check"></i><div style="width: 50px; height: 50px; margin: 5px; border-radius: 100%; box-shadow: 2px 0 4px darkgrey; display: none; transition: 0.3s; justify-content: center; align-items: center; animation: spin 1s linear infinite;" id="clok"></div><i class="fas fa-times" id="clos" style="color: red; font-size: 35px; display: none;"></i></div></button>
+                 <button id="toliau" type="button" onclick="check(this.form)"><div><i class="fas fa-search-location" style="font-size: 35px; color: black;" id="check"></i><div style="width: 50px; height: 50px; margin: 5px; border-radius: 100%; box-shadow: 2px 0 4px darkgrey; display: none; transition: 0.3s ease-out; justify-content: center; align-items: center; animation: spin 1s linear infinite;" id="clok"></div><i class="fas fa-times" id="clos" style="color: red; font-size: 35px; display: none;"></i></div></button>
                  </div>
          
      </div>
      </div>
      </form>
              </div>
+             <div id="matthewRedirect"><div style="width: 320px; height: 320px; border-radius: 100%; box-shadow: 10px 0 10px darkgrey; display: flex; margin-top: -40px; justify-content: center; align-items: center; animation: spin 1s linear infinite; position: absolute;"></div><h1>Opening another page...</h1><div style="width: 300px; display: flex; justify-content: space-around; align-items: center; margin: 20px;"><img src="photos/logo.png" alt="" style="width: 100px;"><i class="fa-solid fa-up-right-from-square" style="font-size: 40px;"></i><img src="https://matthewmatexas.github.io/portfolio/photos/logo.png" alt="Matthew" style="width: 100px;" id="redirectImg2"><img src="photos/logo.png" alt="Old version" style="width: 100px; display: none;" id="redirectImg1"><img src="https://matthewmatexas.github.io/portfolio/photos/githubImg.png" alt="GitHub" style="width: 100px; border-radius: 100%; display: none;" id="redirectImg3"></div></div>
             <div style="display: flex; justify-content: center; align-items: flex-start; flex-direction: column; width: 100%;">
                <h4 style="margin-bottom: -15px;"><a onclick="sekimas()" class="pastas" style="cursor: pointer;">Order tracking</a></h4>
                 <h4 style="margin-bottom: -15px;"><a onclick="openForm10()" class="pastas" style="cursor: pointer;">Rules of purchase</a></h4>
                 <h4 style="margin-bottom: -15px;"><a onclick="cookies()" style="cursor: pointer;" class="pastas">Cookies policy</a></h4>
                 <h4><a href="mailto: moon.astec.shop@gmail.com" class="pastas" target="_blank">Email: moon.astec.shop@gmail.com</a></h4>
             </div>
-            <button onclick="openForm9()" class="klaida">Found an error?</button>
-            <h5 style="margin-bottom: 10px; font-size: 10px; color: slategrey; text-align: center;">Website posted on <a href="https://github.com/" style="color: slategrey;" target="_blank">GitHub</a></h5>
+            <button onclick="openForm9()" class="klaida">Submit feedback</button>
+            <h5 style="margin-bottom: 10px; font-size: 10px; color: slategrey; text-align: center;">Website posted on <a onclick="github()" style="color: slategrey; cursor: pointer; text-decoration: underline;">GitHub</a></h5>
             <div id="back3" onclick="closeForm12()"></div>
             <div id="matthew">
                 <h1 style="color: red; margin-top: 25px;">WARNING!</h1>
                 <p style="color: black; margin: 10px;">The website you're about to go on is Lithuanian language only.</p>
                 <p style="color: black;">Do you want to continue?</p>
                 <div style="width: 210px; height: 50px; display: flex; justify-content: space-between; align-items: center; margin: 10px auto;">
-                <form action="https://matthewmatexas.github.io/portfolio/" target="_blank">
-                    <button class="matthew-button" onclick="closeForm12()">Yes</button>
-                </form>
+                    <button class="matthew-button" onclick="matthewRedi()">Yes</button>
                 <button class="matthew-button2" onclick="closeForm12()">No</button>
                 </div>
             </div>
             <h5 style="margin-bottom: 10px; font-size: 10px; color: slategrey; text-align: center;">Website created by <a onclick="openForm12()" style="color: slategrey; cursor: pointer; text-decoration: underline; text-align: center;">Matthew</a></h5>
-            <h5 style="text-align: center; margin-bottom: 10px; font-size: 13px;"><a href="https://moonastec.github.io/oldversion/eng-index" target="_blank" style="color: darkslategrey; text-decoration: underline;">visit old moon_astec☽</a></h5>
+            <h5 style="text-align: center; margin-bottom: 10px; font-size: 13px;"><a onclick="moonOld()" style="color: darkslategrey; cursor: pointer; text-decoration: underline;">visit old moon_astec☽</a></h5>
             <h5 style="margin-bottom: 10px; text-align: center;">Version: 1.6.7</h5>
             <h5 style="text-align: center;">&copy; Copyright. All rights deserved.</h5>
             <h5 style="text-align: center; margin-top: 5px;">by Moon_astec☽</h5>
@@ -1637,6 +1636,68 @@ document.onkeydown = (e) => {
                 }, 300);
             }
         }
+        function moonOld() {
+            document.getElementById("matthewRedirect").style.display = "flex";
+            document.getElementById("redirectImg1").style.display = "inline";
+            document.getElementById("redirectImg2").style.display = "none";
+            setTimeout(() => {
+                document.getElementById("matthewRedirect").style.opacity = "1";
+                }, 50);
+                setTimeout(() => {
+                    window.open("https://moonastec.github.io/oldversion/eng-index");
+                }, 5000);
+                setTimeout(() => {
+                document.getElementById("matthewRedirect").style.opacity = "0";
+                }, 5100);
+                setTimeout(() => {
+                document.getElementById("matthewRedirect").style.display = "none";
+                }, 5400);
+                setTimeout(() => {
+                    document.getElementById("redirectImg2").style.display = "inline";
+            document.getElementById("redirectImg1").style.display = "none";
+                }, 5400);
+        }
+        function github() {
+            document.getElementById("matthewRedirect").style.display = "flex";
+            document.getElementById("redirectImg3").style.display = "inline";
+            document.getElementById("redirectImg2").style.display = "none";
+            setTimeout(() => {
+                document.getElementById("matthewRedirect").style.opacity = "1";
+                }, 50);
+                setTimeout(() => {
+                    window.open("https://github.com/");
+                }, 5000);
+                setTimeout(() => {
+                document.getElementById("matthewRedirect").style.opacity = "0";
+                }, 5100);
+                setTimeout(() => {
+                document.getElementById("matthewRedirect").style.display = "none";
+                }, 5400);
+                setTimeout(() => {
+                    document.getElementById("redirectImg2").style.display = "inline";
+            document.getElementById("redirectImg3").style.display = "none";
+                }, 5400);
+        }
+        function matthewRedi() {
+            document.getElementById("matthew").style.bottom = "-300px";
+            document.getElementById("back3").style.opacity = "0";
+            setTimeout(() => {
+                document.getElementById("back3").style.zIndex = "-1";
+            }, 300);
+            document.getElementById("matthewRedirect").style.display = "flex";
+            setTimeout(() => {
+                document.getElementById("matthewRedirect").style.opacity = "1";
+                }, 50);
+                setTimeout(() => {
+                    window.open("https://matthewmatexas.github.io/portfolio");
+                }, 5000);
+                setTimeout(() => {
+                document.getElementById("matthewRedirect").style.opacity = "0";
+                }, 5100);
+                setTimeout(() => {
+                document.getElementById("matthewRedirect").style.display = "none";
+                }, 5400);
+        }
         function cookies() {
             if ( window.innerWidth > 750) {     
                 document.getElementById("back6").style.zIndex = "75";
@@ -1666,7 +1727,7 @@ document.onkeydown = (e) => {
         function cookies2() {
             if ( window.innerWidth > 750) {     
                 document.title = 'moon_astec☽ main page';
-                document.getElementById("slapukai").style.top = "-120%";;
+                document.getElementById("slapukai").style.top = "-120%";
                 document.getElementById("slapukai").style.overflowY = "hidden";
                 document.getElementById("slapukai").style.zIndex = "-1";
                 document.getElementById("back6").style.opacity = "0";

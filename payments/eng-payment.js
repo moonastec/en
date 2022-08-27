@@ -38,7 +38,8 @@ window.addEventListener("DOMContentLoaded", function() {
         setTimeout(() => {   document.getElementById("check").style.display = "block"; }, 6150);
         setTimeout(() => {   document.getElementById("clock").style.display = "none"; }, 6150);
         setTimeout(() => {   document.getElementById("po-to").style.display = "block"; }, 6000);
-        setTimeout(() => {         form.reset(); }, 6000);   
+        setTimeout(() => {         form.reset(); }, 6000); 
+        setTimeout(() => {         document.getElementById("back2").style.display = "flex"; }, 6000);   
         setTimeout(() => {         document.getElementById("back2").style.zIndex = "20"; }, 6000); 
         setTimeout(() => {         document.getElementById("back2").style.opacity = "0.9"; }, 6100);   
         setTimeout(() => {         document.getElementById("pavyko").style.top = "30%";
@@ -46,7 +47,7 @@ window.addEventListener("DOMContentLoaded", function() {
         setTimeout(() => {   document.getElementById("pavyko").style.top = "2%"; }, 270);
         document.getElementById("pavyko").style.overflowY = "scroll";
         document.getElementById("pavyko").style.zIndex = "25";
-        document.title = 'moon_astec☽ payment confirmation'; }, 6100);   
+        document.title = 'moon_astec☽ order confirmation'; }, 6100);   
     }
     else {
       document.getElementById("toliau").style.width = "70px";
@@ -60,13 +61,14 @@ window.addEventListener("DOMContentLoaded", function() {
         setTimeout(() => {   document.getElementById("clock").style.display = "none"; }, 6150);
         setTimeout(() => {   document.getElementById("po-to").style.display = "block"; }, 6000);
         setTimeout(() => {         form.reset(); }, 6000);
+        setTimeout(() => {         document.getElementById("back2").style.display = "flex"; }, 6000); 
         setTimeout(() => {         document.getElementById("back2").style.zIndex = "20"; }, 6000);
         setTimeout(() => {         document.getElementById("back2").style.opacity = "0.9"; }, 6100);
         setTimeout(() => {         document.getElementById("pavyko").style.right = "5%";
         document.getElementById("pavyko").style.top = "-1%";
         document.getElementById("pavyko").style.overflowY = "scroll";
         document.getElementById("pavyko").style.zIndex = "25";
-        document.title = 'moon_astec☽ payment confirmation'; }, 6000);
+        document.title = 'moon_astec☽ order confirmation'; }, 6000);
     }
     }
 
@@ -318,3 +320,10 @@ function loadFunction(){
 }
 setTimeout(() => {    document.getElementById("wifi").style.marginTop = "-200px"; }, 20000);
 setTimeout(() => {    document.getElementById("wifi").style.animation = "size 1.5s linear infinite"; }, 20300);
+function emailShow() {
+      document.getElementById("emailErrorInfo").style.display = "block";
+      setTimeout(() => {    document.getElementById("emailErrorInfo").style.opacity = "1"; }, 50);
+      setTimeout(() => {    document.querySelector('#emailErrorInfo').scrollIntoView({
+        behavior: 'smooth'
+    }); }, 50);
+}
