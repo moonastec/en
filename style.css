@@ -2166,6 +2166,20 @@ button[type="button"]:hover div{
     .preke{
         margin: 20px auto;
     }
+    .preke:hover{
+        background-color: azure;
+        transform: scale(1.0);
+        border-radius: 15px;
+        box-shadow: none;
+    }
+    .preke:hover img{
+        border-radius: 15px;
+        transform: scale(1.0);
+    }
+    .preview-nuotraukos:hover{
+        transform: scale(1.0);
+        border-radius: 15px;
+    }
     .buttons button{
         font-size: 10px;
     }
