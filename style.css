@@ -2219,6 +2219,9 @@ button[type="button"]:hover div{
     .buttons button{
         font-size: 10px;
     }
+    .layer i{
+        font-size: 30px;
+    }
     /* #hide{
         display: none;
     } */
