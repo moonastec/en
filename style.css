@@ -389,6 +389,7 @@ body{
     opacity: 1;
     background-color: darkgrey;
     text-align: center;
+    border-radius: 0 0 25px 25px;
 }
 .layer{
     width: 100%;
@@ -401,6 +402,7 @@ body{
     flex-direction: column;
     transition: 0.3s ease-out;
     padding-top: 100px;
+    border-radius: 0 0 25px 25px;
 }
 .layer i{
     font-size: 50px;
@@ -626,6 +628,9 @@ body{
 main p{
     color:rgb(225,225,225);
 }
+main{
+    position: relative
+}
 section{
     width: 100%;
     height: auto;
@@ -768,6 +773,11 @@ section{
     text-align: center;
     border-radius: 15px 15px 0 0;
     padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 50px;
 }
 .apie:hover p{
     transform: scale(1.3);
@@ -788,6 +798,37 @@ section{
     transition: 0.3s ease-out;
     cursor: default;
 }
+#star{
+    color: azure;
+    animation: stars 1.5s linear infinite;
+    position: absolute;
+    font-size: 15px;
+    margin-top: -430px;
+    z-index: 10;
+}
+@keyframes stars{
+    0%{
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    20%{
+        opacity: 0;
+        transform: scale(0.7);
+    }
+    50%{
+        opacity: 1;
+        transform: scale(1.0);
+    }
+    80%{
+        opacity: 0;
+        transform: scale(1.0);
+    }
+    100%{
+        opacity: 0;
+        transform: scale(0.5);
+    }
+}
+
 .kalbos-keitimas{
     width: 200px; 
     height: 50px; 
@@ -1513,16 +1554,29 @@ section{
     overflow: hidden;
     border-radius: 15px;
     cursor: pointer;
+    position: relative;
 }
 .preke:hover{
     background-color: darkgrey;
     transform: scale(1.1);
-    box-shadow: 0 0 10px darkgrey;
     border-radius: 100%;
     color: white;
+    z-index: 10;
+    animation: box-shadow 1s linear infinite;
 }
 .preke:hover p{
     color: white;
+}
+@keyframes box-shadow{
+    0%{
+        box-shadow: none;
+    }
+    50%{
+        box-shadow: 0 0 25px darkgrey;
+    }
+    100%{
+        box-shadow: none;
+    }
 }
 .prekes-nuotrauka{
     width: 150px;
@@ -2212,6 +2266,10 @@ button[type="button"]:hover div{
     .apie:hover p{
         transform: scale(1.0);
     }
+    .apie{
+        padding-top: 0;
+        padding-bottom: -20px;
+    }
     .preke{
         margin: 20px auto;
     }
@@ -2219,7 +2277,8 @@ button[type="button"]:hover div{
         background-color: azure;
         transform: scale(1.0);
         border-radius: 15px;
-        box-shadow: none;
+        animation: none;
+        z-index: 0;
     }
     .preke:hover img{
         border-radius: 15px;
