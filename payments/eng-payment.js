@@ -317,6 +317,17 @@ function loadFunction(){
   setTimeout(() => {    document.getElementById("screen").style.zIndex = "-1"; }, 1200);
   document.getElementById("wifi").style.marginTop = "-2000px";
   setTimeout(() => {    document.getElementById("wifi").style.display = "none"; }, 300);
+  setTimeout(() => {    document.getElementById("stopWork").style.width = "50px"; }, 4500);
+            setTimeout(() => {    document.getElementById("stopWork").style.minHeight = "50px"; }, 4500);
+            setTimeout(() => {    document.getElementById("stopWork").style.maxHeight = "50px"; }, 4300);
+            setTimeout(() => {    document.getElementById("stopWorkText").style.opacity = "0"; }, 4500);
+            setTimeout(() => {    document.getElementById("stopWork").style.borderRadius = "50px"; }, 4500);
+            setTimeout(() => {    document.getElementById("stopWork").style.bottom = "25px"; }, 4500);
+            setTimeout(() => {    document.getElementById("stopWork").style.left = "25px"; }, 4500);
+            setTimeout(() => {    document.getElementById("stopWork").style.pointerEvents = "all"; }, 4500);
+            setTimeout(() => {    document.getElementById("stopWork").style.cursor = "pointer"; }, 4500);
+            setTimeout(() => {    document.getElementById("exclamationStopWork").style.opacity = "1"; }, 4500);
+            setTimeout(() => {    document.getElementById("stopAnimation").style.display = "block"; }, 4800);
 }
 setTimeout(() => {    document.getElementById("wifi").style.marginTop = "-200px"; }, 20000);
 setTimeout(() => {    document.getElementById("wifi").style.animation = "size 1.5s linear infinite"; }, 20300);
@@ -326,4 +337,28 @@ function emailShow() {
       setTimeout(() => {    document.querySelector('#emailErrorInfo').scrollIntoView({
         behavior: 'smooth'
     }); }, 50);
+}
+function stopWorkShow() {
+  document.getElementById("stopWork").style.width = "100%";
+  document.getElementById("stopWork").style.minHeight = "100px";
+  setTimeout(() => {    document.getElementById("stopWork").style.maxHeight = "500px"; }, 200);
+  document.getElementById("stopWorkText").style.opacity = "1";
+  document.getElementById("stopWork").style.borderRadius = "0";
+  document.getElementById("stopWork").style.bottom = "0";
+  document.getElementById("stopWork").style.left = "0";
+  document.getElementById("stopWork").style.pointerEvents = "none";
+  document.getElementById("stopWork").style.cursor = "default";
+  document.getElementById("exclamationStopWork").style.opacity = "0";
+  document.getElementById("stopAnimation").style.display = "none";
+  setTimeout(() => {    document.getElementById("stopWork").style.width = "50px"; }, 3000);
+  setTimeout(() => {    document.getElementById("stopWork").style.minHeight = "50px"; }, 3000);
+  setTimeout(() => {    document.getElementById("stopWork").style.maxHeight = "50px"; }, 2800);
+  setTimeout(() => {    document.getElementById("stopWorkText").style.opacity = "0"; }, 3000);
+  setTimeout(() => {    document.getElementById("stopWork").style.borderRadius = "50px"; }, 3000);
+  setTimeout(() => {    document.getElementById("stopWork").style.bottom = "25px"; }, 3000);
+  setTimeout(() => {    document.getElementById("stopWork").style.left = "25px"; }, 3000);
+  setTimeout(() => {    document.getElementById("stopWork").style.pointerEvents = "all"; }, 3000);
+  setTimeout(() => {    document.getElementById("stopWork").style.cursor = "pointer"; }, 3000);
+  setTimeout(() => {    document.getElementById("exclamationStopWork").style.opacity = "1"; }, 3000);
+  setTimeout(() => {    document.getElementById("stopAnimation").style.display = "block"; }, 3300);
 }

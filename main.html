@@ -101,7 +101,32 @@
   #open-button2:hover p{
         color: white;
   }
+  @keyframes pulse{
+      0%{
+          width: 50px;
+          height: 50px;
+          opacity: 1;
+          bottom: 25px;
+          left: 25px;
+      }
+      50%{
+          width: 150px;
+          height: 150px;
+          opacity: 0;
+          bottom: -26px;
+          left: -26px;
+      }
+      100%{
+          width: 150px;
+          height: 150px;
+          opacity: 0;
+          bottom: -26px;
+          left: -26px;
+      }
+  }
     </style>
+<div style="width: 100%; height: auto; overflow: hidden; transition: 0.3s; padding: 15px; min-height: 100px; left: 0; background-color: red; cursor: default; bottom: 0; position: fixed; z-index: 30; color: white; display: flex; justify-content: center; align-items: center; pointer-events: none;" id="stopWork" onclick="stopWorkShow()"><p id="stopWorkText" style="text-align: center; transition: 0.3s;">due to lack of orders, moon_astec☽ will be closed soon. orders are still being accepted.</p><i class="fa-solid fa-circle-exclamation" style="opacity: 0; position: absolute; transition: 0.3s; font-size: 40px;" id="exclamationStopWork"></i></div>
+<div style="width: 50px; height: 50px; position: fixed; bottom: 25px; left: 25px; background-color: red; display: none; z-index: 29; animation: pulse 3s linear infinite; border-radius: 100%; transition: 0.3s;" id="stopAnimation"></div>
     <!-- <div id="update">
         <img src="photos/logo.png" alt="Moon_astec" style="width: 150px; position: absolute; margin-top: -300px;">
         <p style="position: absolute; margin-top: 270px; text-align: center;">This page is being updated at the moment...</p>
@@ -1549,6 +1574,17 @@ document.onkeydown = (e) => {
             setTimeout(() => {    document.getElementById("h2").style.opacity = "1"; }, 1200);
             setTimeout(() => {    document.getElementById("h2").style.marginLeft = "0"; }, 1200);
             setTimeout(() => {    document.getElementById("layer").style.backgroundColor = "rgba(100,100,100,0.6)"; console.log('page load complete.'); console.log('_'); console.log('page animations: toggle on'); console.log('_');}, 1250);
+            setTimeout(() => {    document.getElementById("stopWork").style.width = "50px"; }, 4500);
+            setTimeout(() => {    document.getElementById("stopWork").style.minHeight = "50px"; }, 4500);
+            setTimeout(() => {    document.getElementById("stopWork").style.maxHeight = "50px"; }, 4300);
+            setTimeout(() => {    document.getElementById("stopWorkText").style.opacity = "0"; }, 4500);
+            setTimeout(() => {    document.getElementById("stopWork").style.borderRadius = "50px"; }, 4500);
+            setTimeout(() => {    document.getElementById("stopWork").style.bottom = "25px"; }, 4500);
+            setTimeout(() => {    document.getElementById("stopWork").style.left = "25px"; }, 4500);
+            setTimeout(() => {    document.getElementById("stopWork").style.pointerEvents = "all"; }, 4500);
+            setTimeout(() => {    document.getElementById("stopWork").style.cursor = "pointer"; }, 4500);
+            setTimeout(() => {    document.getElementById("exclamationStopWork").style.opacity = "1"; }, 4500);
+            setTimeout(() => {    document.getElementById("stopAnimation").style.display = "block"; }, 4800);
             console.log('page loading...');
             console.log('_');
             if ( window.innerWidth > 750) {     
@@ -1569,6 +1605,31 @@ document.onkeydown = (e) => {
         setTimeout(() => {    document.getElementById("wifi").style.marginTop = "-200px"; }, 35000);
         setTimeout(() => {    document.getElementById("wifi").style.animation = "size 1.5s linear infinite"; }, 35300);
         setTimeout(() => {    document.getElementById("skip").style.marginBottom = "-200px"; }, 40000);
+
+        function stopWorkShow() {
+            document.getElementById("stopWork").style.width = "100%";
+            document.getElementById("stopWork").style.minHeight = "100px";
+            setTimeout(() => {    document.getElementById("stopWork").style.maxHeight = "500px"; }, 200);
+            document.getElementById("stopWorkText").style.opacity = "1";
+            document.getElementById("stopWork").style.borderRadius = "0";
+            document.getElementById("stopWork").style.bottom = "0";
+            document.getElementById("stopWork").style.left = "0";
+            document.getElementById("stopWork").style.pointerEvents = "none";
+            document.getElementById("stopWork").style.cursor = "default";
+            document.getElementById("exclamationStopWork").style.opacity = "0";
+            document.getElementById("stopAnimation").style.display = "none";
+            setTimeout(() => {    document.getElementById("stopWork").style.width = "50px"; }, 3000);
+            setTimeout(() => {    document.getElementById("stopWork").style.minHeight = "50px"; }, 3000);
+            setTimeout(() => {    document.getElementById("stopWork").style.maxHeight = "50px"; }, 2800);
+            setTimeout(() => {    document.getElementById("stopWorkText").style.opacity = "0"; }, 3000);
+            setTimeout(() => {    document.getElementById("stopWork").style.borderRadius = "50px"; }, 3000);
+            setTimeout(() => {    document.getElementById("stopWork").style.bottom = "25px"; }, 3000);
+            setTimeout(() => {    document.getElementById("stopWork").style.left = "25px"; }, 3000);
+            setTimeout(() => {    document.getElementById("stopWork").style.pointerEvents = "all"; }, 3000);
+            setTimeout(() => {    document.getElementById("stopWork").style.cursor = "pointer"; }, 3000);
+            setTimeout(() => {    document.getElementById("exclamationStopWork").style.opacity = "1"; }, 3000);
+            setTimeout(() => {    document.getElementById("stopAnimation").style.display = "block"; }, 3300);
+        }
 
         var prevScrollpos = window.pageYOffset;
         window.onscroll = function() {
