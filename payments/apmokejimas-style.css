@@ -102,7 +102,7 @@ body{
     transition: 0.3s ease-out;
 }
 .info:hover{
-    box-shadow: 0 0 20px lightgrey;
+    transform: rotate(1deg);
 }
 .info img{
     width: 100px;
@@ -148,6 +148,7 @@ body{
 .info button:hover{
    background-color: black;
    color: white;
+   transform: scale(1.1);
 }
 #closing{
     font-size: 35px; 

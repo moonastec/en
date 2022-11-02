@@ -307,6 +307,7 @@ function closeForm5() {
 function next() {
     document.getElementById("container").style.height = "auto";
     document.getElementById("info").style.borderRadius = "15px 15px 0 0";
+    document.getElementById("info").style.transform = "scale(1.0)";
     document.getElementById("container").style.padding = "20px";
     document.getElementById("next").style.opacity = "0";
     document.getElementById("next").style.cursor = "default";
